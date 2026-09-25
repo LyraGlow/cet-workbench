@@ -177,6 +177,42 @@ https://github.com/你的用户名/cet-workbench/settings/actions
 
 > 💡 放心：更新脚本已经做了容错——`content.js` 在根目录还是子文件夹里，机器人都能自动找到并更新。
 
+## ❌ 常见错误 4：行动页面显示 "Get started with GitHub Actions"
+
+**现象**：点「行动」后看到的是新手引导页（Get started with GitHub Actions、一堆 Suggested for this repository），左侧没有你的任务。
+**含义**：GitHub 在 `.github/workflows/` 里没找到任何配置——即 `daily-news.yml` 位置不对（或文件名/路径写错了）。
+
+**最省事的修正办法（让 GitHub 自己把路径建对）：**
+
+1. 就在这个页面上，点中间那行小字里的蓝色链接 **set up a workflow yourself**（自己设置工作流）；
+2. 编辑页顶部的**文件名框已经自动填好** `.github/workflows/main.yml`；
+3. 只把最后的 `main.yml` 改成 **`daily-news.yml`**（前面的 `.github/workflows/` 不要动）；
+4. 把编辑框默认内容**全选删除**，粘贴 `daily-news.yml` 的全部内容；
+5. 点 **Commit changes** → 弹窗里再点一次 **Commit changes**；
+6. 回到「行动」刷新，左侧就会出现 **Daily News Update**。
+
+> 如果之前把 `daily-news.yml` 放在过仓库根目录，记得点开它 → 右上角垃圾桶图标 → Commit 删掉，避免重复。
+
+## ❌ 常见错误 3：`daily-news.yml` 放在了仓库根目录
+
+**现象**：仓库根目录能直接看到 `daily-news.yml`（而不是在 `.github/workflows/` 里面）。
+**后果**：机器人完全不会运行——GitHub 只读取 `.github/workflows/` 目录下的配置文件。
+
+**修正（改名搬家，不用重新粘贴内容）**：
+
+1. 点开根目录里的 `daily-news.yml`；
+2. 点右上角**铅笔图标**（Edit this file / 编辑此文件）；
+3. 在顶部的**文件名输入框**里，把 `daily-news.yml` 改成 `.github/workflows/daily-news.yml`（连斜杠一起输入）；
+4. 拉到底点 **Commit changes**；
+5. 回仓库首页确认：根目录的 `daily-news.yml` 消失，`.github/workflows/` 里出现它。
+
+**顺便核对两个文件夹：**
+
+| 文件夹 | 应该有 | 不对怎么办 |
+|---|---|---|
+| `.github/workflows/` | 只有 `daily-news.yml` | 多出别的文件：点开该文件 → 右上角垃圾桶图标 → Commit 删除 |
+| `scripts/` | `update_news.py` | 缺失：Add file → Create new file → 文件名填 `scripts/update_news.py` → 粘贴内容 → Commit |
+
 ## ❌ 常见错误 2：找不到设置里的"自动化"
 
 因为浏览器把 GitHub **自动翻译成中文**了，英文 `Actions` 会被显示成「**行动**」。

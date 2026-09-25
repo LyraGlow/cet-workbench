@@ -32,6 +32,26 @@ CET = timezone(timedelta(hours=8))
 CONTENT = "content.js"
 UA = {"User-Agent": "Mozilla/5.0 (compatible; CET-Workbench-Updater/1.0)"}
 
+
+def find_content_file():
+    """
+    自动定位 content.js：
+    1) 仓库根目录；
+    2) 根目录下的任意一层子文件夹（例如把整个文件夹误传成子目录的情况）。
+    找不到就返回 None。
+    """
+    import os
+    if os.path.isfile("content.js"):
+        return "content.js"
+    for entry in sorted(os.listdir(".")):
+        if os.path.isdir(entry) and not entry.startswith("."):
+            cand = os.path.join(entry, "content.js")
+            if os.path.isfile(cand):
+                print(f"[提示] 在子文件夹里找到内容包：{cand}")
+                return cand
+    return None
+
+
 # 需要剔除的标题关键词（暴力、灾难、战争、冲突类）
 BLOCK_WORDS = [
     "killed", "shooting", "gunman", "dead", "death toll", "war", "attack",
@@ -136,16 +156,21 @@ def main():
         )
     block = "  news: [\n" + ",\n".join(lines) + "\n  ],"
 
-    with open(CONTENT, encoding="utf-8") as f:
+    target = find_content_file()
+    if not target:
+        print("没有找到 content.js（仓库根目录或子文件夹里都没有），放弃。请检查文件是否已上传。")
+        return 1
+
+    with open(target, encoding="utf-8") as f:
         src = f.read()
     new, n = re.subn(r"  news: \[.*?\n  \],", block, src, count=1, flags=re.S)
     if n == 0:
-        print("未找到 news 数组，放弃写入。")
+        print(f"在 {target} 里没找到 news 数组，放弃写入。")
         return 1
     new = re.sub(r'updated: "\d{4}-\d{2}-\d{2}"', 'updated: "%s"' % today, new, count=1)
-    with open(CONTENT, "w", encoding="utf-8") as f:
+    with open(target, "w", encoding="utf-8") as f:
         f.write(new)
-    print(f"已写入 {len(verified)} 条新闻，updated = {today}")
+    print(f"已写入 {len(verified)} 条新闻到 {target}，updated = {today}")
     return 0
 
 

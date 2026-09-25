@@ -522,8 +522,77 @@
     document.getElementById("newsStatus").textContent = "共 " + ns.length + " 条 · 内容包更新于 " + CONTENT.updated + "（每天 6:30 自动抓取多个频道）";
   }
   document.getElementById("newsRefresh").addEventListener("click", function () {
-    document.getElementById("newsStatus").textContent = "在线抓取需要公共代理，当前网络环境下大概率受限；新闻由每日 6:30 自动任务真实抓取更新，明早即可看到新一批。";
+    document.getElementById("newsStatus").textContent = "正在尝试在线抓取最新新闻…";
+    liveNews(true);
   });
+
+  /* 在线抓取最新新闻（尽力而为：成功就用最新的，失败就继续显示内容包里的新闻） */
+  var PROXY_LIST = [
+    function (u) { return "https://api.allorigins.win/raw?url=" + encodeURIComponent(u); },
+    function (u) { return "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(u); },
+    function (u) { return "https://corsproxy.io/?url=" + encodeURIComponent(u); },
+    function (u) { return u; }
+  ];
+  var LIVE_FEEDS = [
+    ["CGTN·China", "https://www.cgtn.com/subscribe/rss/section/china.xml"],
+    ["CGTN·Sports", "https://www.cgtn.com/subscribe/rss/section/sports.xml"],
+    ["CGTN·Culture", "https://www.cgtn.com/subscribe/rss/section/culture.xml"],
+    ["CGTN·Travel", "https://www.cgtn.com/subscribe/rss/section/travel.xml"],
+    ["CGTN·Business", "https://www.cgtn.com/subscribe/rss/section/business.xml"],
+    ["CGTN·World", "https://www.cgtn.com/subscribe/rss/section/world.xml"]
+  ];
+  function liveNews(manual) {
+    var got = [], done = 0, finished = false;
+    function tryOne(fi, pi) {
+      if (fi >= LIVE_FEEDS.length) {
+        if (!finished) {
+          finished = true;
+          if (got.length >= 5) {
+            renderLiveNews(got);
+            document.getElementById("newsStatus").textContent =
+              "✓ 已在线抓取 " + got.length + " 条最新新闻 · " + new Date().toLocaleString();
+          } else {
+            document.getElementById("newsStatus").textContent =
+              "当前网络无法在线抓取，显示的是内容包里的新闻（" + CONTENT.updated + " 更新）";
+          }
+        }
+        return;
+      }
+      var url = PROXY_LIST[pi](LIVE_FEEDS[fi][1]);
+      var ctrl = new AbortController();
+      var t = setTimeout(function () { ctrl.abort(); }, 7000);
+      fetch(url, { signal: ctrl.signal }).then(function (r) { return r.text(); }).then(function (txt) {
+        clearTimeout(t);
+        if (finished) return;
+        var doc = new DOMParser().parseFromString(txt, "text/xml");
+        var items = doc.querySelectorAll("item");
+        if (!items.length) throw new Error("empty");
+        for (var i = 0; i < items.length && i < 3; i++) {
+          var it = items[i];
+          var ti = (it.querySelector("title") || {}).textContent || "";
+          var li = (it.querySelector("link") || {}).textContent || "";
+          if (ti && li) got.push({ src: LIVE_FEEDS[fi][0], title: ti.trim(), link: li.trim().split("?")[0], date: today() });
+        }
+        tryOne(fi + 1, 0);
+      }).catch(function () {
+        clearTimeout(t);
+        if (pi + 1 < PROXY_LIST.length) tryOne(fi, pi + 1);
+        else tryOne(fi + 1, 0);
+      });
+    }
+    tryOne(0, 0);
+  }
+  function renderLiveNews(items) {
+    var ul = document.getElementById("newsList");
+    ul.innerHTML = "";
+    items.forEach(function (n) {
+      var li = document.createElement("li");
+      li.className = "news-item";
+      li.innerHTML = "<span class='tag gray'>刚抓取</span> <span class='tag blue'>" + esc(srcCN(n.src)) + "</span>" +
+        "<div class='t'><a href='" + esc(n.link) + "' target='_blank' rel='noopener'>" + esc(n.title) + "</a></div>";
+      ul.appendChild(li);
+    });
+  }
 
   /* ===== 阅读理解 ===== */
   var curTheme = "全部";
