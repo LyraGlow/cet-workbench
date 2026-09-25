@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>四六级备考工作台</title>
+<style>
+  :root {
+    --bg: #f4f7f5; --card: #fff; --text: #2a3230; --muted: #8a9490; --line: #e6eae8;
+    --accent: #2e7d5b; --accent-soft: #e7f3ee; --warn: #d9822b; --red: #c9564f; --blue: #3a6ea5;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 20px 16px 60px; }
+  .topbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+  .topbar h1 { font-size: 21px; font-weight: 600; }
+  .topbar h1 span { color: var(--accent); }
+  .tr { display: flex; }
+  .tr button { border: 1px solid var(--line); background: #fff; padding: 7px 18px; font-size: 14px; cursor: pointer; color: var(--muted); }
+  .tr button:first-child { border-radius: 8px 0 0 8px; }
+  .tr button:last-child { border-radius: 0 8px 8px 0; border-left: none; }
+  .tr button.on { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
+  .countdown { background: var(--accent); color: #fff; border-radius: 12px; padding: 8px 16px; text-align: center; cursor: pointer; }
+  .countdown b { font-size: 20px; }
+  .countdown small { display: block; font-size: 11px; opacity: .85; }
+  .nav { display: flex; gap: 6px; background: var(--card); border-radius: 12px; padding: 5px; box-shadow: 0 1px 3px rgba(0,0,0,.05); margin-bottom: 16px; overflow-x: auto; }
+  .nav button { flex: 1; min-width: 88px; border: none; background: transparent; padding: 9px 4px; border-radius: 8px; font-size: 14px; cursor: pointer; color: var(--muted); white-space: nowrap; }
+  .nav button.active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .card { background: var(--card); border-radius: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.05); padding: 18px; margin-bottom: 14px; }
+  .card h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+  .muted { color: var(--muted); font-size: 13px; }
+  .btn { padding: 8px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; cursor: pointer; font-size: 14px; color: var(--text); }
+  .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .btn.small { padding: 4px 10px; font-size: 12px; border-radius: 6px; }
+  input[type=text], select { padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px; font-size: 14px; outline: none; background: #fff; color: var(--text); }
+  input[type=text]:focus { border-color: var(--accent); }
+  .empty { color: var(--muted); text-align: center; padding: 22px 0; font-size: 14px; }
+  ul.list { list-style: none; }
+  ul.list li { padding: 11px 4px; border-bottom: 1px solid var(--line); }
+  ul.list li:last-child { border-bottom: none; }
+  .del { border: none; background: none; color: var(--muted); cursor: pointer; font-size: 15px; }
+  .del:hover { color: var(--red); }
+  .tag { font-size: 12px; padding: 2px 10px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); display: inline-block; }
+  .tag.blue { background: #eaf2fc; color: var(--blue); }
+  .tag.orange { background: #fdf1e2; color: var(--warn); }
+  .tag.gray { background: #f0f1f3; color: var(--muted); }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+
+  /* 新闻 */
+  .news-item .t { font-size: 14.5px; font-weight: 600; line-height: 1.5; margin: 3px 0; }
+  .news-item .t a { color: var(--text); text-decoration: none; }
+  .news-item .t a:hover { color: var(--accent); text-decoration: underline; }
+
+  /* 阅读文章 */
+  .art-head { cursor: pointer; }
+  .art-head .t { font-size: 15px; font-weight: 600; margin: 4px 0; }
+  .art-body { display: none; margin-top: 10px; border-top: 1px dashed var(--line); padding-top: 12px; }
+  .art-body.open { display: block; }
+  .art-text { font-size: 14.5px; line-height: 2; }
+  .art-text .w { cursor: pointer; border-radius: 3px; }
+  .art-text .w:hover { background: var(--accent-soft); color: var(--accent); }
+  .art-trans { font-size: 13.5px; line-height: 1.8; color: #55605b; background: #f7f9f8; border-radius: 10px; padding: 12px; margin-top: 10px; display: none; }
+  .art-trans.open { display: block; }
+  .word-chip { display: inline-block; background: var(--accent-soft); color: var(--accent); border-radius: 8px; padding: 4px 10px; font-size: 13px; margin: 3px 4px 0 0; }
+  .quiz { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 12px; }
+  .quiz .q { font-size: 14px; margin: 12px 0 6px; line-height: 1.6; }
+  .quiz label { display: block; font-size: 13.5px; padding: 5px 8px; cursor: pointer; border-radius: 6px; }
+  .quiz label:hover { background: #f4f7f5; }
+  .quiz label.correct { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .quiz label.wrong { background: #fdecec; color: var(--red); }
+
+  /* 生词弹窗 */
+  #wordPop { display: none; position: fixed; left: 50%; transform: translateX(-50%); bottom: 24px; width: min(480px, 92vw); background: #fff; border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.18); padding: 16px 18px; z-index: 99; }
+  #wordPop .wpw { font-size: 22px; font-weight: 700; color: var(--accent); }
+  #wordPop .wpm { font-size: 14.5px; margin-top: 4px; }
+  #wordPop .close { position: absolute; right: 12px; top: 8px; }
+
+  /* 听写 */
+  .dict-box { border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-top: 10px; }
+  .dict-sent { font-size: 15px; margin-bottom: 10px; line-height: 1.6; }
+  .dict-sent .ok { color: var(--accent); }
+  .dict-sent .bad { color: var(--red); text-decoration: line-through; }
+  #dictInput { width: 100%; }
+  .speed-ctl { display: flex; gap: 8px; align-items: center; margin: 8px 0; flex-wrap: wrap; }
+  .passage-item { cursor: pointer; }
+  .passage-item:hover { color: var(--accent); }
+
+  /* 单词卡 */
+  .flashcard { background: var(--accent-soft); border-radius: 16px; padding: 34px 20px; text-align: center; margin: 10px 0; min-height: 170px; display: flex; flex-direction: column; justify-content: center; }
+  .flashcard .word { font-size: 34px; font-weight: 700; color: var(--accent); }
+  .flashcard .pos { color: var(--muted); font-size: 14px; margin-top: 4px; }
+  .flashcard .mean { font-size: 19px; margin-top: 14px; }
+  .stats-row { display: flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
+  .stat { flex: 1; min-width: 90px; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 10px; text-align: center; }
+  .stat b { font-size: 20px; color: var(--accent); display: block; }
+  .stat span { font-size: 12px; color: var(--muted); }
+  .footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <h1>📘 四六级<span>备考工作台</span></h1>
+    <div class="tr">
+      <button id="lv4">四级</button>
+      <button id="lv6">六级</button>
+    </div>
+    <div class="countdown" id="cdBox" title="点击修改考试日期">
+      <b id="cdNum">--</b><small id="cdLabel">天 · 距四级考试</small>
+    </div>
+  </div>
+
+  <div class="nav">
+    <button data-tab="news" class="active">📰 英语时事</button>
+    <button data-tab="read">📖 阅读理解</button>
+    <button data-tab="listen">🎧 听力听写</button>
+    <button data-tab="vocab">🃏 背单词</button>
+    <button data-tab="grammar">📐 语法语态</button>
+    <button data-tab="essay">✍️ 作文素材</button>
+    <button data-tab="wordbook">⭐ 生词本</button>
+  </div>
+
+  <!-- 英语时事 -->
+  <section id="tab-news">
+    <div class="card">
+      <h2>今日英语时事 <span class="muted" style="font-weight:400;">· 真实抓取 CGTN，每日 6:30 自动更新</span></h2>
+      <div class="row" style="margin-bottom:10px;">
+        <button class="btn small" id="newsRefresh">🔄 在线刷新</button>
+        <span class="muted" id="newsStatus"></span>
+      </div>
+      <ul class="list" id="newsList"></ul>
+      <p class="muted" style="margin-top:8px;">💡 点击标题在新标签页打开原文。想练长阅读请去「阅读理解」——那里有按四六级真题篇幅定制的文章和配题。</p>
+    </div>
+  </section>
+
+  <!-- 阅读理解 -->
+  <section id="tab-read" style="display:none;">
+    <div class="card">
+      <h2>精读训练 · 四六级真题篇幅 <span class="muted" style="font-weight:400;">· 点击文中任意单词可查释义、加星进生词本</span></h2>
+      <div class="row" style="margin-bottom:8px;">
+        <span class="muted">主题：</span>
+        <div class="row" id="themeChips"></div>
+      </div>
+      <p class="muted" id="readUpdated"></p>
+      <ul class="list" id="readList"></ul>
+      <div class="empty" id="readEmpty">当前主题下暂无文章 —— 点上方「全部」查看该级别所有文章，或切换四级/六级</div>
+    </div>
+  </section>
+
+  <!-- 听力听写 -->
+  <section id="tab-listen" style="display:none;">
+    <div class="card">
+      <h2>听力听写训练 <span class="muted" style="font-weight:400;">· 短文+对话，贴近四六级听力题型</span></h2>
+      <div id="dictPicker">
+        <p class="muted" style="margin-bottom:8px;">选择材料开始听写（浏览器语音朗读，可调语速）。点击原文中的单词也可查词、加生词本。</p>
+        <ul class="list" id="passageList"></ul>
+      </div>
+      <div id="dictArea" style="display:none;">
+        <div class="row" style="justify-content:space-between;">
+          <b id="dictTitle"></b>
+          <button class="btn small" id="dictBack">← 返回列表</button>
+        </div>
+        <div class="speed-ctl">
+          <span class="muted">语速：</span>
+          <select id="voiceRate">
+            <option value="0.55">慢速 (适合精听)</option>
+            <option value="0.8" selected>常速偏慢</option>
+            <option value="1">常速</option>
+          </select>
+          <button class="btn small primary" id="btnPlay">▶ 播放本句</button>
+          <button class="btn small" id="btnReveal">看原文</button>
+        </div>
+        <div class="dict-box">
+          <div class="dict-sent" id="dictSent"></div>
+          <div class="row">
+            <input type="text" id="dictInput" placeholder="听写：输入你听到的句子…">
+            <button class="btn primary" id="btnCheck">检查</button>
+          </div>
+          <p class="muted" id="dictFeedback" style="margin-top:8px;"></p>
+          <div class="row" style="margin-top:10px; justify-content:space-between;">
+            <span class="muted" id="dictProgress"></span>
+            <button class="btn small" id="btnNext">下一句 →</button>
+          </div>
+        </div>
+        <div class="card" style="box-shadow:none; border:1px solid var(--line); margin-top:12px;">
+          <b style="font-size:14px;">原文与译文（原文单词可点击查词）</b>
+          <p class="art-text" id="dictFull" style="margin-top:8px;"></p>
+          <p style="margin-top:8px; line-height:1.7; font-size:14px; color:#55605b;" id="dictTrans"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 背单词 -->
+  <section id="tab-vocab" style="display:none;">
+    <div class="card">
+      <div class="stats-row">
+        <div class="stat"><b id="stNew">0</b><span>今日新学</span></div>
+        <div class="stat"><b id="stReview">0</b><span>待复习</span></div>
+        <div class="stat"><b id="stTotal">0</b><span>词库总量</span></div>
+        <div class="stat"><b id="stMaster">0</b><span>已掌握</span></div>
+      </div>
+      <div class="row" style="margin-bottom:6px;">
+        <select id="bankSel">
+          <option value="cet4">四级高频词库</option>
+          <option value="cet6">六级高频词库</option>
+        </select>
+        <span class="muted">每日新词</span>
+        <select id="dailyQuota"><option>5</option><option selected>10</option><option>15</option><option>20</option></select>
+        <span class="muted">个</span>
+      </div>
+      <div id="flashArea">
+        <div class="flashcard" id="flashcard">
+          <div class="word" id="fcWord">—</div>
+          <div class="pos" id="fcPos"></div>
+          <div class="mean" id="fcMean" style="visibility:hidden;">—</div>
+        </div>
+        <div class="row" style="justify-content:center;">
+          <button class="btn" id="fcSpeak">🔊 发音</button>
+          <button class="btn" id="fcShow">显示释义</button>
+          <button class="btn" id="fcHard" style="border-color:var(--warn); color:var(--warn);"> 😵 没记住</button>
+          <button class="btn primary" id="fcEasy">✓ 记住了</button>
+          <button class="btn" id="fcSkip" style="color:var(--muted);">⏭ 跳过</button>
+        </div>
+        <p class="muted" style="text-align:center; margin-top:8px;" id="fcHint">认识就直接点「记住了」，不必先看释义；不确定再点「显示释义」</p>
+      </div>
+      <p class="muted" style="margin-top:10px;">📋 复习遵循艾宾浩斯遗忘曲线：记住后第 1、2、4、7、15 天自动安排复习。切换左上角「四级/六级」会自动切换对应词库。</p>
+    </div>
+  </section>
+
+  <!-- 语法语态 -->
+  <section id="tab-grammar" style="display:none;">
+    <div class="card">
+      <h2>语法语态 · 知识点 + 专项练习 <span class="muted" style="font-weight:400;">· 四六级高频语法点</span></h2>
+      <div class="row" style="margin-bottom:10px;">
+        <span class="muted">选择知识点：</span>
+        <select id="gSel" style="min-width:280px;"></select>
+      </div>
+      <div id="gBody"></div>
+    </div>
+  </section>
+
+  <!-- 作文素材 -->
+  <section id="tab-essay" style="display:none;">
+    <div class="card">
+      <h2>作文素材库 <span class="muted" style="font-weight:400;">· 摘抄好句好段，随时取用</span></h2>
+      <div class="row" style="margin-bottom:8px;">
+        <select id="esTag">
+          <option value="开头句">开头句</option>
+          <option value="过渡句">过渡句</option>
+          <option value="结尾句">结尾句</option>
+          <option value="观点表达">观点表达</option>
+          <option value="数据论证">数据论证</option>
+          <option value="话题词汇">话题词汇</option>
+          <option value="万能句型">万能句型</option>
+          <option value="其他">其他</option>
+        </select>
+        <input type="text" id="esEn" placeholder="英文句子/段落（必填）" style="flex:1; min-width:200px;">
+      </div>
+      <div class="row" style="margin-bottom:10px;">
+        <input type="text" id="esZh" placeholder="中文意思或使用场景备注（选填）" style="flex:1; min-width:200px;">
+        <button class="btn primary" id="esAdd">保存</button>
+      </div>
+      <div class="row" style="margin-bottom:8px;">
+        <span class="muted">筛选：</span>
+        <div class="row" id="esChips"></div>
+      </div>
+      <ul class="list" id="esList"></ul>
+      <div class="empty" id="esEmpty">素材库还是空的 —— 阅读时看到好句子，复制到这里存起来</div>
+    </div>
+  </section>
+
+  <!-- 生词本 -->
+  <section id="tab-wordbook" style="display:none;">
+    <div class="card">
+      <h2>生词本 <span class="muted" style="font-weight:400;">· 文章中点击单词加星，或在此手动添加</span></h2>
+      <div class="row" style="margin-bottom:10px;">
+        <input type="text" id="wbInput" placeholder="输入生词（回车添加）" style="flex:1; min-width:160px;">
+        <button class="btn primary" id="wbAdd">添加</button>
+      </div>
+      <ul class="list" id="wbList"></ul>
+      <div class="empty" id="wbEmpty">生词本是空的</div>
+    </div>
+  </section>
+
+  <!-- 点词弹窗 -->
+  <div id="wordPop">
+    <button class="del close" id="wpClose">✕</button>
+    <div class="wpw" id="wpWord">word</div>
+    <div class="wpm muted" id="wpMean">释义</div>
+    <div class="row" style="margin-top:10px;">
+      <button class="btn small" id="wpSpeak">🔊 发音</button>
+      <button class="btn small primary" id="wpStar">☆ 加入生词本</button>
+    </div>
+  </div>
+
+  <div class="footer">数据保存在本机浏览器 · 内容每日自动更新 · 建议收藏此页（Ctrl+D）</div>
+</div>
+
+<script src="words.js"></script>
+<script src="grammar.js"></script>
+<script src="content.js"></script>
+<script>
+(function () {
+  var KEY = "cetDesk_v3";
+  function load() { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } }
+  function save() { localStorage.setItem(KEY, JSON.stringify(db)); }
+  var db = load();
+  db.level = db.level || "四级";
+  db.examDate = db.examDate || "2026-12-12";
+  db.wordbook = db.wordbook || [];
+  db.progress = db.progress || {};
+  db.quota = db.quota || 10;
+  function today() { var d = new Date(); return d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" + ("0"+d.getDate()).slice(-2); }
+  function addDays(n) { var d = new Date(); d.setDate(d.getDate() + n); return d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" + ("0"+d.getDate()).slice(-2); }
+  function esc(s) { return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+
+  /* ===== 词库 ===== */
+  var BANKS = {
+    cet4: [
+      ["abandon","v.","放弃，抛弃"],["absorb","v.","吸收；使专心"],["academic","adj.","学术的"],
+      ["access","n./v.","接近；通道；存取"],["accomplish","v.","完成，实现"],["accumulate","v.","积累，堆积"],
+      ["accurate","adj.","准确的"],["acquire","v.","获得，学到"],["adapt","v.","适应；改编"],
+      ["adequate","adj.","足够的"],["adjust","v.","调整"],["admire","v.","钦佩"],
+      ["adopt","v.","采用；收养"],["advantage","n.","优势"],["advocate","v./n.","提倡；提倡者"],
+      ["affect","v.","影响"],["afford","v.","负担得起"],["allocate","v.","分配"],
+      ["alternative","n./adj.","替代方案"],["ambitious","adj.","有雄心的"],["analyze","v.","分析"],
+      ["anticipate","v.","预期"],["anxiety","n.","焦虑"],["apparent","adj.","明显的"],
+      ["appeal","v./n.","呼吁；吸引力"],["apply","v.","应用；申请"],["appreciate","v.","感激；欣赏"],
+      ["approach","n./v.","方法；处理"],["appropriate","adj.","恰当的"],["approve","v.","批准"],
+      ["arise","v.","出现"],["arrange","v.","安排"],["assess","v.","评估"],
+      ["assume","v.","假定；承担"],["attach","v.","附上；使依恋"],["attain","v.","达到"],
+      ["attempt","n./v.","尝试"],["attribute","v./n.","归因于；属性"],["authority","n.","权威；当局"],
+      ["available","adj.","可获得的"],["awareness","n.","意识"],["barrier","n.","障碍"],
+      ["benefit","n./v.","利益；有益于"],["capacity","n.","容量；能力"],["challenge","n./v.","挑战"],
+      ["circumstance","n.","环境，情况"],["collaborate","v.","合作"],["comment","n./v.","评论"],
+      ["commit","v.","犯（错）；承诺"],["community","n.","社区"],["compensate","v.","补偿"],
+      ["competent","adj.","胜任的"],["compete","v.","竞争"],["comprehensive","adj.","全面的"],
+      ["concentrate","v.","专心"],["consequence","n.","后果"],["conserve","v.","保存，节约"],
+      ["considerable","adj.","相当大的"],["consistent","adj.","一致的"],["constitute","v.","构成"],
+      ["constraint","n.","约束"],["consume","v.","消耗"],["contemporary","adj.","当代的"],
+      ["contribute","v.","贡献；导致"],["controversy","n.","争议"],["convince","v.","说服"],
+      ["cooperate","v.","合作"],["criterion","n.","标准"],["crucial","adj.","至关重要的"],
+      ["cultivate","v.","培养"],["decline","v./n.","下降；婉拒"],["dedicate","v.","奉献，致力于"],
+      ["demand","n./v.","需求；要求"],["demonstrate","v.","证明；演示"],["distribute","v.","分配"],
+      ["diverse","adj.","多样的"],["domestic","adj.","国内的"],["dominate","v.","支配"],
+      ["eliminate","v.","消除"],["emphasize","v.","强调"],["enable","v.","使能够"],
+      ["encounter","v./n.","遇到"],["enhance","v.","增强"],["enormous","adj.","巨大的"],
+      ["establish","v.","建立"],["evaluate","v.","评估"],["evidence","n.","证据"],
+      ["evolve","v.","进化；发展"],["exaggerate","v.","夸大"],["exceed","v.","超过"],
+      ["exclude","v.","排除"],["exhibit","v.","展览；表现"],["expand","v.","扩大"],
+      ["expose","v.","暴露；使接触"],["facilitate","v.","促进"],["factor","n.","因素"],
+      ["feasible","adj.","可行的"],["fluctuate","v.","波动"],["forecast","n./v.","预测"],
+      ["foundation","n.","基础"],["generate","v.","产生"],["guarantee","v./n.","保证"],
+      ["identify","v.","识别"],["ignore","v.","忽视"],["immigrant","n.","移民"],
+      ["implement","v.","实施"],["imply","v.","暗示"],["indicate","v.","表明"],
+      ["individual","n./adj.","个人"],["influence","n./v.","影响"],["initiative","n.","主动性；倡议"],
+      ["innovative","adj.","创新的"],["insufficient","adj.","不足的"],["integrate","v.","整合"],
+      ["interpret","v.","解释；口译"],["involve","v.","涉及"],["justify","v.","证明…正当"],
+      ["magnificent","adj.","壮丽的"],["maintain","v.","维持"],["mechanism","n.","机制"],
+      ["modify","v.","修改"],["negotiate","v.","谈判"],["neglect","v./n.","忽视"],
+      ["objective","n./adj.","目标；客观的"],["obligation","n.","义务"],["obstacle","n.","障碍"],
+      ["obtain","v.","获得"],["occupy","v.","占据"],["occur","v.","发生"],
+      ["operate","v.","运转"],["opponent","n.","对手"],["optimistic","adj.","乐观的"],
+      ["organize","v.","组织"],["original","adj.","原创的"],["overcome","v.","克服"],
+      ["participate","v.","参与"],["perceive","v.","察觉"],["persist","v.","坚持"],
+      ["perspective","n.","视角"],["phenomenon","n.","现象"],["potential","n./adj.","潜力；潜在的"],
+      ["practical","adj.","实际的"],["precise","adj.","精确的"],["predict","v.","预测"],
+      ["prevail","v.","盛行；获胜"],["previous","adj.","以前的"],["primary","adj.","首要的"],
+      ["primitive","adj.","原始的"],["principle","n.","原则"],["priority","n.","优先"],
+      ["procedure","n.","程序"],["prohibit","v.","禁止"],["promote","v.","促进；晋升"],
+      ["proportion","n.","比例"],["prosperity","n.","繁荣"],["punctual","adj.","准时的"],
+      ["pursue","v.","追求"],["qualify","v.","使合格"],["range","n./v.","范围；变动"],
+      ["rare","adj.","稀有的"],["realistic","adj.","现实的"],["recession","n.","衰退"],
+      ["reform","n./v.","改革"],["region","n.","地区"],["regulate","v.","管理，调节"],
+      ["reject","v.","拒绝"],["relevant","adj.","相关的"],["rely","v.","依赖"],
+      ["remarkable","adj.","显著的"],["remote","adj.","遥远的"],["represent","v.","代表"],
+      ["reputation","n.","名誉"],["requirement","n.","要求"],["resemble","v.","类似"],
+      ["resolve","v.","解决"],["resource","n.","资源"],["restrict","v.","限制"],
+      ["retain","v.","保留"],["reveal","v.","揭示"],["revenue","n.","收入"],
+      ["reverse","v./adj.","颠倒；相反的"],["sacrifice","n./v.","牺牲；祭祀"],["satisfy","v.","满足"],
+      ["sufficient","adj.","足够的"],["sustain","v.","维持"],["symbol","n.","象征"],
+      ["tendency","n.","趋势"],["thrive","v.","兴旺"],["transform","v.","转变"],
+      ["tremendous","adj.","巨大的"],["ultimate","adj.","最终的"],["undergo","v.","经历"],
+      ["unique","adj.","独特的"],["utilize","v.","利用"],["vary","v.","变化"],
+      ["verify","v.","核实"],["violate","v.","违反"],["virtual","adj.","虚拟的"],
+      ["vital","adj.","至关重要的"],["voluntary","adj.","自愿的"],["witness","n./v.","目击；见证"]
+    ],
+    cet6: [
+      ["abide","v.","遵守"],["abnormal","adj.","反常的"],["abolish","v.","废除"],["abstain","v.","弃权"],
+      ["accountable","adj.","负有责任的"],["acquaint","v.","使熟悉"],["adhere","v.","粘附；坚持"],["adverse","adj.","不利的"],
+      ["aggravate","v.","加重"],["agitate","v.","煽动；使焦虑"],["alleviate","v.","减轻"],["ambiguous","adj.","模棱两可的"],
+      ["ample","adj.","充足的"],["analogy","n.","类比"],["anonymous","adj.","匿名的"],["appraisal","n.","评价"],
+      ["arbitrary","adj.","任意的"],["articulate","v./adj.","清晰表达"],["aspiration","n.","渴望"],["assault","n./v.","攻击"],
+      ["audit","n./v.","审计"],["authentic","adj.","真实的"],["avert","v.","避免"],["baffle","v.","使困惑"],
+      ["benevolent","adj.","仁慈的"],["bewilder","v.","使迷惑"],["boost","v.","提升"],["boycott","v./n.","抵制"],
+      ["breach","n./v.","违反"],["brittle","adj.","易碎的"],["capsule","n.","胶囊"],["casualty","n.","伤亡人员"],
+      ["cater","v.","迎合"],["cherish","v.","珍惜"],["chronic","adj.","慢性的"],["circulate","v.","流通"],
+      ["coincide","v.","恰好相同"],["commence","v.","开始"],["compatible","adj.","兼容的"],["compile","v.","汇编"],
+      ["comply","v.","遵从"],["compress","v.","压缩"],["confidential","adj.","机密的"],["conform","v.","遵守；符合"],
+      ["consecutive","adj.","连续的"],["contemplate","v.","沉思"],["contradict","v.","反驳"],["correlate","v.","关联"],
+      ["corrupt","adj./v.","腐败的"],["deteriorate","v.","恶化"],["deviate","v.","偏离"],["discern","v.","辨别"],
+      ["dispatch","v./n.","派遣"],["disperse","v.","分散"],["dissipate","v.","消散"],["distort","v.","扭曲"],
+      ["divert","v.","转移"],["dwell","v.","居住；详述"],["eccentric","adj.","古怪的"],["elevate","v.","提升"],
+      ["elicit","v.","引出"],["embark","v.","着手"],["embody","v.","体现"],["entail","v.","牵涉"],
+      ["erupt","v.","爆发"],["escalate","v.","升级"],["evacuate","v.","撤离"],["expend","v.","花费"],
+      ["expire","v.","到期"],["fabricate","v.","捏造"],["flaw","n.","缺陷"],["formulate","v.","制定"],
+      ["foster","v.","培养"],["frustrate","v.","使沮丧"],["hazard","n.","危险"],["hinder","v.","阻碍"],
+      ["hypothesis","n.","假说"],["immerse","v.","使专心"],["immune","adj.","免疫的"],["imperative","adj.","必要的"],
+      ["incentive","n.","刺激"],["incline","v.","倾向"],["incur","v.","招致"],["indispensable","adj.","不可缺少的"],
+      ["inherent","adj.","固有的"],["intricate","adj.","复杂的"],["intrigue","v.","激起兴趣"],["intuition","n.","直觉"],
+      ["invalid","adj.","无效的"],["irritate","v.","激怒"],["jeopardize","v.","危及"],["latent","adj.","潜在的"],
+      ["legitimate","adj.","合法的"],["linger","v.","逗留"],["manipulate","v.","操纵"],["mediate","v.","调解"],
+      ["merge","v.","合并"],["mitigate","v.","缓和"],["notorious","adj.","臭名昭著的"],["nurture","v.","养育"],
+      ["obscure","adj./v.","模糊的"],["obsession","n.","痴迷"],["offset","v.","抵消"],["overwhelm","v.","压倒"],
+      ["paradox","n.","悖论"],["perpetual","adj.","永久的"],["plausible","adj.","貌似合理的"],["preclude","v.","排除"],
+      ["predominant","adj.","主要的"],["premise","n.","前提"],["prescribe","v.","开处方"],["prestige","n.","威望"],
+      ["probe","v./n.","探查"],["prolong","v.","延长"],["prone","adj.","易于…的"],["propel","v.","推进"],
+      ["provoke","v.","激怒"],["reconcile","v.","调和"],["refute","v.","反驳"],["render","v.","使成为"],
+      ["restrain","v.","抑制"],["scrutiny","n.","审查"],["simulate","v.","模拟"],["spontaneous","adj.","自发的"],
+      ["subsidiary","adj./n.","附属的"],["subtle","adj.","微妙的"],["supplement","n./v.","补充"],["suppress","v.","压制"],
+      ["surge","v./n.","激增"],["susceptible","adj.","易受影响的"],["tangle","v./n.","缠结"],["tentative","adj.","试探性的"],
+      ["threshold","n.","门槛"],["transmit","v.","传输"],["trigger","v./n.","触发"],["underestimate","v.","低估"],
+      ["underlying","adj.","潜在的"],["unfold","v.","展开"],["unify","v.","统一"],["upgrade","v.","升级"],
+      ["validate","v.","验证"],["versatile","adj.","多才多艺的"],["vibrate","v.","振动"],["withstand","v.","经受"],
+      ["yield","v./n.","让步；产量"]
+    ]
+  };
+  /* 统一条目格式为 {w, p, m} */
+  function normalize(bk) {
+    return bk.map(function (x) {
+      if (x && x.w) return { w: x.w, p: x.p || "", m: x.m || ((x.pos ? x.pos + " " : "") + (x.mean || "")) };
+      return { w: x[0], p: x[1] || "", m: x[2] };
+    });
+  }
+  BANKS.cet4 = normalize(BANKS.cet4);
+  BANKS.cet6 = normalize(BANKS.cet6);
+
+  /* 若有完整词库数据文件（words.js），优先使用 */
+  if (window.CET_WORDS && window.CET_WORDS.cet4 && window.CET_WORDS.cet4.length) {
+    BANKS.cet4 = window.CET_WORDS.cet4.map(function (x) { return { w: x[0], p: x[1] || "", m: x[2] }; });
+    var cet6Only = window.CET_WORDS.cet6.map(function (x) { return { w: x[0], p: x[1] || "", m: x[2] }; });
+    /* 六级考试要求掌握四级词汇，故六级词库 = 四级基础词 + 六级进阶词 */
+    var seenW = {};
+    var merged6 = BANKS.cet4.map(function (x) { seenW[x.w.toLowerCase()] = 1; return { w: x.w, p: x.p, m: x.m, lv: "四级基础" }; });
+    cet6Only.forEach(function (x) {
+      if (!seenW[x.w.toLowerCase()]) merged6.push({ w: x.w, p: x.p, m: x.m, lv: "六级进阶" });
+    });
+    BANKS.cet6 = merged6;
+  }
+
+  /* 合并查词词典 */
+  var DICT = {};
+  BANKS.cet4.concat(BANKS.cet6).forEach(function (x) { DICT[x.w.toLowerCase()] = x.m; });
+  var CONTENT = window.CET_CONTENT || { updated: "", news: [], readings: [], listenings: [], dialogues: [] };
+  (CONTENT.readings || []).forEach(function (a) { (a.words || []).forEach(function (w) { DICT[w[0].toLowerCase()] = w[1] + " " + w[2]; }); });
+  db.wordbook.forEach(function (x) { if (!DICT[x.w.toLowerCase()]) DICT[x.w.toLowerCase()] = "（生词本词条）"; });
+
+  /* ===== 标签页 ===== */
+  var tabs = document.querySelectorAll(".nav button");
+  tabs.forEach(function (b) {
+    b.addEventListener("click", function () {
+      tabs.forEach(function (x) { x.classList.remove("active"); });
+      b.classList.add("active");
+      ["news", "read", "listen", "vocab", "grammar", "essay", "wordbook"].forEach(function (t) {
+        document.getElementById("tab-" + t).style.display = (t === b.dataset.tab) ? "" : "none";
+      });
+    });
+  });
+
+  /* ===== 级别切换 ===== */
+  function renderLevel() {
+    document.getElementById("lv4").classList.toggle("on", db.level === "四级");
+    document.getElementById("lv6").classList.toggle("on", db.level === "六级");
+    document.getElementById("cdLabel").textContent = document.getElementById("cdLabel").textContent.replace(/距.(级|六)考试/, "距" + (db.level === "四级" ? "四" : "六") + "考试");
+  }
+  document.getElementById("lv4").addEventListener("click", function () { setLevel("四级"); });
+  document.getElementById("lv6").addEventListener("click", function () { setLevel("六级"); });
+  function setLevel(lv) {
+    db.level = lv; save();
+    curTheme = "全部";                     // 切换级别时重置主题筛选，避免看到空列表
+    document.getElementById("bankSel").value = lv === "四级" ? "cet4" : "cet6";
+    renderLevel(); renderThemeChips(); renderReadings(); renderDictPicker(); renderCountdown(); nextCard(); renderStats();
+  }
+
+  /* ===== 倒计时 ===== */
+  function renderCountdown() {
+    var target = new Date(db.examDate + "T00:00:00");
+    var diff = Math.ceil((target - new Date()) / 86400000);
+    document.getElementById("cdNum").textContent = diff >= 0 ? diff : "已过";
+    document.getElementById("cdLabel").textContent = "天 · 距" + (db.level === "四级" ? "四" : "六") + "级考试";
+  }
+  document.getElementById("cdBox").addEventListener("click", function () {
+    var v = prompt("考试日期（格式 2026-12-12）：", db.examDate);
+    if (v && v.trim()) { db.examDate = v.trim(); save(); renderCountdown(); }
+  });
+
+  /* ===== 英语时事 ===== */
+  /* 英文来源标记转中文，方便阅读 */
+  var SRC_CN = {
+    "CGTN·China": "中国", "CGTN·World": "国际", "CGTN·Business": "商业",
+    "CGTN·Sports": "体育", "CGTN·Culture": "文化", "CGTN·Travel": "旅游",
+    "CGTN·Opinion": "评论"
+  };
+  function srcCN(s) { return "CGTN · " + (SRC_CN[s] || String(s).replace("CGTN·", "")); }
+
+  function renderNews() {
+    var ul = document.getElementById("newsList");
+    ul.innerHTML = "";
+    var ns = CONTENT.news || [];
+    if (!ns.length) {
+      ul.innerHTML = "<div class='empty'>内容包暂无新闻，稍后自动更新</div>";
+      return;
+    }
+    ns.forEach(function (n) {
+      var li = document.createElement("li");
+      li.className = "news-item";
+      li.innerHTML = "<span class='tag gray'>" + esc(n.date) + "</span> <span class='tag blue'>" + esc(srcCN(n.src)) + "</span>" +
+        "<div class='t'><a href='" + esc(n.link) + "' target='_blank' rel='noopener'>" + esc(n.title) + "</a></div>";
+      ul.appendChild(li);
+    });
+    document.getElementById("newsStatus").textContent = "共 " + ns.length + " 条 · 内容包更新于 " + CONTENT.updated + "（每天 6:30 自动抓取多个频道）";
+  }
+  document.getElementById("newsRefresh").addEventListener("click", function () {
+    document.getElementById("newsStatus").textContent = "在线抓取需要公共代理，当前网络环境下大概率受限；新闻由每日 6:30 自动任务真实抓取更新，明早即可看到新一批。";
+  });
+
+  /* ===== 阅读理解 ===== */
+  var curTheme = "全部";
+  function myReadings() { return (CONTENT.readings || []).filter(function (a) { return a.level === db.level; }); }
+  function renderThemeChips() {
+    var themes = ["全部"];
+    myReadings().forEach(function (a) { if (themes.indexOf(a.theme) < 0) themes.push(a.theme); });
+    var box = document.getElementById("themeChips");
+    box.innerHTML = "";
+    themes.forEach(function (th) {
+      var b = document.createElement("button");
+      b.className = "btn small" + (th === curTheme ? " primary" : "");
+      b.textContent = th;
+      b.addEventListener("click", function () { curTheme = th; renderThemeChips(); renderReadings(); });
+      box.appendChild(b);
+    });
+  }
+  function clickableText(text) {
+    return esc(text).replace(/[A-Za-z][A-Za-z'-]*/g, function (m) {
+      return "<span class='w' data-w='" + m.toLowerCase() + "'>" + m + "</span>";
+    });
+  }
+  function renderReadings() {
+    var ul = document.getElementById("readList");
+    ul.innerHTML = "";
+    var arts = myReadings().filter(function (a) { return curTheme === "全部" || a.theme === curTheme; });
+    document.getElementById("readEmpty").style.display = arts.length ? "none" : "";
+    document.getElementById("readUpdated").textContent = "内容包更新：" + CONTENT.updated + " · 当前级别：" + db.level + " · 篇幅按真题标准（四级约 300~350 词 / 六级约 400~450 词）";
+    arts.forEach(function (a) {
+      var li = document.createElement("li");
+      var head = document.createElement("div");
+      head.className = "art-head";
+      head.innerHTML =
+        "<span class='tag " + (a.theme === "科技" ? "blue" : a.theme === "传统文化" ? "orange" : "gray") + "'>" + esc(a.theme) + "</span> " +
+        "<span class='tag'>" + esc(a.level) + "</span> <span class='tag gray'>" + esc(a.date) + "</span>" +
+        "<div class='t'>" + esc(a.title) + "</div>" +
+        "<span class='muted'>点击展开 · 含 " + ((a.text.match(/\S+/g) || []).length) + " 词 + " + ((a.questions || []).length) + " 道理解题 ↓</span>";
+      var body = document.createElement("div");
+      body.className = "art-body";
+      var txt = document.createElement("p");
+      txt.className = "art-text";
+      txt.innerHTML = clickableText(a.text);
+      var words = document.createElement("div");
+      words.style.marginTop = "10px";
+      (a.words || []).forEach(function (w) {
+        var chip = document.createElement("span");
+        chip.className = "word-chip";
+        chip.textContent = w[0] + " " + w[1] + " " + w[2];
+        words.appendChild(chip);
+      });
+      var row = document.createElement("div");
+      row.className = "row"; row.style.marginTop = "10px";
+      var btnTrans = document.createElement("button");
+      btnTrans.className = "btn small";
+      btnTrans.textContent = "显示/隐藏全文译文";
+      var btnDict = document.createElement("button");
+      btnDict.className = "btn small primary";
+      btnDict.textContent = "🎧 听写这篇";
+      btnDict.addEventListener("click", function () { startDict({ id: "rd-" + a.id, title: a.title, text: a.text, trans: a.trans }); });
+      row.appendChild(btnTrans); row.appendChild(btnDict);
+      var trans = document.createElement("div");
+      trans.className = "art-trans";
+      trans.textContent = "【译文】" + (a.trans || "（暂无译文）");
+      btnTrans.addEventListener("click", function () { trans.classList.toggle("open"); });
+      body.appendChild(txt); body.appendChild(words); body.appendChild(row); body.appendChild(trans);
+
+      // 理解题
+      if (a.questions && a.questions.length) {
+        var quiz = document.createElement("div");
+        quiz.className = "quiz";
+        quiz.innerHTML = "<b style='font-size:14px;'>📖 阅读理解题（共 " + a.questions.length + " 题）</b>";
+        a.questions.forEach(function (q, qi) {
+          var qd = document.createElement("div");
+          qd.className = "q";
+          qd.textContent = (qi + 1) + ". " + q.q;
+          quiz.appendChild(qd);
+          var labels = [];
+          q.options.forEach(function (opt, oi) {
+            var lab = document.createElement("label");
+            var inp = document.createElement("input");
+            inp.type = "radio"; inp.name = "q-" + a.id + "-" + qi; inp.value = oi;
+            inp.style.marginRight = "6px";
+            lab.appendChild(inp);
+            lab.appendChild(document.createTextNode(" " + "ABCD"[oi] + ". " + opt));
+            quiz.appendChild(lab);
+            labels.push({ lab: lab, oi: oi });
+          });
+          quiz.appendChild(document.createElement("br"));
+          q._labels = (q._labels || []).concat([{ id: a.id, labels: labels }]);
+        });
+        var submit = document.createElement("button");
+        submit.className = "btn small primary";
+        submit.textContent = "提交答案";
+        submit.addEventListener("click", function () {
+          var score = 0;
+          a.questions.forEach(function (q, qi) {
+            var sel = quiz.querySelector("input[name='q-" + a.id + "-" + qi + "']:checked");
+            q._labels.forEach(function (grp) {
+              if (grp.id !== a.id) return;
+              grp.labels.forEach(function (x) {
+                x.lab.classList.remove("correct", "wrong");
+                if (x.oi === q.answer) x.lab.classList.add("correct");
+                if (sel && parseInt(sel.value) === x.oi && x.oi !== q.answer) x.lab.classList.add("wrong");
+              });
+            });
+            if (sel && parseInt(sel.value) === q.answer) score++;
+          });
+          var fb = quiz.querySelector(".quiz-fb") || document.createElement("p");
+          fb.className = "quiz-fb";
+          fb.style.marginTop = "8px";
+          fb.innerHTML = "<b style='color:var(--accent);'>得分：" + score + " / " + a.questions.length + "</b>" +
+            (score === a.questions.length ? " 🎉 全对！" : " 绿色为正确答案");
+          if (!fb.parentNode) quiz.appendChild(fb);
+        });
+        quiz.appendChild(submit);
+        body.appendChild(quiz);
+      }
+
+      head.addEventListener("click", function (e) {
+        if (e.target.tagName === "BUTTON" || e.target.tagName === "INPUT") return;
+        body.classList.toggle("open");
+      });
+      li.appendChild(head); li.appendChild(body);
+      ul.appendChild(li);
+    });
+  }
+
+  /* 点词查义 + 加星 */
+  var popWord = null;
+  document.addEventListener("click", function (e) {
+    var w = e.target.closest ? e.target.closest(".w") : null;
+    if (!w) return;
+    e.stopPropagation();
+    popWord = w.dataset.w;
+    document.getElementById("wpWord").textContent = popWord;
+    document.getElementById("wpMean").textContent = DICT[popWord] || "词库未收录该词（仍可加入生词本）";
+    document.getElementById("wpStar").textContent = db.wordbook.some(function (x) { return x.w.toLowerCase() === popWord; })
+      ? "★ 已在生词本" : "☆ 加入生词本";
+    document.getElementById("wordPop").style.display = "block";
+  });
+  document.getElementById("wpClose").addEventListener("click", function () {
+    document.getElementById("wordPop").style.display = "none";
+  });
+  document.getElementById("wpStar").addEventListener("click", function () {
+    if (!popWord) return;
+    if (!db.wordbook.some(function (x) { return x.w.toLowerCase() === popWord; })) {
+      db.wordbook.unshift({ id: Date.now().toString(36), w: popWord, date: today() });
+      save(); renderWB();
+      document.getElementById("wpStar").textContent = "★ 已在生词本";
+    }
+  });
+  document.getElementById("wpSpeak").addEventListener("click", function () { if (popWord) speak(popWord, 0.85); });
+
+  /* ===== 听写 ===== */
+  function speak(text, rate) {
+    if (!window.speechSynthesis) { alert("当前浏览器不支持语音合成，建议用 Edge 或 Chrome"); return; }
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-US"; u.rate = rate;
+    var vs = speechSynthesis.getVoices().filter(function (v) { return v.lang.indexOf("en") === 0; });
+    if (vs.length) u.voice = vs[0];
+    speechSynthesis.speak(u);
+  }
+  if (window.speechSynthesis) speechSynthesis.getVoices();
+
+  function myListenables() {
+    var list = [];
+    (CONTENT.listenings || []).filter(function (x) { return x.level === db.level; }).forEach(function (x) {
+      list.push({ id: "ls-" + x.id, title: "📻 " + x.title, text: x.text, trans: x.trans });
+    });
+    (CONTENT.dialogues || []).filter(function (x) { return x.level === db.level; }).forEach(function (d) {
+      list.push({
+        id: "dg-" + d.id, title: "💬 " + d.title,
+        text: d.lines.map(function (l) { return l[1]; }).join(" "),
+        trans: d.lines.map(function (l) { return l[2]; }).join(" ")
+      });
+    });
+    return list;
+  }
+  var cur = null, sentIdx = 0;
+  function renderDictPicker() {
+    var ul = document.getElementById("passageList");
+    ul.innerHTML = "";
+    var items = myListenables();
+    if (!items.length) { ul.innerHTML = "<div class='empty'>当前级别暂无听力材料</div>"; return; }
+    items.forEach(function (p) {
+      var li = document.createElement("li");
+      li.className = "passage-item";
+      li.textContent = p.title;
+      li.addEventListener("click", function () { startDict(p); });
+      ul.appendChild(li);
+    });
+  }
+  function startDict(p) {
+    cur = p; sentIdx = 0;
+    document.getElementById("dictPicker").style.display = "none";
+    document.getElementById("dictArea").style.display = "";
+    document.getElementById("dictTitle").textContent = p.title;
+    document.getElementById("dictFull").innerHTML = clickableText(p.text);
+    document.getElementById("dictTrans").textContent = p.trans ? "【译】" + p.trans : "";
+    showSentence();
+  }
+  function norm(s) { return s.toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim(); }
+  function sentences() { return (cur.text.match(/[^.!?]+[.!?]+/g) || [cur.text]); }
+  function showSentence() {
+    var sents = sentences();
+    if (sentIdx >= sents.length) sentIdx = 0;
+    document.getElementById("dictSent").innerHTML = "🔊 第 " + (sentIdx + 1) + " / " + sents.length + " 句（点播放，听写后检查）";
+    document.getElementById("dictInput").value = "";
+    document.getElementById("dictFeedback").textContent = "";
+    document.getElementById("dictProgress").textContent = "句子 " + (sentIdx + 1) + "/" + sents.length;
+  }
+  document.getElementById("btnPlay").addEventListener("click", function () {
+    speak(sentences()[sentIdx].trim(), parseFloat(document.getElementById("voiceRate").value));
+  });
+  document.getElementById("btnCheck").addEventListener("click", function () {
+    var ans = norm(sentences()[sentIdx]);
+    var mine = norm(document.getElementById("dictInput").value);
+    var fb = document.getElementById("dictFeedback");
+    if (!mine) { fb.textContent = "先听写再检查哦"; return; }
+    if (ans === mine) {
+      fb.innerHTML = "<span style='color:var(--accent);'>✓ 完全正确！点「下一句」继续</span>";
+    } else {
+      var aw = ans.split(" "), mw = mine.split(" "), mark = [];
+      aw.forEach(function (w, i) { mark.push("<span class='" + (mw[i] === w ? "ok" : "bad") + "'>" + w + "</span>"); });
+      fb.innerHTML = "正确答案：" + mark.join(" ");
+    }
+  });
+  document.getElementById("btnNext").addEventListener("click", function () { sentIdx++; showSentence(); });
+  document.getElementById("btnReveal").addEventListener("click", function () {
+    document.getElementById("dictFeedback").innerHTML = "本句原文：" + sentences()[sentIdx].trim();
+  });
+  document.getElementById("dictBack").addEventListener("click", function () {
+    document.getElementById("dictArea").style.display = "none";
+    document.getElementById("dictPicker").style.display = "";
+    if (window.speechSynthesis) speechSynthesis.cancel();
+  });
+
+  /* ===== 背单词 ===== */
+  var INTERVALS = [1, 2, 4, 7, 15];
+  var shown = false;
+  function bank() { return BANKS[document.getElementById("bankSel").value]; }
+  function dueWords(all) {
+    var t = today();
+    return all.filter(function (w) {
+      var p = db.progress[w.w];
+      return p && !p.mastered && p.due && p.due <= t;
+    });
+  }
+  function freshWords(all) { return all.filter(function (w) { return !db.progress[w.w]; }); }
+  function renderStats() {
+    var all = bank();
+    var mastered = all.filter(function (w) { return db.progress[w.w] && db.progress[w.w].mastered; }).length;
+    document.getElementById("stNew").textContent = Math.min(freshWords(all).length, db.quota);
+    document.getElementById("stReview").textContent = dueWords(all).length;
+    document.getElementById("stTotal").textContent = all.length;
+    document.getElementById("stMaster").textContent = mastered;
+  }
+  var fcWord = null;
+  function nextCard() {
+    var all = bank();
+    var pool = dueWords(all).concat(freshWords(all).slice(0, db.quota));
+    if (!pool.length) {
+      document.getElementById("fcWord").textContent = "🎉";
+      document.getElementById("fcPos").textContent = "本词库暂无待学/待复习的词";
+      document.getElementById("fcMean").textContent = "切换词库或明天再来";
+      document.getElementById("fcMean").style.visibility = "visible";
+      fcWord = null; renderStats(); return;
+    }
+    var w = pool[Math.floor(Math.random() * pool.length)];
+    fcWord = w; shown = false;
+    document.getElementById("fcWord").textContent = w.w;
+    document.getElementById("fcPos").textContent = (w.p ? "/" + w.p + "/ " : "") + (w.lv ? w.lv + " · " : "") + (db.progress[w.w] ? "复习" : "新词");
+    document.getElementById("fcMean").textContent = w.m;
+    document.getElementById("fcMean").style.visibility = "hidden";
+    renderStats();
+  }
+  document.getElementById("fcShow").addEventListener("click", function () {
+    if (fcWord) { document.getElementById("fcMean").style.visibility = "visible"; shown = true; }
+  });
+  document.getElementById("fcSpeak").addEventListener("click", function () { if (fcWord) speak(fcWord.w, 0.85); });
+  function grade(good) {
+    if (!fcWord) return;
+    var p = db.progress[fcWord.w] || { box: 0, due: today(), mastered: false };
+    if (good) {
+      /* 认识就直接过；若未看释义也想确认，可先点「显示释义」 */
+      p.box = Math.min(p.box + 1, INTERVALS.length);
+      if (p.box >= INTERVALS.length) p.mastered = true;
+      else p.due = addDays(INTERVALS[p.box - 1]);
+    } else {
+      p.box = 0; p.due = today();
+      document.getElementById("fcMean").style.visibility = "visible";   // 没记住自动给出释义
+    }
+    db.progress[fcWord.w] = p;
+    save(); nextCard();
+  }
+  document.getElementById("fcEasy").addEventListener("click", function () { grade(true); });
+  document.getElementById("fcHard").addEventListener("click", function () { grade(false); });
+  document.getElementById("fcSkip").addEventListener("click", function () { nextCard(); });
+  document.getElementById("bankSel").addEventListener("change", nextCard);
+  document.getElementById("dailyQuota").addEventListener("change", function () { db.quota = parseInt(this.value); save(); renderStats(); });
+
+  /* ===== 生词本 ===== */
+  function renderWB() {
+    var ul = document.getElementById("wbList");
+    ul.innerHTML = "";
+    document.getElementById("wbEmpty").style.display = db.wordbook.length ? "none" : "";
+    db.wordbook.forEach(function (item) {
+      var li = document.createElement("li");
+      li.className = "row";
+      var w = document.createElement("b"); w.textContent = item.w; w.style.fontSize = "15px";
+      var d = document.createElement("span"); d.className = "muted"; d.textContent = item.date;
+      var m = document.createElement("span"); m.className = "muted"; m.textContent = DICT[item.w.toLowerCase()] || "";
+      m.style.flex = "1"; m.style.minWidth = "120px";
+      var add = document.createElement("button");
+      add.className = "btn small primary"; add.textContent = "加入背单词";
+      add.addEventListener("click", function () {
+        var found = null;
+        [BANKS.cet4, BANKS.cet6].forEach(function (bk) {
+          bk.forEach(function (x) { if (x.w.toLowerCase() === item.w.toLowerCase()) found = x; });
+        });
+        if (!found) found = { w: item.w, p: "", m: "（自定义生词）" };
+        var bk = BANKS[document.getElementById("bankSel").value];
+        if (!bk.some(function (x) { return x.w === found.w; })) bk.push(found);
+        db.wordbook = db.wordbook.filter(function (x) { return x.id !== item.id; });
+        save(); renderWB(); renderStats();
+        alert("已加入词库：" + found.w);
+      });
+      var del = document.createElement("button");
+      del.className = "del"; del.textContent = "✕";
+      del.addEventListener("click", function () {
+        db.wordbook = db.wordbook.filter(function (x) { return x.id !== item.id; });
+        save(); renderWB();
+      });
+      li.appendChild(w); li.appendChild(m); li.appendChild(d); li.appendChild(add); li.appendChild(del);
+      ul.appendChild(li);
+    });
+  }
+  function addWord() {
+    var v = document.getElementById("wbInput").value.trim();
+    if (!v) return;
+    db.wordbook.unshift({ id: Date.now().toString(36), w: v, date: today() });
+    document.getElementById("wbInput").value = "";
+    save(); renderWB();
+  }
+  document.getElementById("wbAdd").addEventListener("click", addWord);
+  document.getElementById("wbInput").addEventListener("keydown", function (e) { if (e.key === "Enter") addWord(); });
+
+  /* ===== 语法语态 ===== */
+  var GRAMMAR = window.CET_GRAMMAR || [];
+  function renderGrammar(keepIdx) {
+    var sel = document.getElementById("gSel");
+    if (!sel.options.length) {
+      GRAMMAR.forEach(function (g, i) {
+        var o = document.createElement("option");
+        o.value = i; o.textContent = "[" + g.level + "] " + g.topic;
+        sel.appendChild(o);
+      });
+      sel.addEventListener("change", function () { renderGrammar(); });
+    }
+    var g = GRAMMAR[parseInt(sel.value || "0", 10)];
+    var box = document.getElementById("gBody");
+    box.innerHTML = "";
+    if (!g) { box.innerHTML = "<div class='empty'>暂无语法内容</div>"; return; }
+    var tag = document.createElement("div");
+    tag.innerHTML = "<span class='tag'>" + esc(g.level) + "</span> <span class='tag gray'>" + esc(g.topic) + "</span>";
+    box.appendChild(tag);
+    var pts = document.createElement("ul");
+    pts.style.cssText = "margin:10px 0 0 18px; line-height:1.9; font-size:14px;";
+    g.points.forEach(function (p) { var li = document.createElement("li"); li.textContent = p; pts.appendChild(li); });
+    box.appendChild(pts);
+    var ex = document.createElement("div");
+    ex.style.cssText = "background:#f7f9f8;border-radius:10px;padding:12px;margin-top:10px;font-size:13.5px;line-height:1.9;";
+    ex.innerHTML = "<b>例句</b><br>" + g.examples.map(function (e) { return "· " + esc(e); }).join("<br>");
+    box.appendChild(ex);
+    var quiz = document.createElement("div");
+    quiz.className = "quiz";
+    quiz.innerHTML = "<b style='font-size:14px;'>专项练习（" + g.quiz.length + " 题）</b>";
+    g.quiz.forEach(function (q, qi) {
+      var qd = document.createElement("div");
+      qd.className = "q"; qd.textContent = (qi + 1) + ". " + q.q;
+      quiz.appendChild(qd);
+      q.options.forEach(function (opt, oi) {
+        var lab = document.createElement("label");
+        var inp = document.createElement("input");
+        inp.type = "radio"; inp.name = "g-" + g.id + "-" + qi; inp.value = oi;
+        inp.style.marginRight = "6px";
+        lab.appendChild(inp);
+        lab.appendChild(document.createTextNode(" " + "ABCD"[oi] + ". " + opt));
+        quiz.appendChild(lab);
+      });
+    });
+    var btn = document.createElement("button");
+    btn.className = "btn small primary";
+    btn.textContent = "提交答案";
+    btn.addEventListener("click", function () {
+      var right = 0;
+      g.quiz.forEach(function (q, qi) {
+        var labels = quiz.querySelectorAll("input[name='g-" + g.id + "-" + qi + "']");
+        var sel2 = quiz.querySelector("input[name='g-" + g.id + "-" + qi + "']:checked");
+        labels.forEach(function (inp) {
+          var lab = inp.parentElement;
+          lab.classList.remove("correct", "wrong");
+          if (parseInt(inp.value) === q.answer) lab.classList.add("correct");
+          if (sel2 && parseInt(sel2.value) === parseInt(inp.value) && parseInt(inp.value) !== q.answer) lab.classList.add("wrong");
+        });
+        if (sel2 && parseInt(sel2.value) === q.answer) right++;
+        var expId = "gexp-" + g.id + "-" + qi;
+        var old = document.getElementById(expId);
+        if (old) old.remove();
+        var e = document.createElement("p");
+        e.id = expId; e.className = "muted"; e.style.marginBottom = "6px";
+        e.textContent = "解析：" + q.exp;
+        if (sel2 && sel2.parentElement && sel2.parentElement.parentElement) {
+          sel2.parentElement.parentElement.insertBefore(e, sel2.parentElement.nextSibling);
+        } else { quiz.appendChild(e); }
+      });
+      var fb = document.getElementById("gfb-" + g.id) || document.createElement("p");
+      fb.id = "gfb-" + g.id; fb.style.marginTop = "8px";
+      fb.innerHTML = "<b style='color:var(--accent);'>本次得分：" + right + " / " + g.quiz.length + "</b>";
+      if (!fb.parentNode) quiz.appendChild(fb);
+    });
+    quiz.appendChild(btn);
+    box.appendChild(quiz);
+  }
+
+  /* ===== 作文素材库 ===== */
+  db.essays = db.essays || [];
+  var esFilter = "全部";
+  function renderEssay() {
+    var tags = ["全部"];
+    db.essays.forEach(function (e) { if (tags.indexOf(e.tag) < 0) tags.push(e.tag); });
+    var chips = document.getElementById("esChips");
+    chips.innerHTML = "";
+    tags.forEach(function (t) {
+      var b = document.createElement("button");
+      b.className = "btn small" + (t === esFilter ? " primary" : "");
+      b.textContent = t;
+      b.addEventListener("click", function () { esFilter = t; renderEssay(); });
+      chips.appendChild(b);
+    });
+    var ul = document.getElementById("esList");
+    ul.innerHTML = "";
+    var list = db.essays.filter(function (e) { return esFilter === "全部" || e.tag === esFilter; });
+    document.getElementById("esEmpty").style.display = list.length ? "none" : "";
+    list.forEach(function (e) {
+      var li = document.createElement("li");
+      var head = document.createElement("div");
+      head.className = "row";
+      head.innerHTML = "<span class='tag'>" + esc(e.tag) + "</span><span class='muted'>" + esc(e.date) + "</span>";
+      var en = document.createElement("p");
+      en.className = "art-text"; en.style.marginTop = "6px"; en.textContent = e.en;
+      var zh = document.createElement("p");
+      zh.className = "muted"; zh.style.marginTop = "4px"; zh.textContent = e.zh || "";
+      var row = document.createElement("div");
+      row.className = "row"; row.style.marginTop = "8px";
+      var copy = document.createElement("button");
+      copy.className = "btn small"; copy.textContent = "📋 复制英文";
+      copy.addEventListener("click", function () {
+        if (navigator.clipboard) navigator.clipboard.writeText(e.en).then(function () { copy.textContent = "✓ 已复制"; });
+        else { alert(e.en); }
+      });
+      var del = document.createElement("button");
+      del.className = "del"; del.textContent = "✕"; del.style.marginLeft = "auto";
+      del.addEventListener("click", function () {
+        db.essays = db.essays.filter(function (x) { return x.id !== e.id; });
+        save(); renderEssay();
+      });
+      row.appendChild(copy); row.appendChild(del);
+      li.appendChild(head); li.appendChild(en); li.appendChild(zh); li.appendChild(row);
+      ul.appendChild(li);
+    });
+  }
+  document.getElementById("esAdd").addEventListener("click", function () {
+    var en = document.getElementById("esEn").value.trim();
+    if (!en) { alert("请填写英文句子或段落"); return; }
+    db.essays.unshift({
+      id: Date.now().toString(36), tag: document.getElementById("esTag").value,
+      en: en, zh: document.getElementById("esZh").value.trim(), date: today()
+    });
+    document.getElementById("esEn").value = "";
+    document.getElementById("esZh").value = "";
+    save(); renderEssay();
+  });
+
+  /* 启动 */
+  document.getElementById("bankSel").value = db.level === "四级" ? "cet4" : "cet6";
+  document.getElementById("dailyQuota").value = db.quota;
+  renderLevel(); renderCountdown();
+  renderThemeChips(); renderReadings(); renderDictPicker(); renderNews();
+  renderGrammar(); renderEssay();
+  renderWB(); nextCard();
+
+  /* 内容是否过期提示：内容包日期不是今天就提醒 */
+  (function () {
+    var upd = CONTENT.updated || "";
+    if (upd === today()) return;
+    var bar = document.createElement("div");
+    bar.style.cssText = "background:#fdf1e2;color:#8a5a17;border:1px solid #f0dcbb;border-radius:10px;" +
+      "padding:10px 14px;font-size:13px;line-height:1.7;margin-bottom:14px;";
+    bar.innerHTML = "⚠️ <b>内容包上次更新于 " + (upd || "未知日期") + "</b>，可能不是最新的。" +
+      "打开 WorkBuddy 对我说一句「更新今天的内容」，我马上抓最新新闻并生成新文章。";
+    var nav = document.querySelector(".nav");
+    nav.parentNode.insertBefore(bar, nav);
+  })();
+})();
+</script>
+</body>
+</html>
