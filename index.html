@@ -6,8 +6,17 @@
 <title>四六级备考工作台</title>
 <style>
   :root {
-    --bg: #f4f7f5; --card: #fff; --text: #2a3230; --muted: #8a9490; --line: #e6eae8;
-    --accent: #2e7d5b; --accent-soft: #e7f3ee; --warn: #d9822b; --red: #c9564f; --blue: #3a6ea5;
+    /* 莫兰迪色系：低饱和、灰调、柔和 */
+    --bg: #F1EFEA;
+    --card: #FBFAF7;
+    --text: #4A4642;
+    --muted: #9A948C;
+    --line: #E4E0D8;
+    --accent: #8C9A8E;
+    --accent-soft: #E7ECE6;
+    --warn: #C6A18B;
+    --red: #B58A8A;
+    --blue: #8E9BA8;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
@@ -23,10 +32,10 @@
   .countdown { background: var(--accent); color: #fff; border-radius: 12px; padding: 8px 16px; text-align: center; cursor: pointer; }
   .countdown b { font-size: 20px; }
   .countdown small { display: block; font-size: 11px; opacity: .85; }
-  .nav { display: flex; gap: 6px; background: var(--card); border-radius: 12px; padding: 5px; box-shadow: 0 1px 3px rgba(0,0,0,.05); margin-bottom: 16px; overflow-x: auto; }
+  .nav { display: flex; gap: 6px; background: var(--card); border-radius: 12px; padding: 5px; box-shadow: 0 1px 3px rgba(120,110,100,.07); margin-bottom: 16px; overflow-x: auto; }
   .nav button { flex: 1; min-width: 88px; border: none; background: transparent; padding: 9px 4px; border-radius: 8px; font-size: 14px; cursor: pointer; color: var(--muted); white-space: nowrap; }
   .nav button.active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
-  .card { background: var(--card); border-radius: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.05); padding: 18px; margin-bottom: 14px; }
+  .card { background: var(--card); border-radius: 14px; box-shadow: 0 1px 3px rgba(120,110,100,.07); padding: 18px; margin-bottom: 14px; }
   .card h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
   .muted { color: var(--muted); font-size: 13px; }
   .btn { padding: 8px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; cursor: pointer; font-size: 14px; color: var(--text); }
@@ -40,10 +49,11 @@
   ul.list li:last-child { border-bottom: none; }
   .del { border: none; background: none; color: var(--muted); cursor: pointer; font-size: 15px; }
   .del:hover { color: var(--red); }
-  .tag { font-size: 12px; padding: 2px 10px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); display: inline-block; }
-  .tag.blue { background: #eaf2fc; color: var(--blue); }
-  .tag.orange { background: #fdf1e2; color: var(--warn); }
-  .tag.gray { background: #f0f1f3; color: var(--muted); }
+  .tag { font-size: 12px; padding: 2px 10px; border-radius: 12px; background: var(--accent-soft); color: #6F7D71; display: inline-block; }
+  .tag.blue { background: #E7EBEF; color: #78889A; }
+  .tag.orange { background: #F3EAE3; color: #AE8467; }
+  .tag.gray { background: #EFEDE7; color: var(--muted); }
+  .tag.today { background: #EDE6DC; color: #A2825F; font-weight: 600; }
   .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 
   /* 新闻 */
@@ -66,8 +76,8 @@
   .quiz .q { font-size: 14px; margin: 12px 0 6px; line-height: 1.6; }
   .quiz label { display: block; font-size: 13.5px; padding: 5px 8px; cursor: pointer; border-radius: 6px; }
   .quiz label:hover { background: #f4f7f5; }
-  .quiz label.correct { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
-  .quiz label.wrong { background: #fdecec; color: var(--red); }
+  .quiz label.correct { background: var(--accent-soft); color: #6F7D71; font-weight: 600; }
+  .quiz label.wrong { background: #F1E4E4; color: var(--red); }
 
   /* 生词弹窗 */
   #wordPop { display: none; position: fixed; left: 50%; transform: translateX(-50%); bottom: 24px; width: min(480px, 92vw); background: #fff; border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.18); padding: 16px 18px; z-index: 99; }
@@ -105,6 +115,7 @@
       <button id="lv4">四级</button>
       <button id="lv6">六级</button>
     </div>
+    <button class="btn" id="pfBtn" style="white-space:nowrap;">👤 <span id="pfName">我的档案</span></button>
     <div class="countdown" id="cdBox" title="点击修改考试日期">
       <b id="cdNum">--</b><small id="cdLabel">天 · 距四级考试</small>
     </div>
@@ -261,7 +272,9 @@
         <input type="text" id="esZh" placeholder="中文意思或使用场景备注（选填）" style="flex:1; min-width:200px;">
         <button class="btn primary" id="esAdd">保存</button>
       </div>
-      <div class="row" style="margin-bottom:8px;">
+      <div id="esDailyBox" style="margin-top:6px;"></div>
+      <div class="row" style="margin:14px 0 8px;">
+        <b style="font-size:14px;">我的素材库</b>
         <span class="muted">筛选：</span>
         <div class="row" id="esChips"></div>
       </div>
@@ -283,6 +296,20 @@
     </div>
   </section>
 
+  <!-- 个人档案面板 -->
+  <div id="pfPanel" style="display:none; position:fixed; right:20px; top:64px; width:min(360px,94vw); background:var(--card); border-radius:14px; box-shadow:0 10px 34px rgba(120,110,100,.22); padding:16px; z-index:130;">
+    <b style="font-size:14px;">个人档案</b>
+    <p class="muted" style="margin-top:6px; line-height:1.7;">数据保存在本机浏览器，不同档案互相隔离——同一台电脑上多人使用也不会混。换设备或清理浏览器数据会丢失，重要内容请用「导出数据」备份。</p>
+    <ul class="list" id="pfList" style="margin-top:8px; max-height:190px; overflow:auto;"></ul>
+    <div class="row" style="margin-top:10px;">
+      <button class="btn small primary" id="pfNew">＋ 新建档案</button>
+      <button class="btn small" id="pfRename">改名</button>
+      <button class="btn small" id="pfExport">导出数据</button>
+      <button class="btn small" id="pfImport">导入数据</button>
+      <button class="btn small" id="pfClose" style="margin-left:auto;">关闭</button>
+    </div>
+  </div>
+
   <!-- 点词弹窗 -->
   <div id="wordPop">
     <button class="del close" id="wpClose">✕</button>
@@ -292,6 +319,7 @@
       <button class="btn small" id="wpSpeak">🔊 发音</button>
       <button class="btn small primary" id="wpStar">☆ 加入生词本</button>
     </div>
+    <p class="muted" id="wpTip" style="margin-top:8px; color:var(--warn);"></p>
   </div>
 
   <div class="footer">数据保存在本机浏览器 · 内容每日自动更新 · 建议收藏此页（Ctrl+D）</div>
@@ -299,10 +327,32 @@
 
 <script src="words.js"></script>
 <script src="grammar.js"></script>
+<script src="essay.js"></script>
 <script src="content.js"></script>
 <script>
 (function () {
-  var KEY = "cetDesk_v3";
+  /* ===== 个人档案（本地多用户，数据互相隔离） ===== */
+  var PMETA = "cetDesk_profiles", PCUR = "cetDesk_current";
+  function readProfiles() { try { return JSON.parse(localStorage.getItem(PMETA)) || null; } catch (e) { return null; } }
+  function saveProfiles() { localStorage.setItem(PMETA, JSON.stringify(profiles)); }
+  var profiles = readProfiles();
+  if (!profiles || !profiles.length) {
+    var pid0 = "p" + Date.now().toString(36);
+    profiles = [{ id: pid0, name: "我的档案", created: new Date().toLocaleDateString() }];
+    saveProfiles();
+    localStorage.setItem(PCUR, pid0);
+    var legacy = localStorage.getItem("cetDesk_v3");     /* 迁移旧版本数据 */
+    if (legacy) localStorage.setItem("cetDesk_v4_" + pid0, legacy);
+  }
+  var curPid = localStorage.getItem(PCUR);
+  if (!profiles.some(function (x) { return x.id === curPid; })) {
+    curPid = profiles[0].id; localStorage.setItem(PCUR, curPid);
+  }
+  function curProfile() {
+    for (var i = 0; i < profiles.length; i++) if (profiles[i].id === curPid) return profiles[i];
+    return profiles[0];
+  }
+  var KEY = "cetDesk_v4_" + curPid;
   function load() { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } }
   function save() { localStorage.setItem(KEY, JSON.stringify(db)); }
   var db = load();
@@ -313,6 +363,15 @@
   db.quota = db.quota || 10;
   function today() { var d = new Date(); return d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" + ("0"+d.getDate()).slice(-2); }
   function addDays(n) { var d = new Date(); d.setDate(d.getDate() + n); return d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" + ("0"+d.getDate()).slice(-2); }
+  /* 今天是今年的第几天，用于"每日轮换内容" */
+  function dayNumber() {
+    var d = new Date(), base = new Date(d.getFullYear(), 0, 1);
+    return Math.floor((d - base) / 86400000);
+  }
+  function pickToday(arr, offset) {
+    if (!arr || !arr.length) return null;
+    return arr[(dayNumber() + (offset || 0)) % arr.length];
+  }
   function esc(s) { return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
 
   /* ===== 词库 ===== */
@@ -619,6 +678,11 @@
     var ul = document.getElementById("readList");
     ul.innerHTML = "";
     var arts = myReadings().filter(function (a) { return curTheme === "全部" || a.theme === curTheme; });
+    var tp = null;
+    if (curTheme === "全部" && arts.length > 1) {
+      tp = pickToday(arts, 0);
+      if (tp) arts = [tp].concat(arts.filter(function (x) { return x !== tp; }));
+    }
     document.getElementById("readEmpty").style.display = arts.length ? "none" : "";
     document.getElementById("readUpdated").textContent = "内容包更新：" + CONTENT.updated + " · 当前级别：" + db.level + " · 篇幅按真题标准（四级约 300~350 词 / 六级约 400~450 词）";
     arts.forEach(function (a) {
@@ -626,6 +690,7 @@
       var head = document.createElement("div");
       head.className = "art-head";
       head.innerHTML =
+        (a === tp ? "<span class='tag today'>今日推荐</span> " : "") +
         "<span class='tag " + (a.theme === "科技" ? "blue" : a.theme === "传统文化" ? "orange" : "gray") + "'>" + esc(a.theme) + "</span> " +
         "<span class='tag'>" + esc(a.level) + "</span> <span class='tag gray'>" + esc(a.date) + "</span>" +
         "<div class='t'>" + esc(a.title) + "</div>" +
@@ -732,6 +797,10 @@
     document.getElementById("wpStar").textContent = db.wordbook.some(function (x) { return x.w.toLowerCase() === popWord; })
       ? "★ 已在生词本" : "☆ 加入生词本";
     document.getElementById("wordPop").style.display = "block";
+    var tip = document.getElementById("wpTip");
+    if (tip) { tip.textContent = ""; }
+    /* 点击单词即自动朗读（用户点击本身满足浏览器的音频手势要求） */
+    speak(popWord, 0.9, function (msg) { if (tip) tip.textContent = msg; });
   });
   document.getElementById("wpClose").addEventListener("click", function () {
     document.getElementById("wordPop").style.display = "none";
@@ -744,19 +813,60 @@
       document.getElementById("wpStar").textContent = "★ 已在生词本";
     }
   });
-  document.getElementById("wpSpeak").addEventListener("click", function () { if (popWord) speak(popWord, 0.85); });
+  document.getElementById("wpSpeak").addEventListener("click", function () {
+    var tip = document.getElementById("wpTip");
+    if (tip) tip.textContent = "";
+    if (popWord) speak(popWord, 0.85, function (msg) { if (tip) tip.textContent = msg; });
+  });
 
   /* ===== 听写 ===== */
-  function speak(text, rate) {
-    if (!window.speechSynthesis) { alert("当前浏览器不支持语音合成，建议用 Edge 或 Chrome"); return; }
+  /* ===== 发音（稳健版：语音包是异步加载的，必须处理） ===== */
+  var EN_VOICES = [];
+  function loadVoices() {
+    if (!window.speechSynthesis) return;
+    try {
+      EN_VOICES = speechSynthesis.getVoices().filter(function (v) { return /^en/i.test(v.lang || ""); });
+    } catch (e) { EN_VOICES = []; }
+    /* 优先美音女声，其次任意英文音色 */
+    EN_VOICES.sort(function (a, b) {
+      var sa = (/en-US/i.test(a.lang) ? 0 : 1) + (/female|zira|aria|jenny/i.test(a.name) ? 0 : 2);
+      var sb = (/en-US/i.test(b.lang) ? 0 : 1) + (/female|zira|aria|jenny/i.test(b.name) ? 0 : 2);
+      return sa - sb;
+    });
+  }
+  if (window.speechSynthesis) {
+    loadVoices();
+    if (typeof speechSynthesis.addEventListener === "function") {
+      speechSynthesis.addEventListener("voiceschanged", loadVoices);
+    }
+    setTimeout(loadVoices, 300);
+    setTimeout(loadVoices, 1500);
+  }
+  function speak(text, rate, onFail) {
+    if (!window.speechSynthesis) {
+      if (onFail) onFail("当前浏览器不支持语音朗读，请用 Edge 或 Chrome 打开");
+      return;
+    }
+    if (!EN_VOICES.length) loadVoices();
     speechSynthesis.cancel();
     var u = new SpeechSynthesisUtterance(text);
-    u.lang = "en-US"; u.rate = rate;
-    var vs = speechSynthesis.getVoices().filter(function (v) { return v.lang.indexOf("en") === 0; });
-    if (vs.length) u.voice = vs[0];
+    u.lang = "en-US";
+    u.rate = rate || 0.9;
+    u.volume = 1;
+    if (EN_VOICES.length) u.voice = EN_VOICES[0];
+    u.onerror = function () {
+      if (onFail) onFail("发音失败：系统可能未安装英语语音包（Windows 设置 → 时间和语言 → 语音 → 添加英语语音）");
+    };
     speechSynthesis.speak(u);
+    /* 兜底检测：若 1.2 秒后仍未开始朗读，提示可能缺少语音包 */
+    var started = false;
+    u.onstart = function () { started = true; };
+    setTimeout(function () {
+      if (!started && onFail && !speechSynthesis.speaking) {
+        onFail("没有声音？可能是系统缺少英语语音包，或浏览器/系统被静音");
+      }
+    }, 1200);
   }
-  if (window.speechSynthesis) speechSynthesis.getVoices();
 
   function myListenables() {
     var list = [];
@@ -778,10 +888,12 @@
     ul.innerHTML = "";
     var items = myListenables();
     if (!items.length) { ul.innerHTML = "<div class='empty'>当前级别暂无听力材料</div>"; return; }
+    var tpL = pickToday(items, 0);
+    if (tpL && items.length > 1) items = [tpL].concat(items.filter(function (x) { return x !== tpL; }));
     items.forEach(function (p) {
       var li = document.createElement("li");
       li.className = "passage-item";
-      li.textContent = p.title;
+      li.textContent = (p === tpL ? "⭐ 今日推荐 · " : "") + p.title;
       li.addEventListener("click", function () { startDict(p); });
       ul.appendChild(li);
     });
@@ -951,6 +1063,7 @@
         o.value = i; o.textContent = "[" + g.level + "] " + g.topic;
         sel.appendChild(o);
       });
+      sel.value = String(dayNumber() % GRAMMAR.length);   /* 默认展示"今日一则" */
       sel.addEventListener("change", function () { renderGrammar(); });
     }
     var g = GRAMMAR[parseInt(sel.value || "0", 10)];
@@ -1077,6 +1190,155 @@
     document.getElementById("esZh").value = "";
     save(); renderEssay();
   });
+
+  /* ===== 个人档案界面 ===== */
+  function renderProfile() {
+    document.getElementById("pfName").textContent = curProfile().name;
+    var ul = document.getElementById("pfList");
+    ul.innerHTML = "";
+    profiles.forEach(function (x) {
+      var li = document.createElement("li");
+      li.className = "row";
+      var b = document.createElement("b");
+      b.textContent = (x.id === curPid ? "✓ " : "") + x.name;
+      b.style.fontSize = "14px";
+      var d = document.createElement("span");
+      d.className = "muted";
+      d.textContent = x.created || "";
+      var sw = document.createElement("button");
+      sw.className = "btn small" + (x.id === curPid ? "" : " primary");
+      sw.textContent = x.id === curPid ? "使用中" : "切换";
+      sw.style.marginLeft = "auto";
+      sw.addEventListener("click", function () {
+        if (x.id === curPid) return;
+        localStorage.setItem(PCUR, x.id);
+        location.reload();
+      });
+      var del = document.createElement("button");
+      del.className = "del";
+      del.textContent = "✕";
+      del.title = "删除该档案（数据一并删除）";
+      del.addEventListener("click", function () {
+        if (profiles.length <= 1) { alert("至少保留一个档案"); return; }
+        if (!confirm("确定删除档案「" + x.name + "」？该档案的学习数据会被一并删除。")) return;
+        localStorage.removeItem("cetDesk_v4_" + x.id);
+        profiles = profiles.filter(function (y) { return y.id !== x.id; });
+        saveProfiles();
+        if (x.id === curPid) { localStorage.setItem(PCUR, profiles[0].id); location.reload(); }
+        renderProfile();
+      });
+      li.appendChild(b); li.appendChild(d); li.appendChild(d); li.appendChild(sw); li.appendChild(del);
+      ul.appendChild(li);
+    });
+  }
+  document.getElementById("pfBtn").addEventListener("click", function () {
+    var pnl = document.getElementById("pfPanel");
+    pnl.style.display = pnl.style.display === "block" ? "none" : "block";
+    if (pnl.style.display === "block") renderProfile();
+  });
+  document.getElementById("pfClose").addEventListener("click", function () {
+    document.getElementById("pfPanel").style.display = "none";
+  });
+  document.getElementById("pfNew").addEventListener("click", function () {
+    var name = prompt("新档案的名字（例如：王同学、我的六级）：", "");
+    if (!name) return;
+    var id = "p" + Date.now().toString(36);
+    profiles.push({ id: id, name: name.trim(), created: new Date().toLocaleDateString() });
+    saveProfiles();
+    localStorage.setItem(PCUR, id);
+    location.reload();
+  });
+  document.getElementById("pfRename").addEventListener("click", function () {
+    var n = prompt("修改当前档案的名字：", curProfile().name);
+    if (!n) return;
+    curProfile().name = n.trim();
+    saveProfiles(); renderProfile();
+  });
+  document.getElementById("pfExport").addEventListener("click", function () {
+    var data = { profile: curProfile().name, exported: today(), content: db };
+    var blob = new Blob([JSON.stringify(data, null, 1)], { type: "application/json" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "四六级工作台备份_" + curProfile().name + "_" + today() + ".json";
+    a.click();
+  });
+  document.getElementById("pfImport").addEventListener("click", function () {
+    var inp = document.createElement("input");
+    inp.type = "file"; inp.accept = ".json,application/json";
+    inp.addEventListener("change", function () {
+      var f = inp.files[0];
+      if (!f) return;
+      var fr = new FileReader();
+      fr.onload = function () {
+        try {
+          var obj = JSON.parse(fr.result);
+          var content = obj.content || obj;
+          if (!confirm("导入的数据会覆盖当前档案「" + curProfile().name + "」的内容，继续吗？")) return;
+          localStorage.setItem(KEY, JSON.stringify(content));
+          location.reload();
+        } catch (e) { alert("文件格式不正确：" + e.message); }
+      };
+      fr.readAsText(f);
+    });
+    inp.click();
+  });
+
+  /* ===== 内置好词好句（每日推荐 5 条）===== */
+  var ESSAY_LIB = window.CET_ESSAY || [];
+  function renderEssayDaily() {
+    var box = document.getElementById("esDailyBox");
+    if (!box) return;
+    box.innerHTML = "";
+    if (!ESSAY_LIB.length) return;
+    var title = document.createElement("div");
+    title.style.cssText = "display:flex;align-items:center;gap:8px;margin-bottom:6px;";
+    title.innerHTML = "<b style='font-size:14px;'>今日好句推荐</b><span class='tag today'>第 " +
+      ((dayNumber() % Math.max(1, Math.ceil(ESSAY_LIB.length / 5))) + 1) + " 组</span>" +
+      "<span class='muted'>内置 " + ESSAY_LIB.length + " 条，每天自动换一组</span>";
+    box.appendChild(title);
+    var start = (dayNumber() * 5) % ESSAY_LIB.length;
+    var picks = [];
+    for (var i = 0; i < 5 && i < ESSAY_LIB.length; i++) picks.push(ESSAY_LIB[(start + i) % ESSAY_LIB.length]);
+    var ul = document.createElement("ul");
+    ul.className = "list";
+    picks.forEach(function (e) {
+      var li = document.createElement("li");
+      var head = document.createElement("div");
+      head.className = "row";
+      head.innerHTML = "<span class='tag'>" + esc(e.tag) + "</span><span class='tag gray'>" + esc(e.topic) + "</span>";
+      var en = document.createElement("p");
+      en.className = "art-text"; en.style.marginTop = "6px";
+      en.innerHTML = clickableText(e.en);
+      var zh = document.createElement("p");
+      zh.className = "muted"; zh.style.marginTop = "4px"; zh.textContent = e.zh || "";
+      var row = document.createElement("div");
+      row.className = "row"; row.style.marginTop = "8px";
+      var star = document.createElement("button");
+      star.className = "btn small primary";
+      star.textContent = "☆ 收藏到我的素材库";
+      star.addEventListener("click", function () {
+        db.essays.unshift({
+          id: Date.now().toString(36), tag: e.tag, en: e.en, zh: e.zh || "",
+          date: today(), from: "内置推荐"
+        });
+        save(); renderEssay();
+        star.textContent = "★ 已收藏";
+      });
+      var copy = document.createElement("button");
+      copy.className = "btn small";
+      copy.textContent = "📋 复制";
+      copy.addEventListener("click", function () {
+        if (navigator.clipboard) navigator.clipboard.writeText(e.en).then(function () { copy.textContent = "✓ 已复制"; });
+        else alert(e.en);
+      });
+      row.appendChild(star); row.appendChild(copy);
+      li.appendChild(head); li.appendChild(en); li.appendChild(zh); li.appendChild(row);
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+  }
+  var _origRenderEssay = renderEssay;
+  renderEssay = function () { _origRenderEssay(); renderEssayDaily(); };
 
   /* 启动 */
   document.getElementById("bankSel").value = db.level === "四级" ? "cet4" : "cet6";
