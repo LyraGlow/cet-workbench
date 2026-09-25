@@ -1,0 +1,52 @@
+name: Daily News Update
+
+# ============================================================
+# 这个文件是「每日自动更新新闻」的机器人配置
+# 下面是英文关键字的中文含义（关键字必须写英文，这是 GitHub 的语法要求）：
+#   name              → 任务名称（会显示在 Actions 页面左侧）
+#   on                → 触发条件（什么时候运行）
+#   schedule          → 定时运行
+#   cron              → 定时表达式，格式是「分 时 日 月 周」，用格林尼治时间(UTC)
+#                       30 22 * * *  =  UTC 22:30 = 北京时间早上 6:30
+#   workflow_dispatch → 允许你在网页上手动点一下立即运行（方便测试）
+#   permissions       → 权限：contents: write = 允许把更新写回仓库
+#   jobs              → 要执行的工作
+#   runs-on           → 在什么机器上运行（GitHub 免费提供的 Linux 机器）
+#   steps             → 具体步骤（下面每一步都有中文说明）
+#   uses              → 使用官方现成的功能模块
+# ============================================================
+
+on:
+  schedule:
+    - cron: '30 22 * * *'   # 北京时间每天 6:30 自动运行
+  workflow_dispatch:        # 也可以在网页上手动点「Run workflow」立即运行
+
+permissions:
+  contents: write           # 允许机器人把更新后的内容提交回仓库（必须开，否则无法保存）
+
+jobs:
+  update:
+    runs-on: ubuntu-latest  # 使用 GitHub 免费提供的 Linux 运行环境
+    steps:
+      - name: 第一步：把仓库下载到运行环境
+        uses: actions/checkout@v4
+
+      - name: 第二步：安装 Python 运行环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 第三步：抓取最新新闻并更新 content.js
+        run: python scripts/update_news.py
+
+      - name: 第四步：把更新提交回仓库（没变化就跳过）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "内容无变化，跳过提交"
+          else
+            git add content.js
+            git commit -m "chore: 每日更新英语时事新闻 ($(date -u '+%Y-%m-%d'))"
+            git push
+          fi
