@@ -1,7 +1,7 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-09-25",
+  updated: "2026-09-26",
   news: [
     { id: "n01", date: "2026-09-11", src: "CGTN·Sports", title: "France ends China's World Cup run with 90-61 quarterfinal win", link: "https://news.cgtn.com/news/2026-09-11/France-ends-China-s-World-Cup-run-with-90-61-quarterfinal-win-1QlsaONu0ne/p.html" },
     { id: "n02", date: "2026-09-22", src: "CGTN·Sports", title: "Liu Dewen returns after 8 years to win Asian Games gold medal in Wushu", link: "https://news.cgtn.com/news/2026-09-22/Liu-Dewen-returns-after-8-years-to-win-Asian-Games-gold-medal-in-Wushu-1QE0bz7Ky9G/p.html" },
