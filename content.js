@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   news: [
-    { id: "n01", date: "2026-09-11", src: "CGTN·Sports", title: "France ends China's World Cup run with 90-61 quarterfinal win", link: "https://news.cgtn.com/news/2026-09-11/France-ends-China-s-World-Cup-run-with-90-61-quarterfinal-win-1QlsaONu0ne/p.html" },
-    { id: "n02", date: "2026-09-22", src: "CGTN·Sports", title: "Liu Dewen returns after 8 years to win Asian Games gold medal in Wushu", link: "https://news.cgtn.com/news/2026-09-22/Liu-Dewen-returns-after-8-years-to-win-Asian-Games-gold-medal-in-Wushu-1QE0bz7Ky9G/p.html" },
-    { id: "n03", date: "2026-08-26", src: "CGTN·Sports", title: "China dominates World Climbing Asia Youth Championships with 10 golds", link: "https://news.cgtn.com/news/2026-08-26/China-dominates-World-Climbing-Asia-Youth-Championships-with-10-golds-1PV7Wyc303u/p.html" },
-    { id: "n04", date: "2026-09-22", src: "CGTN·Culture", title: "Drones light up sky at 2026 Mid-Autumn Gala", link: "https://news.cgtn.com/news/2026-09-22/Drones-light-up-sky-at-2026-Mid-Autumn-Gala-1QE5UcVAfKM/p.html" },
-    { id: "n05", date: "2026-09-23", src: "CGTN·Culture", title: "China promotes equal voice for all countries at UN", link: "https://newsus.cgtn.com/news/2026-09-23/China-promotes-equal-voice-for-all-countries-at-UN-1QF6W5xRefu/p.html" },
-    { id: "n06", date: "2026-09-16", src: "CGTN·Culture", title: "'The First Crossing of the Long March' takes the stage in Yudu", link: "https://news.cgtn.com/news/2026-09-16/-The-First-Crossing-of-the-Long-March-takes-the-stage-in-Yudu-1Qu8LU8H1q8/p.html" },
+    { id: "n01", date: "2026-09-12", src: "CGTN·Sports", title: "Chen Xingtong survives Hana Goda for WTT Champions Macao quarterfinals", link: "https://news.cgtn.com/news/2026-09-12/Chen-Xingtong-survives-Hana-Goda-for-WTT-Champions-Macao-quarterfinals-1QnahUlRkbu/p.html" },
+    { id: "n02", date: "2026-09-17", src: "CGTN·Sports", title: "Formula E secures long-term future in China, new team joins the grid", link: "https://news.cgtn.com/news/2026-09-17/Formula-E-secures-long-term-future-in-China-new-team-joins-the-grid--1QvQi8clngI/p.html" },
+    { id: "n03", date: "2026-09-04", src: "CGTN·Sports", title: "Zheng continues US Open ascent with strong display against Putintseva", link: "https://news.cgtn.com/news/2026-09-04/Zheng-continues-US-Open-ascent-with-strong-display-against-Putintseva-1Q9VcJeECha/p.html" },
+    { id: "n04", date: "2026-09-23", src: "CGTN·Culture", title: "The 5th Chinese Documentary Film Festival opens in Guangzhou", link: "https://news.cgtn.com/news/2026-09-23/The-5th-Chinese-Documentary-Film-Festival-opens-in-Guangzhou-1QFMfRUxKI8/p.html" },
+    { id: "n05", date: "2026-09-24", src: "CGTN·Culture", title: "A grassland of beauty and sacrifice in Sichuan", link: "https://news.cgtn.com/news/2026-09-24/A-grassland-of-beauty-and-sacrifice-in-Sichuan-1QH5KLUONd6/p.html" },
+    { id: "n06", date: "2026-09-18", src: "CGTN·Culture", title: "How Black Myth: Wukong is taking its world beyond the screen", link: "https://news.cgtn.com/news/2026-09-18/How-Black-Myth-Wukong-is-taking-its-world-beyond-the-screen-1QxnhmS4viE/p.html" },
     { id: "n07", date: "2026-09-10", src: "CGTN·Travel", title: "Red Army heritage old town: A living fossil on stone streets", link: "https://news.cgtn.com/news/2026-09-10/Red-Army-heritage-old-town-A-living-fossil-on-stone-streets-1Qk48ZjnLji/p.html" },
     { id: "n08", date: "2026-09-22", src: "CGTN·Travel", title: "11 ASEAN member states, one expo – What's there to discover?", link: "https://news.cgtn.com/news/2026-09-22/11-ASEAN-member-states-one-expo-What-s-there-to-discover--1QEvjBhwz8k/p.html" },
     { id: "n09", date: "2026-08-30", src: "CGTN·Travel", title: "Jingmai Mountain: Explore China's living tea heritage site", link: "https://news.cgtn.com/news/2026-08-30/Jingmai-Mountain-Explore-China-s-living-tea-heritage-site-1Q1Kmnx1HDW/p.html" },
-    { id: "n10", date: "2026-09-24", src: "CGTN·Business", title: "German carmakers can harness Chinese innovation for shared success", link: "https://news.cgtn.com/news/2026-09-24/German-carmakers-can-harness-Chinese-innovation-for-shared-success-1QHvVFFaHXG/p.html" },
-    { id: "n11", date: "2026-09-18", src: "CGTN·Business", title: "Academic: Higher rates could widen US wealth divide", link: "https://news.cgtn.com/news/2026-09-18/Academic-Higher-rates-could-widen-US-wealth-divide-1QxBvXpK5Og/p.html" },
-    { id: "n12", date: "2026-09-14", src: "CGTN·Business", title: "BRICS is putting capital behind climate action", link: "https://news.cgtn.com/news/2026-09-14/BRICS-is-putting-capital-behind-climate-action-1QqVjPEiMfe/p.html" },
-    { id: "n13", date: "2026-09-25", src: "CGTN·China", title: "Xi to attend welcome banquet hosted by Trump", link: "https://news.cgtn.com/news/2026-09-25/Xi-to-attend-welcome-banquet-hosted-by-Trump-1QIpO8qoHLi/p.html" },
-    { id: "n14", date: "2026-09-25", src: "CGTN·China", title: "International journalists on the Xi-Trump meeting", link: "https://newsus.cgtn.com/news/2026-09-25/International-journalists-on-the-Xi-Trump-meeting--1QIlpEdOc3m/p.html" },
-    { id: "n15", date: "2026-09-24", src: "CGTN·China", title: "Trump addresses welcome ceremony hosted for Xi at White House", link: "https://news.cgtn.com/news/2026-09-24/Trump-addresses-welcome-ceremony-hosted-for-Xi-at-White-House-1QHRQBXF3kk/p.html" }
+    { id: "n10", date: "2026-09-25", src: "CGTN·Business", title: "What America's top business bosses think about China", link: "https://news.cgtn.com/news/2026-09-25/What-America-s-top-business-bosses-think-about-China-1QJguJBiqgo/p.html" },
+    { id: "n11", date: "2026-09-20", src: "CGTN·Business", title: "Trump says he plans to form AI Force, appoint AI 'Czar'", link: "https://news.cgtn.com/news/2026-09-20/Trump-says-he-plans-to-form-AI-Force-appoint-AI-Czar--1QAeF93euoo/p.html" },
+    { id: "n12", date: "2026-09-14", src: "CGTN·Business", title: "Mongolian president vows to deepen energy cooperation with China", link: "https://news.cgtn.com/news/2026-09-14/Mongolian-president-vows-to-deepen-energy-cooperation-with-China-1QqgW08LX7q/p.html" },
+    { id: "n13", date: "2026-09-25", src: "CGTN·China", title: "IOMed launches Global Series in Hong Kong on dispute resolution", link: "https://news.cgtn.com/news/2026-09-25/IOMed-launches-Global-Series-in-Hong-Kong-on-dispute-resolution-1QJqvlgYDXq/p.html" },
+    { id: "n14", date: "2026-09-26", src: "CGTN·China", title: "China's mooncakes get a fresh twist", link: "https://news.cgtn.com/news/2026-09-26/China-s-mooncakes-get-a-fresh-twist-1QJK1Omh5T2/p.html" },
+    { id: "n15", date: "2026-09-24", src: "CGTN·China", title: "Xi attends arrival ceremony at White House hosted by Trump", link: "https://news.cgtn.com/news/2026-09-24/news-1QHTQhpfnqw/p.html" }
   ],
   readings: [
     {
