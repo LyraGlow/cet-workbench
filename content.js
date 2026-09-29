@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-09-28",
+  updated: "2026-09-29",
   news: [
-    { id: "n01", date: "2026-09-09", src: "CGTN·Sports", title: "Real Madrid, Manchester City open Champions League campaigns with wins", link: "https://news.cgtn.com/news/2026-09-09/Real-Madrid-Manchester-City-open-Champions-League-campaigns-with-wins-1Qi9l1fr0lO/p.html" },
-    { id: "n02", date: "2026-09-19", src: "CGTN·Sports", title: "Kane breaks record as Bayern Munich thrash Union Berlin 7-0", link: "https://news.cgtn.com/news/2026-09-19/Kane-breaks-record-as-Bayern-Munich-thrash-Union-Berlin-7-0-1QyLm4lw69G/p.html" },
-    { id: "n03", date: "2026-08-28", src: "CGTN·Sports", title: "Raphinha, Lopez goals help Barcelona beat Athletic Club", link: "https://news.cgtn.com/news/2026-08-28/Raphinha-Lopez-goals-help-Barcelona-beat-Athletic-Club-1PYheh6QnlK/p.html" },
-    { id: "n04", date: "2026-09-22", src: "CGTN·Culture", title: "Drones light up sky at 2026 Mid-Autumn Gala", link: "https://news.cgtn.com/news/2026-09-22/Drones-light-up-sky-at-2026-Mid-Autumn-Gala-1QE5UcVAfKM/p.html" },
-    { id: "n05", date: "2026-09-23", src: "CGTN·Culture", title: "China promotes equal voice for all countries at UN", link: "https://newsus.cgtn.com/news/2026-09-23/China-promotes-equal-voice-for-all-countries-at-UN-1QF6W5xRefu/p.html" },
-    { id: "n06", date: "2026-09-17", src: "CGTN·Culture", title: "Equestrian show in Hulunbuir highlights spectacular riding stunts", link: "https://news.cgtn.com/news/2026-09-17/Equestrian-show-in-Hulunbuir-highlights-spectacular-riding-stunts-1QvJUU739RK/p.html" },
+    { id: "n01", date: "2026-09-10", src: "CGTN·Sports", title: "Ping-Pong at Songyue Lake: Shandong’s carnival stop in Rizhao", link: "https://news.cgtn.com/news/2026-09-10/Ping-Pong-at-Songyue-Lake-Shandong-s-carnival-stop-in-Rizhao-1QicObqvrW0/p.html" },
+    { id: "n02", date: "2026-09-25", src: "CGTN·Sports", title: "Billie Jean King hails global growth of namesake tennis competition", link: "https://news.cgtn.com/news/2026-09-25/Billie-Jean-King-hails-global-growth-of-namesake-tennis-competition-1QIKGT87qjm/p.html" },
+    { id: "n03", date: "2026-08-27", src: "CGTN·Sports", title: "China beats Chinese Taipei, makes Asian Championship quarters unbeaten", link: "https://news.cgtn.com/news/2026-08-27/China-beats-Chinese-Taipei-makes-Asian-Championship-quarters-unbeaten-1PWvFy0UTGU/p.html" },
+    { id: "n04", date: "2026-09-21", src: "CGTN·Culture", title: "Xi'an, where the Silk Road meets the screen", link: "https://news.cgtn.com/news/2026-09-21/Xi-an-where-the-Silk-Road-meets-the-screen-1QCxEbCvfKo/p.html" },
+    { id: "n05", date: "2026-09-27", src: "CGTN·Culture", title: "Various celebrations staged across China to mark Mid-Autumn Festival", link: "https://news.cgtn.com/news/2026-09-27/Various-celebrations-staged-across-China-to-mark-Mid-Autumn-Festival-1QMnM0IJMI0/p.html" },
+    { id: "n06", date: "2026-09-17", src: "CGTN·Culture", title: "Dinner, then a walk: China's evening ritual", link: "https://news.cgtn.com/news/2026-09-17/Dinner-then-a-walk-China-s-evening-ritual-1QvSe6fud1e/p.html" },
     { id: "n07", date: "2026-09-10", src: "CGTN·Travel", title: "Red Army heritage old town: A living fossil on stone streets", link: "https://news.cgtn.com/news/2026-09-10/Red-Army-heritage-old-town-A-living-fossil-on-stone-streets-1Qk48ZjnLji/p.html" },
     { id: "n08", date: "2026-09-22", src: "CGTN·Travel", title: "11 ASEAN member states, one expo – What's there to discover?", link: "https://news.cgtn.com/news/2026-09-22/11-ASEAN-member-states-one-expo-What-s-there-to-discover--1QEvjBhwz8k/p.html" },
     { id: "n09", date: "2026-08-30", src: "CGTN·Travel", title: "Jingmai Mountain: Explore China's living tea heritage site", link: "https://news.cgtn.com/news/2026-08-30/Jingmai-Mountain-Explore-China-s-living-tea-heritage-site-1Q1Kmnx1HDW/p.html" },
-    { id: "n10", date: "2026-09-24", src: "CGTN·Business", title: "Expert: Rethinking the value of engagement with China", link: "https://news.cgtn.com/news/2026-09-24/Expert-Rethinking-the-value-of-engagement-with-China-1QHly5s8dNe/p.html" },
-    { id: "n11", date: "2026-09-18", src: "CGTN·Business", title: "The Takaichi Fallout: Japan's rate hike can't fix what politics broke", link: "https://news.cgtn.com/news/2026-09-18/The-Takaichi-Fallout-Japan-s-rate-hike-can-t-fix-what-politics-broke-1QxuesGDiU0/p.html" },
-    { id: "n12", date: "2026-09-16", src: "CGTN·Business", title: "China's approach to AI governance offers path for global cooperation", link: "https://news.cgtn.com/news/2026-09-16/China-s-approach-to-AI-governance-offers-path-for-global-cooperation-1Qu9eoizVFC/p.html" },
-    { id: "n13", date: "2026-09-26", src: "CGTN·China", title: "Mid-Autumn Festival bridges cultures for foreign guests in Chongqing", link: "https://news.cgtn.com/news/2026-09-26/Mid-Autumn-Festival-bridges-cultures-for-foreign-guests-in-Chongqing-1QKptUV4QWQ/p.html" },
-    { id: "n14", date: "2026-09-27", src: "CGTN·China", title: "China sends pair of giant pandas to Zoo Atlanta", link: "https://news.cgtn.com/news/2026-09-27/China-sends-pair-of-giant-pandas-to-US-1QLPORaY5wc/p.html" },
-    { id: "n15", date: "2026-09-25", src: "CGTN·China", title: "US-China relations will have \"big impact\" on future", link: "https://newsus.cgtn.com/news/2026-09-25/US-China-relations-will-have-big-impact-on-future-1QIuTSSorAY/p.html" }
+    { id: "n10", date: "2026-09-24", src: "CGTN·Business", title: "China-US trade future in flux", link: "https://newsus.cgtn.com/news/2026-09-24/China-US-trade-future-in-flux-1QGMcx2abTi/p.html" },
+    { id: "n11", date: "2026-09-27", src: "CGTN·Business", title: "BizDataDive: China travel made easier", link: "https://news.cgtn.com/news/2026-09-27/BizDataDive-China-travel-made-easier-1QMFOvqjOKI/p.html" },
+    { id: "n12", date: "2026-09-15", src: "CGTN·Business", title: "33rd Arabian Travel Market kicks off", link: "https://news.cgtn.com/news/2026-09-15/33rd-Arabian-Travel-Market-kicks-off--1QsvuZMuPFm/p.html" },
+    { id: "n13", date: "2026-09-26", src: "CGTN·China", title: "George Lucas opens museum celebrating the art of storytelling", link: "https://newsus.cgtn.com/news/2026-09-26/George-Lucas-opens-museum-celebrating-the-art-of-storytelling-1QJWP51lle0/p.html" },
+    { id: "n14", date: "2026-09-28", src: "CGTN·China", title: "Two new giant pandas from China arrive in the United States", link: "https://newsus.cgtn.com/news/2026-09-28/Two-new-giant-pandas-from-China-arrive-in-the-United-States-1QNq8lf6f6M/p.html" },
+    { id: "n15", date: "2026-09-25", src: "CGTN·China", title: "IOMed launches Global Series in Hong Kong on dispute resolution", link: "https://news.cgtn.com/news/2026-09-25/IOMed-launches-Global-Series-in-Hong-Kong-on-dispute-resolution-1QJqvlgYDXq/p.html" }
   ],
   readings: [
     {
