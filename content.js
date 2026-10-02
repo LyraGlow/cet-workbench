@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-01",
+  updated: "2026-10-02",
   news: [
-    { id: "n01", date: "2026-09-08", src: "CGTN·Sports", title: "Zheng rallies from 5-0 to stun Swiatek and reach US Open quarterfinals", link: "https://news.cgtn.com/news/2026-09-08/Zheng-rallies-from-5-0-to-stun-Swiatek-and-reach-US-Open-quarterfinals-1Qgt3EUD160/p.html" },
-    { id: "n02", date: "2026-09-23", src: "CGTN·Sports", title: "Belgium, Rwanda restore diplomatic ties after 18-month rift", link: "https://newsaf.cgtn.com/news/2026-09-23/Belgium-Rwanda-restore-diplomatic-ties-after-18-month-rift-1QFIHaKDNHG/p.html" },
-    { id: "n03", date: "2026-08-29", src: "CGTN·Sports", title: "Unbeaten China sees off Vietnam, Iran awaits in AVC semifinals", link: "https://news.cgtn.com/news/2026-08-29/Unbeaten-China-sees-off-Vietnam-Iran-awaits-in-AVC-semifinals-1PZUQ7SP6kE/p.html" },
-    { id: "n04", date: "2026-09-23", src: "CGTN·Culture", title: "Peter Pau on how films can offer a window into China", link: "https://news.cgtn.com/news/2026-09-23/Peter-Pau-on-how-films-can-offer-a-window-into-China-1QFNs7NtAg8/p.html" },
-    { id: "n05", date: "2026-09-29", src: "CGTN·Culture", title: "Nishan Forum: Why Confucius still matters", link: "https://news.cgtn.com/news/2026-09-29/Nishan-Forum-Why-Confucius-still-matters-1QPU2E5yipG/p.html" },
-    { id: "n06", date: "2026-09-21", src: "CGTN·Culture", title: "This Beijing bridge hides an underwater walkway", link: "https://news.cgtn.com/news/2026-09-21/This-Beijing-bridge-hides-an-underwater-walkway-1QCsGzq3i5q/p.html" },
+    { id: "n01", date: "2026-09-03", src: "CGTN·Sports", title: "China outlines new five-year plan for sports powerhouse drive", link: "https://news.cgtn.com/news/2026-09-03/China-outlines-new-five-year-plan-for-sports-powerhouse-drive-1Q8EZsYNdNS/p.html" },
+    { id: "n02", date: "2026-09-25", src: "CGTN·Sports", title: "China bags four swimming golds, keeps women's table tennis team title", link: "https://news.cgtn.com/news/2026-09-25/China-bags-four-swimming-golds-keeps-women-s-table-tennis-team-title-1QIJjbJXb44/p.html" },
+    { id: "n03", date: "2026-08-28", src: "CGTN·Sports", title: "Raphinha, Lopez goals help Barcelona beat Athletic Club", link: "https://news.cgtn.com/news/2026-08-28/Raphinha-Lopez-goals-help-Barcelona-beat-Athletic-Club-1PYheh6QnlK/p.html" },
+    { id: "n04", date: "2026-09-22", src: "CGTN·Culture", title: "SRIFF 2026: A shared devotion to art – Italy and China via the lens", link: "https://news.cgtn.com/news/2026-09-22/SRIFF-2026-A-shared-devotion-to-art-Italy-and-China-via-the-lens-1QEeb8xJ7A4/p.html" },
+    { id: "n05", date: "2026-09-29", src: "CGTN·Culture", title: "Traditional Chinese dance moves spark viral imitation trend", link: "https://news.cgtn.com/news/2026-09-29/Traditional-Chinese-dance-moves-spark-viral-imitation-trend-1QPGRm62xVu/p.html" },
+    { id: "n06", date: "2026-09-22", src: "CGTN·Culture", title: "Two Sounds. One Moon", link: "https://news.cgtn.com/news/2026-09-22/Two-Sounds-One-Moon-1QE62eT7bcQ/p.html" },
     { id: "n07", date: "2026-09-10", src: "CGTN·Travel", title: "Red Army heritage old town: A living fossil on stone streets", link: "https://news.cgtn.com/news/2026-09-10/Red-Army-heritage-old-town-A-living-fossil-on-stone-streets-1Qk48ZjnLji/p.html" },
     { id: "n08", date: "2026-09-22", src: "CGTN·Travel", title: "11 ASEAN member states, one expo – What's there to discover?", link: "https://news.cgtn.com/news/2026-09-22/11-ASEAN-member-states-one-expo-What-s-there-to-discover--1QEvjBhwz8k/p.html" },
     { id: "n09", date: "2026-08-30", src: "CGTN·Travel", title: "Jingmai Mountain: Explore China's living tea heritage site", link: "https://news.cgtn.com/news/2026-08-30/Jingmai-Mountain-Explore-China-s-living-tea-heritage-site-1Q1Kmnx1HDW/p.html" },
-    { id: "n10", date: "2026-09-29", src: "CGTN·Business", title: "PBOC announces adjustments to several monetary policy tools", link: "https://news.cgtn.com/news/2026-09-29/PBOC-announces-adjustments-to-several-monetary-policy-tools-1QPWGj2poxG/p.html" },
-    { id: "n11", date: "2026-09-29", src: "CGTN·Business", title: "CCPIT: China-US summit brings greater certainty to trade and business", link: "https://news.cgtn.com/news/2026-09-29/CCPIT-China-US-summit-brings-greater-certainty-to-trade-and-business-1QPFuNSVXYk/p.html" },
-    { id: "n12", date: "2026-09-21", src: "CGTN·Business", title: "What Manchester's mayor saw in Wuhan's car factory", link: "https://news.cgtn.com/news/2026-09-21/What-can-UK-s-Manchester-learn-from-Wuhan--1QCFNpzqZGw/p.html" },
-    { id: "n13", date: "2026-09-28", src: "CGTN·China", title: "China marks 2,577th anniversary of Confucius’s birth", link: "https://news.cgtn.com/news/2026-09-28/China-marks-2-577th-anniversary-of-Confucius-s-birth-1QNGWxXj6Mg/p.html" },
-    { id: "n14", date: "2026-09-29", src: "CGTN·China", title: "Marching On: From Barren to Bountiful", link: "https://news.cgtn.com/news/2026-09-29/Marching-On-From-Barren-to-Bountiful-1QPGCBakJXy/p.html" },
-    { id: "n15", date: "2026-09-29", src: "CGTN·China", title: "Linfen's green transition wins global recognition", link: "https://news.cgtn.com/news/2026-09-29/Linfen-s-green-transition-wins-global-recognition-1QPtqWdAfhS/p.html" }
+    { id: "n10", date: "2026-09-28", src: "CGTN·Business", title: "Somalia tightens coastal security as piracy resurges", link: "https://newsaf.cgtn.com/news/2026-09-28/Somalia-tightens-coastal-security-as-piracy-resurges-1QOpyUEArKg/p.html" },
+    { id: "n11", date: "2026-09-30", src: "CGTN·Business", title: "China expands mortgage subsidies to ease homebuying costs", link: "https://news.cgtn.com/news/2026-09-30/China-expands-mortgage-subsidies-to-ease-homebuying-costs-1QR9evPxYoU/p.html" },
+    { id: "n12", date: "2026-09-23", src: "CGTN·Business", title: "How can tensions ease for China-US trade?", link: "https://newsus.cgtn.com/news/2026-09-23/How-can-tensions-ease-for-China-US-trade--1QF8wpiLWeI/p.html" },
+    { id: "n13", date: "2026-09-30", src: "CGTN·China", title: "China launches deep-sea robot for South China Sea exploration", link: "https://news.cgtn.com/news/2026-09-30/China-launches-deep-sea-robot-for-South-China-Sea-exploration-1QQVfZ0JulW/p.html" },
+    { id: "n14", date: "2026-09-30", src: "CGTN·China", title: "Xi's article on people's wellbeing to be published", link: "https://news.cgtn.com/news/2026-09-30/Xi-s-article-on-people-s-wellbeing-to-be-published-1QRnyTUaZwY/p.html" },
+    { id: "n15", date: "2026-09-30", src: "CGTN·China", title: "China-US strategic stability can preserve continuity in global health", link: "https://news.cgtn.com/news/2026-09-30/China-US-strategic-stability-can-preserve-continuity-in-global-health-1QQZdX1h30c/p.html" }
   ],
   readings: [
     {
