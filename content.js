@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-02",
+  updated: "2026-10-03",
   news: [
-    { id: "n01", date: "2026-09-03", src: "CGTN·Sports", title: "China outlines new five-year plan for sports powerhouse drive", link: "https://news.cgtn.com/news/2026-09-03/China-outlines-new-five-year-plan-for-sports-powerhouse-drive-1Q8EZsYNdNS/p.html" },
-    { id: "n02", date: "2026-09-25", src: "CGTN·Sports", title: "China bags four swimming golds, keeps women's table tennis team title", link: "https://news.cgtn.com/news/2026-09-25/China-bags-four-swimming-golds-keeps-women-s-table-tennis-team-title-1QIJjbJXb44/p.html" },
-    { id: "n03", date: "2026-08-28", src: "CGTN·Sports", title: "Raphinha, Lopez goals help Barcelona beat Athletic Club", link: "https://news.cgtn.com/news/2026-08-28/Raphinha-Lopez-goals-help-Barcelona-beat-Athletic-Club-1PYheh6QnlK/p.html" },
-    { id: "n04", date: "2026-09-22", src: "CGTN·Culture", title: "SRIFF 2026: A shared devotion to art – Italy and China via the lens", link: "https://news.cgtn.com/news/2026-09-22/SRIFF-2026-A-shared-devotion-to-art-Italy-and-China-via-the-lens-1QEeb8xJ7A4/p.html" },
-    { id: "n05", date: "2026-09-29", src: "CGTN·Culture", title: "Traditional Chinese dance moves spark viral imitation trend", link: "https://news.cgtn.com/news/2026-09-29/Traditional-Chinese-dance-moves-spark-viral-imitation-trend-1QPGRm62xVu/p.html" },
-    { id: "n06", date: "2026-09-22", src: "CGTN·Culture", title: "Two Sounds. One Moon", link: "https://news.cgtn.com/news/2026-09-22/Two-Sounds-One-Moon-1QE62eT7bcQ/p.html" },
-    { id: "n07", date: "2026-09-10", src: "CGTN·Travel", title: "Red Army heritage old town: A living fossil on stone streets", link: "https://news.cgtn.com/news/2026-09-10/Red-Army-heritage-old-town-A-living-fossil-on-stone-streets-1Qk48ZjnLji/p.html" },
-    { id: "n08", date: "2026-09-22", src: "CGTN·Travel", title: "11 ASEAN member states, one expo – What's there to discover?", link: "https://news.cgtn.com/news/2026-09-22/11-ASEAN-member-states-one-expo-What-s-there-to-discover--1QEvjBhwz8k/p.html" },
-    { id: "n09", date: "2026-08-30", src: "CGTN·Travel", title: "Jingmai Mountain: Explore China's living tea heritage site", link: "https://news.cgtn.com/news/2026-08-30/Jingmai-Mountain-Explore-China-s-living-tea-heritage-site-1Q1Kmnx1HDW/p.html" },
-    { id: "n10", date: "2026-09-28", src: "CGTN·Business", title: "Somalia tightens coastal security as piracy resurges", link: "https://newsaf.cgtn.com/news/2026-09-28/Somalia-tightens-coastal-security-as-piracy-resurges-1QOpyUEArKg/p.html" },
-    { id: "n11", date: "2026-09-30", src: "CGTN·Business", title: "China expands mortgage subsidies to ease homebuying costs", link: "https://news.cgtn.com/news/2026-09-30/China-expands-mortgage-subsidies-to-ease-homebuying-costs-1QR9evPxYoU/p.html" },
-    { id: "n12", date: "2026-09-23", src: "CGTN·Business", title: "How can tensions ease for China-US trade?", link: "https://newsus.cgtn.com/news/2026-09-23/How-can-tensions-ease-for-China-US-trade--1QF8wpiLWeI/p.html" },
-    { id: "n13", date: "2026-09-30", src: "CGTN·China", title: "China launches deep-sea robot for South China Sea exploration", link: "https://news.cgtn.com/news/2026-09-30/China-launches-deep-sea-robot-for-South-China-Sea-exploration-1QQVfZ0JulW/p.html" },
-    { id: "n14", date: "2026-09-30", src: "CGTN·China", title: "Xi's article on people's wellbeing to be published", link: "https://news.cgtn.com/news/2026-09-30/Xi-s-article-on-people-s-wellbeing-to-be-published-1QRnyTUaZwY/p.html" },
-    { id: "n15", date: "2026-09-30", src: "CGTN·China", title: "China-US strategic stability can preserve continuity in global health", link: "https://news.cgtn.com/news/2026-09-30/China-US-strategic-stability-can-preserve-continuity-in-global-health-1QQZdX1h30c/p.html" }
+    { id: "n01", date: "2026-09-05", src: "CGTN·Sports", title: "Tech powers China's sports upgrade in new five-year plan", link: "https://news.cgtn.com/news/2026-09-05/Tech-powers-China-s-sports-upgrade-in-new-five-year-plan-1QbLrjivlwA/p.html" },
+    { id: "n02", date: "2026-09-21", src: "CGTN·Sports", title: "China's athletes stand out at World Climbing Series in Chongqing", link: "https://news.cgtn.com/news/2026-09-21/China-s-athletes-stand-out-at-World-Climbing-Series-in-Chongqing-1QCqZ65d3Dq/p.html" },
+    { id: "n03", date: "2026-09-04", src: "CGTN·Sports", title: "Chinese delegation for 20th Asian Games formed", link: "https://news.cgtn.com/news/2026-09-04/Chinese-delegation-for-20th-Asian-Games-formed-1Q9PDbUrR3G/p.html" },
+    { id: "n04", date: "2026-09-24", src: "CGTN·Culture", title: "A grassland of beauty and sacrifice in Sichuan", link: "https://news.cgtn.com/news/2026-09-24/A-grassland-of-beauty-and-sacrifice-in-Sichuan-1QH5KLUONd6/p.html" },
+    { id: "n05", date: "2026-09-24", src: "CGTN·Culture", title: "US student's summer in China bridges cultural divide", link: "https://newsus.cgtn.com/news/2026-09-24/US-student-s-summer-in-China-bridges-cultural-divide-1QGyaEavL0s/p.html" },
+    { id: "n06", date: "2026-09-23", src: "CGTN·Culture", title: "The 5th Chinese Documentary Film Festival opens in Guangzhou", link: "https://news.cgtn.com/news/2026-09-23/The-5th-Chinese-Documentary-Film-Festival-opens-in-Guangzhou-1QFMfRUxKI8/p.html" },
+    { id: "n07", date: "2026-09-24", src: "CGTN·Travel", title: "Chinese for a Day: The Temple of a Thousand Buddhas | Crossing Paths", link: "https://news.cgtn.com/news/2026-09-24/Chinese-for-a-Day-The-Temple-of-a-Thousand-Buddhas-Crossing-Paths-1QCvyIolyP6/p.html" },
+    { id: "n08", date: "2026-10-01", src: "CGTN·Travel", title: "Health Talk | The secret to longevity", link: "https://news.cgtn.com/news/2026-10-01/Health-Talk-The-secret-to-longevity--1QSIcGuue8E/p.html" },
+    { id: "n09", date: "2026-09-24", src: "CGTN·Travel", title: "US student reflects on the power of people-to-people exchange", link: "https://newsus.cgtn.com/news/2026-09-24/US-student-reflects-on-the-power-of-people-to-people-exchange-1QGN9dNNnB6/p.html" },
+    { id: "n10", date: "2026-09-27", src: "CGTN·Business", title: "China-US relations: From tech blockade to AI dialogue", link: "https://news.cgtn.com/news/2026-09-27/China-US-relations-From-tech-blockade-to-AI-dialogue-1QMnHWJcgmY/p.html" },
+    { id: "n11", date: "2026-09-27", src: "CGTN·Business", title: "China's botanicals fuel trans-Pacific innovation", link: "https://news.cgtn.com/news/2026-09-27/China-s-botanicals-fuel-trans-Pacific-innovation-1QM0bsGGJbi/p.html" },
+    { id: "n12", date: "2026-09-21", src: "CGTN·Business", title: "Pinglu Canal: What does China's new river-sea link mean for ASEAN?", link: "https://news.cgtn.com/news/2026-09-21/Pinglu-Canal-What-does-China-s-new-river-sea-link-mean-for-ASEAN--1QCKwsdylyM/p.html" },
+    { id: "n13", date: "2026-09-29", src: "CGTN·China", title: "Zhang Zhanshuo: Seven golds on his Asian Games debut", link: "https://news.cgtn.com/news/2026-09-29/Zhang-Zhanshuo-Seven-golds-on-his-Asian-Games-debut-1QPQ626yQ2A/p.html" },
+    { id: "n14", date: "2026-10-01", src: "CGTN·China", title: "Have Fun in China II | Meshrep: Xinjiang's Improvised Party Tradition", link: "https://news.cgtn.com/news/2026-10-01/Have-Fun-in-China-II-Meshrep-Xinjiang-s-Improvised-Party-Tradition-1QSUs98mqxG/p.html" },
+    { id: "n15", date: "2026-09-29", src: "CGTN·China", title: "China urges Japan to seriously reflect on and correct wrongdoings", link: "https://news.cgtn.com/news/2026-09-29/China-urges-Japan-to-seriously-reflect-on-and-correct-wrongdoings-1QPQyiVRPq0/p.html" }
   ],
   readings: [
     {
