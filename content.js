@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-03",
+  updated: "2026-10-04",
   news: [
-    { id: "n01", date: "2026-09-05", src: "CGTN·Sports", title: "Tech powers China's sports upgrade in new five-year plan", link: "https://news.cgtn.com/news/2026-09-05/Tech-powers-China-s-sports-upgrade-in-new-five-year-plan-1QbLrjivlwA/p.html" },
-    { id: "n02", date: "2026-09-21", src: "CGTN·Sports", title: "China's athletes stand out at World Climbing Series in Chongqing", link: "https://news.cgtn.com/news/2026-09-21/China-s-athletes-stand-out-at-World-Climbing-Series-in-Chongqing-1QCqZ65d3Dq/p.html" },
-    { id: "n03", date: "2026-09-04", src: "CGTN·Sports", title: "Chinese delegation for 20th Asian Games formed", link: "https://news.cgtn.com/news/2026-09-04/Chinese-delegation-for-20th-Asian-Games-formed-1Q9PDbUrR3G/p.html" },
-    { id: "n04", date: "2026-09-24", src: "CGTN·Culture", title: "A grassland of beauty and sacrifice in Sichuan", link: "https://news.cgtn.com/news/2026-09-24/A-grassland-of-beauty-and-sacrifice-in-Sichuan-1QH5KLUONd6/p.html" },
-    { id: "n05", date: "2026-09-24", src: "CGTN·Culture", title: "US student's summer in China bridges cultural divide", link: "https://newsus.cgtn.com/news/2026-09-24/US-student-s-summer-in-China-bridges-cultural-divide-1QGyaEavL0s/p.html" },
-    { id: "n06", date: "2026-09-23", src: "CGTN·Culture", title: "The 5th Chinese Documentary Film Festival opens in Guangzhou", link: "https://news.cgtn.com/news/2026-09-23/The-5th-Chinese-Documentary-Film-Festival-opens-in-Guangzhou-1QFMfRUxKI8/p.html" },
+    { id: "n01", date: "2026-08-30", src: "CGTN·Sports", title: "China sweeps Iran to reach Asian Women's Volleyball Championship final", link: "https://news.cgtn.com/news/2026-08-30/China-sweeps-Iran-to-reach-Asian-Women-s-Volleyball-Championship-final-1Q1AE2ye2Eo/p.html" },
+    { id: "n02", date: "2026-09-22", src: "CGTN·Sports", title: "Refugee taekwondo athlete Al Hinide targets gold medal at Asian Games", link: "https://news.cgtn.com/news/2026-09-22/Refugee-taekwondo-athlete-Al-Hinide-targets-gold-medal-at-Asian-Games-1QDSgAyMo24/p.html" },
+    { id: "n03", date: "2026-08-28", src: "CGTN·Sports", title: "Raphinha, Lopez goals help Barcelona beat Athletic Club", link: "https://news.cgtn.com/news/2026-08-28/Raphinha-Lopez-goals-help-Barcelona-beat-Athletic-Club-1PYheh6QnlK/p.html" },
+    { id: "n04", date: "2026-09-22", src: "CGTN·Culture", title: "Crossing the snow-capped mountains: Epic of the Long March", link: "https://news.cgtn.com/news/2026-09-22/Crossing-the-snow-capped-mountains-Epic-of-the-Long-March-1QEmaLGvoys/p.html" },
+    { id: "n05", date: "2026-09-29", src: "CGTN·Culture", title: "Traditional Chinese dance moves spark viral imitation trend", link: "https://news.cgtn.com/news/2026-09-29/Traditional-Chinese-dance-moves-spark-viral-imitation-trend-1QPGRm62xVu/p.html" },
+    { id: "n06", date: "2026-09-22", src: "CGTN·Culture", title: "SRIFF 2026: A shared devotion to art – Italy and China via the lens", link: "https://news.cgtn.com/news/2026-09-22/SRIFF-2026-A-shared-devotion-to-art-Italy-and-China-via-the-lens-1QEeb8xJ7A4/p.html" },
     { id: "n07", date: "2026-09-24", src: "CGTN·Travel", title: "Chinese for a Day: The Temple of a Thousand Buddhas | Crossing Paths", link: "https://news.cgtn.com/news/2026-09-24/Chinese-for-a-Day-The-Temple-of-a-Thousand-Buddhas-Crossing-Paths-1QCvyIolyP6/p.html" },
     { id: "n08", date: "2026-10-01", src: "CGTN·Travel", title: "Health Talk | The secret to longevity", link: "https://news.cgtn.com/news/2026-10-01/Health-Talk-The-secret-to-longevity--1QSIcGuue8E/p.html" },
     { id: "n09", date: "2026-09-24", src: "CGTN·Travel", title: "US student reflects on the power of people-to-people exchange", link: "https://newsus.cgtn.com/news/2026-09-24/US-student-reflects-on-the-power-of-people-to-people-exchange-1QGN9dNNnB6/p.html" },
-    { id: "n10", date: "2026-09-27", src: "CGTN·Business", title: "China-US relations: From tech blockade to AI dialogue", link: "https://news.cgtn.com/news/2026-09-27/China-US-relations-From-tech-blockade-to-AI-dialogue-1QMnHWJcgmY/p.html" },
-    { id: "n11", date: "2026-09-27", src: "CGTN·Business", title: "China's botanicals fuel trans-Pacific innovation", link: "https://news.cgtn.com/news/2026-09-27/China-s-botanicals-fuel-trans-Pacific-innovation-1QM0bsGGJbi/p.html" },
-    { id: "n12", date: "2026-09-21", src: "CGTN·Business", title: "Pinglu Canal: What does China's new river-sea link mean for ASEAN?", link: "https://news.cgtn.com/news/2026-09-21/Pinglu-Canal-What-does-China-s-new-river-sea-link-mean-for-ASEAN--1QCKwsdylyM/p.html" },
-    { id: "n13", date: "2026-09-29", src: "CGTN·China", title: "Zhang Zhanshuo: Seven golds on his Asian Games debut", link: "https://news.cgtn.com/news/2026-09-29/Zhang-Zhanshuo-Seven-golds-on-his-Asian-Games-debut-1QPQ626yQ2A/p.html" },
-    { id: "n14", date: "2026-10-01", src: "CGTN·China", title: "Have Fun in China II | Meshrep: Xinjiang's Improvised Party Tradition", link: "https://news.cgtn.com/news/2026-10-01/Have-Fun-in-China-II-Meshrep-Xinjiang-s-Improvised-Party-Tradition-1QSUs98mqxG/p.html" },
-    { id: "n15", date: "2026-09-29", src: "CGTN·China", title: "China urges Japan to seriously reflect on and correct wrongdoings", link: "https://news.cgtn.com/news/2026-09-29/China-urges-Japan-to-seriously-reflect-on-and-correct-wrongdoings-1QPQyiVRPq0/p.html" }
+    { id: "n10", date: "2026-09-28", src: "CGTN·Business", title: "China-US trade talks: A new framework for economic engagement", link: "https://news.cgtn.com/news/2026-09-28/China-US-trade-talks-A-new-framework-for-economic-engagement-1QOgkXG2F4Q/p.html" },
+    { id: "n11", date: "2026-09-30", src: "CGTN·Business", title: "Exclusive: WEF president on navigating global economic change", link: "https://news.cgtn.com/news/2026-09-30/Exclusive-WEF-president-on-navigating-global-economic-change-1QRm29CVjVK/p.html" },
+    { id: "n12", date: "2026-09-24", src: "CGTN·Business", title: "Expert: Rethinking the value of engagement with China", link: "https://news.cgtn.com/news/2026-09-24/Expert-Rethinking-the-value-of-engagement-with-China-1QHly5s8dNe/p.html" },
+    { id: "n13", date: "2026-09-30", src: "CGTN·China", title: "Airborne Wind Harvesting, A National R&amp;D Program", link: "https://news.cgtn.com/news/2026-09-30/Airborne-Wind-Harvesting-A-National-R-D-Program--1QPPOvbDNHW/p.html" },
+    { id: "n14", date: "2026-10-02", src: "CGTN·China", title: "Travel surges on China's National Day holiday as tourists hit the road", link: "https://news.cgtn.com/news/2026-10-02/Travel-surges-on-China-s-National-Day-holiday-as-tourists-hit-the-road-1QUsGgTeMQE/p.html" },
+    { id: "n15", date: "2026-09-30", src: "CGTN·China", title: "Xi's article on people's wellbeing to be published", link: "https://news.cgtn.com/news/2026-09-30/Xi-s-article-on-people-s-wellbeing-to-be-published-1QRnyTUaZwY/p.html" }
   ],
   readings: [
     {
