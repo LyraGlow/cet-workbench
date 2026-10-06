@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   news: [
-    { id: "n01", date: "2026-08-31", src: "CGTN·Sports", title: "China's Wu Yibing, Wang Xinyu advance to second round at US Open", link: "https://news.cgtn.com/news/2026-08-31/China-s-Wu-Yibing-Wang-Xinyu-advance-to-second-round-at-US-Open-1Q3fqEwP22k/p.html" },
-    { id: "n02", date: "2026-09-21", src: "CGTN·Sports", title: "Exclusive: China's women's pentathlon team on first Asian Games gold", link: "https://news.cgtn.com/news/2026-09-21/Exclusive-China-s-women-s-pentathlon-team-on-first-Asian-Games-gold-1QC7GBtjWYU/p.html" },
-    { id: "n03", date: "2026-09-14", src: "CGTN·Sports", title: "Maresca makes flawless Man City start to leave Man Utd trailing", link: "https://news.cgtn.com/news/2026-09-14/Maresca-makes-flawless-Man-City-start-to-leave-Man-Utd-trailing-1QqurubusAo/p.html" },
-    { id: "n04", date: "2026-09-23", src: "CGTN·Culture", title: "China promotes equal voice for all countries at UN", link: "https://newsus.cgtn.com/news/2026-09-23/China-promotes-equal-voice-for-all-countries-at-UN-1QF6W5xRefu/p.html" },
-    { id: "n05", date: "2026-09-30", src: "CGTN·Culture", title: "Brad Pitt's 'Heart of the Beast' opens in Chinese cinemas today", link: "https://news.cgtn.com/news/2026-09-30/Brad-Pitt-s-Heart-of-the-Beast-opens-in-Chinese-cinemas-today-1QRmrKQ8I9y/p.html" },
-    { id: "n06", date: "2026-09-28", src: "CGTN·Culture", title: "Tsinghua team uses AI to revive Chinese Shadow Puppetry", link: "https://news.cgtn.com/news/2026-09-28/Tsinghua-team-uses-AI-to-revive-Chinese-Shadow-Puppetry-1QO01nfqyhq/p.html" },
+    { id: "n01", date: "2026-10-05", src: "CGTN·Sports", title: "China tops medal table as Aichi-Nagoya Asian Games close", link: "https://news.cgtn.com/news/2026-10-05/China-tops-medal-table-as-Aichi-Nagoya-Asian-Games-close-1QZqhuYBgI0/p.html" },
+    { id: "n02", date: "2026-09-22", src: "CGTN·Sports", title: "Refugee taekwondo athlete Al Hinide targets gold medal at Asian Games", link: "https://news.cgtn.com/news/2026-09-22/Refugee-taekwondo-athlete-Al-Hinide-targets-gold-medal-at-Asian-Games-1QDSgAyMo24/p.html" },
+    { id: "n03", date: "2026-09-07", src: "CGTN·Sports", title: "China defeats Czech Republic in overtime at FIBA Women's World Cup", link: "https://news.cgtn.com/news/2026-09-07/China-defeats-Czech-Republic-in-overtime-at-FIBA-Women-s-World-Cup-1QeRUI2IUTe/p.html" },
+    { id: "n04", date: "2026-10-05", src: "CGTN·Culture", title: "Notional Day Holiday: What are tourists buying in China's Shanxi?", link: "https://news.cgtn.com/news/2026-10-05/Notional-Day-Holiday-What-are-tourists-buying-in-China-s-Shanxi--1QYoeY8daMw/p.html" },
+    { id: "n05", date: "2026-10-01", src: "CGTN·Culture", title: "Canada honors Indigenous residential school survivors", link: "https://newsus.cgtn.com/news/2026-10-01/Canada-honors-Indigenous-residential-school-survivors--1QSrwHTIToA/p.html" },
+    { id: "n06", date: "2026-09-27", src: "CGTN·Culture", title: "Young Americans share views on China's proposed exchange program", link: "https://news.cgtn.com/news/2026-09-27/Young-Americans-share-views-on-China-s-proposed-exchange-program-1QMgWJOJ7X2/p.html" },
     { id: "n07", date: "2026-09-24", src: "CGTN·Travel", title: "Chinese for a Day: The Temple of a Thousand Buddhas | Crossing Paths", link: "https://news.cgtn.com/news/2026-09-24/Chinese-for-a-Day-The-Temple-of-a-Thousand-Buddhas-Crossing-Paths-1QCvyIolyP6/p.html" },
     { id: "n08", date: "2026-10-01", src: "CGTN·Travel", title: "Health Talk | The secret to longevity", link: "https://news.cgtn.com/news/2026-10-01/Health-Talk-The-secret-to-longevity--1QSIcGuue8E/p.html" },
     { id: "n09", date: "2026-09-24", src: "CGTN·Travel", title: "US student reflects on the power of people-to-people exchange", link: "https://newsus.cgtn.com/news/2026-09-24/US-student-reflects-on-the-power-of-people-to-people-exchange-1QGN9dNNnB6/p.html" },
-    { id: "n10", date: "2026-09-25", src: "CGTN·Business", title: "US academic: Back-to-back China–US meetings are a big deal", link: "https://news.cgtn.com/news/2026-09-25/US-academic-Back-to-back-China-US-meetings-are-a-big-deal-1QJdfJ8cX9C/p.html" },
-    { id: "n11", date: "2026-09-26", src: "CGTN·Business", title: "New scenarios boost China's consumption", link: "https://news.cgtn.com/news/2026-09-26/New-scenarios-boost-China-s-consumption-1QJ4X6rDY6A/p.html" },
-    { id: "n12", date: "2026-09-20", src: "CGTN·Business", title: "Explainer: Where do China-US economic and trade ties stand?", link: "https://news.cgtn.com/news/2026-09-20/Explainer-Where-do-China-US-economic-and-trade-ties-stand--1QAW6R8DWda/p.html" },
-    { id: "n13", date: "2026-10-04", src: "CGTN·China", title: "Chinese scientists begin joint disaster survey in Nepal", link: "https://news.cgtn.com/news/2026-10-04/Chinese-scientists-begin-joint-disaster-survey-in-Nepal-1QXyVYdGpuo/p.html" },
-    { id: "n14", date: "2026-10-01", src: "CGTN·China", title: "Macao SAR marks National Day with flag-raising ceremony, reception", link: "https://news.cgtn.com/news/2026-10-01/Macao-SAR-marks-National-Day-with-flag-raising-ceremony-reception-1QToXRwGvUA/p.html" },
-    { id: "n15", date: "2026-10-01", src: "CGTN·China", title: "Health Talk | The secret to longevity", link: "https://news.cgtn.com/news/2026-10-01/Health-Talk-The-secret-to-longevity--1QSIcGuue8E/p.html" }
+    { id: "n10", date: "2026-09-30", src: "CGTN·Business", title: "Historic landmark and new horizons in China-US trade relations", link: "https://news.cgtn.com/news/2026-09-30/Historic-landmark-and-new-horizons-in-China-US-trade-relations-1QOePHt4jf2/p.html" },
+    { id: "n11", date: "2026-09-30", src: "CGTN·Business", title: "China expands mortgage subsidies to ease homebuying costs", link: "https://news.cgtn.com/news/2026-09-30/China-expands-mortgage-subsidies-to-ease-homebuying-costs-1QR9evPxYoU/p.html" },
+    { id: "n12", date: "2026-09-24", src: "CGTN·Business", title: "German auto executives call for deeper cooperation with China on NEVs", link: "https://news.cgtn.com/news/2026-09-24/German-auto-executives-call-for-deeper-cooperation-with-China-on-NEVs-1QH3YrNpRbq/p.html" },
+    { id: "n13", date: "2026-10-04", src: "CGTN·China", title: "Finding answers: How foreign youth are living and growing in China", link: "https://news.cgtn.com/news/2026-10-04/Finding-answers-How-foreign-youth-are-living-and-growing-in-China-1QY5pKZAqli/p.html" },
+    { id: "n14", date: "2026-10-02", src: "CGTN·China", title: "A glimpse of autumn in rural China", link: "https://news.cgtn.com/news/2026-10-02/A-glimpse-of-autumn-in-rural-China-1QUMJk2kovu/p.html" },
+    { id: "n15", date: "2026-09-30", src: "CGTN·China", title: "Shenzhen Airlines launches Bandar Seri Begawan–Shenzhen route", link: "https://news.cgtn.com/news/2026-09-30/Shenzhen-Airlines-launches-Bandar-Seri-Begawan-Shenzhen-route-1QRKvcaZGi4/p.html" }
   ],
   readings: [
     {
