@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-08",
+  updated: "2026-10-09",
   news: [
-    { id: "n01", date: "2026-09-15", src: "CGTN·Sports", title: "Wang Shuang powers China to 5-1 Aichi-Nagoya Asian Games opening win", link: "https://news.cgtn.com/news/2026-09-15/Wang-Shuang-powers-China-to-5-1-Aichi-Nagoya-Asian-Games-opening-win-1Qs8JxHNlGU/p.html" },
-    { id: "n02", date: "2026-09-22", src: "CGTN·Sports", title: "Refugee taekwondo athlete Al Hinide targets gold medal at Asian Games", link: "https://news.cgtn.com/news/2026-09-22/Refugee-taekwondo-athlete-Al-Hinide-targets-gold-medal-at-Asian-Games-1QDSgAyMo24/p.html" },
-    { id: "n03", date: "2026-09-08", src: "CGTN·Sports", title: "Zheng rallies from 5-0 to stun Swiatek and reach US Open quarterfinals", link: "https://news.cgtn.com/news/2026-09-08/Zheng-rallies-from-5-0-to-stun-Swiatek-and-reach-US-Open-quarterfinals-1Qgt3EUD160/p.html" },
-    { id: "n04", date: "2026-10-06", src: "CGTN·Culture", title: "Discover China’s vibrant contemporary glass art scene in Beijing", link: "https://news.cgtn.com/news/2026-10-06/Discover-China-s-vibrant-contemporary-glass-art-scene-in-Beijing-1R1nAm7oHVm/p.html" },
-    { id: "n05", date: "2026-10-02", src: "CGTN·Culture", title: "Fireworks light up Urumqi as ethnic groups celebrate national day", link: "https://news.cgtn.com/news/2026-10-02/Fireworks-light-up-Urumqi-as-ethnic-groups-celebrate-national-day-1QUK1geHjtC/p.html" },
-    { id: "n06", date: "2026-09-28", src: "CGTN·Culture", title: "Xi's key quotes on cultural diversity, exchanges between civilizations", link: "https://news.cgtn.com/news/2026-09-28/Xi-s-key-quotes-on-cultural-diversity-exchanges-between-civilizations-1QOj9i6NBq8/p.html" },
+    { id: "n01", date: "2026-09-30", src: "CGTN·Sports", title: "Exclusive: ATP CEO eyes change as China Open celebrates 20th edition", link: "https://news.cgtn.com/news/2026-09-30/Exclusive-ATP-CEO-eyes-change-as-China-Open-celebrates-20th-edition-1QRdYHLOXII/p.html" },
+    { id: "n02", date: "2026-09-18", src: "CGTN·Sports", title: "Yang Shuai header lifts Shanghai Shenhua past Tampines Rovers", link: "https://news.cgtn.com/news/2026-09-18/Yang-Shuai-header-lifts-Shanghai-Shenhua-past-Tampines-Rovers-1Qx5Ozlc3yE/p.html" },
+    { id: "n03", date: "2026-09-10", src: "CGTN·Sports", title: "China's Zheng Qinwen knocked out by Rybakina in US Open quarterfinals", link: "https://news.cgtn.com/news/2026-09-10/China-s-Zheng-Qinwen-knocked-out-by-Rybakina-in-US-Open-quarterfinals-1QjRmlLgGfC/p.html" },
+    { id: "n04", date: "2026-10-04", src: "CGTN·Culture", title: "Beyond ACG: US creators behind NHS find an audience in China", link: "https://news.cgtn.com/news/2026-10-04/Beyond-ACG-US-creators-behind-NHS-find-an-audience-in-China-1QV2qHoLIWs/p.html" },
+    { id: "n05", date: "2026-09-30", src: "CGTN·Culture", title: "Brad Pitt's 'Heart of the Beast' opens in Chinese cinemas today", link: "https://news.cgtn.com/news/2026-09-30/Brad-Pitt-s-Heart-of-the-Beast-opens-in-Chinese-cinemas-today-1QRmrKQ8I9y/p.html" },
+    { id: "n06", date: "2026-09-29", src: "CGTN·Culture", title: "Nishan Dialogue: The wisdom of the analects on justice", link: "https://news.cgtn.com/news/2026-09-29/Nishan-Dialogue-The-wisdom-of-the-analects-on-justice-1QPv1yJJ8kw/p.html" },
     { id: "n07", date: "2026-09-24", src: "CGTN·Travel", title: "Chinese for a Day: The Temple of a Thousand Buddhas | Crossing Paths", link: "https://news.cgtn.com/news/2026-09-24/Chinese-for-a-Day-The-Temple-of-a-Thousand-Buddhas-Crossing-Paths-1QCvyIolyP6/p.html" },
     { id: "n08", date: "2026-10-01", src: "CGTN·Travel", title: "Health Talk | The secret to longevity", link: "https://news.cgtn.com/news/2026-10-01/Health-Talk-The-secret-to-longevity--1QSIcGuue8E/p.html" },
     { id: "n09", date: "2026-09-24", src: "CGTN·Travel", title: "US student reflects on the power of people-to-people exchange", link: "https://newsus.cgtn.com/news/2026-09-24/US-student-reflects-on-the-power-of-people-to-people-exchange-1QGN9dNNnB6/p.html" },
-    { id: "n10", date: "2026-09-28", src: "CGTN·Business", title: "China's Mid-Autumn Festival sees spike in travel demand", link: "https://news.cgtn.com/news/2026-09-28/China-s-Mid-Autumn-Festival-sees-spike-in-travel-demand-1QObio6QOTC/p.html" },
-    { id: "n11", date: "2026-09-28", src: "CGTN·Business", title: "China-US trade talks: A new framework for economic engagement", link: "https://news.cgtn.com/news/2026-09-28/China-US-trade-talks-A-new-framework-for-economic-engagement-1QOgkXG2F4Q/p.html" },
-    { id: "n12", date: "2026-09-24", src: "CGTN·Business", title: "The automobile at 140: From Mannheim to Haikou", link: "https://news.cgtn.com/news/2026-09-24/The-automobile-at-140-From-Mannheim-to-Haikou-1QHo0AmEBoY/p.html" },
-    { id: "n13", date: "2026-10-06", src: "CGTN·China", title: "Hotline delivers: Road repairs make travel safer for residents", link: "https://news.cgtn.com/news/2026-10-06/Hotline-delivers-Road-repairs-make-travel-safer-for-residents-1R1j6le918k/p.html" },
-    { id: "n14", date: "2026-10-04", src: "CGTN·China", title: "Finding answers: How foreign youth are living and growing in China", link: "https://news.cgtn.com/news/2026-10-04/Finding-answers-How-foreign-youth-are-living-and-growing-in-China-1QY5pKZAqli/p.html" },
-    { id: "n15", date: "2026-10-02", src: "CGTN·China", title: "China's domestic holiday travel turns to immersive, local experiences", link: "https://news.cgtn.com/news/2026-10-02/China-s-domestic-holiday-travel-turns-to-immersive-local-experiences-1QUM2eoBKOk/p.html" }
+    { id: "n10", date: "2026-10-07", src: "CGTN·Business", title: "Immersive experiences reshape inbound travel over National Day holiday", link: "https://news.cgtn.com/news/2026-10-07/Immersive-experiences-reshape-inbound-travel-over-National-Day-holiday-1R38klfjZOU/p.html" },
+    { id: "n11", date: "2026-09-26", src: "CGTN·Business", title: "Economists weigh China-US trade tensions amid Xi-Trump talks", link: "https://newsus.cgtn.com/news/2026-09-26/Economists-weigh-China-US-trade-tensions-amid-Xi-Trump-talks-1QJWh3lZ3DW/p.html" },
+    { id: "n12", date: "2026-09-23", src: "CGTN·Business", title: "How can tensions ease for China-US trade?", link: "https://newsus.cgtn.com/news/2026-09-23/How-can-tensions-ease-for-China-US-trade--1QF8wpiLWeI/p.html" },
+    { id: "n13", date: "2026-10-07", src: "CGTN·China", title: "Russian Presidential Aide Patrushev to visit China October 8-13", link: "https://news.cgtn.com/news/2026-10-07/Russian-Presidential-Aide-Patrushev-to-visit-China-October-8-13-1R2Z5OVqUWk/p.html" },
+    { id: "n14", date: "2026-10-08", src: "CGTN·China", title: "Chancay-Shanghai maritime route is supercharging China-Peru trade", link: "https://newsus.cgtn.com/news/2026-10-08/Chancay-Shanghai-maritime-route-is-supercharging-China-Peru-trade--1R3XzsJTbB6/p.html" },
+    { id: "n15", date: "2026-10-03", src: "CGTN·China", title: "China finishes Asian Games campaign with 169 golds", link: "https://news.cgtn.com/news/2026-10-03/China-finishes-Asian-Games-campaign-with-169-golds-1QWG7lGV9BK/p.html" }
   ],
   readings: [
     {
