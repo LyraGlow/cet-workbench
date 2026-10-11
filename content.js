@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   news: [
-    { id: "n01", date: "2026-09-28", src: "CGTN·Sports", title: "Zimbabwe beats Uganda to win Rugby Africa Sevens title", link: "https://newsaf.cgtn.com/news/2026-09-28/Zimbabwe-beats-Uganda-to-win-Rugby-Africa-Sevens-title-1QO8hDL8KrK/p.html" },
-    { id: "n02", date: "2026-10-09", src: "CGTN·Sports", title: "Buyunchaokete shines on serve to book Shanghai showdown with Ruud", link: "https://news.cgtn.com/news/2026-10-09/Buyunchaokete-shines-on-serve-to-book-Shanghai-showdown-with-Ruud-1R5YrkX44us/p.html" },
-    { id: "n03", date: "2026-09-04", src: "CGTN·Sports", title: "Kenya, Egypt set for CAVB final", link: "https://newsaf.cgtn.com/news/2026-09-04/Kenya-Egypt-set-for-CAVB-final-1QazPKPq9XO/p.html" },
-    { id: "n04", date: "2026-10-06", src: "CGTN·Culture", title: "Discover China’s vibrant contemporary glass art scene in Beijing", link: "https://news.cgtn.com/news/2026-10-06/Discover-China-s-vibrant-contemporary-glass-art-scene-in-Beijing-1R1nAm7oHVm/p.html" },
-    { id: "n05", date: "2026-10-09", src: "CGTN·Culture", title: "2027 Spring/Summer Shanghai Fashion Week kicks off", link: "https://news.cgtn.com/news/2026-10-09/2027-Spring-Summer-Shanghai-Fashion-Week-kicks-off-1R60vT5iee4/p.html" },
-    { id: "n06", date: "2026-09-28", src: "CGTN·Culture", title: "How about decorating your desk with Confucius figurines?", link: "https://news.cgtn.com/news/2026-09-28/How-about-decorating-your-desk-with-Confucius-figurines--1QOkJ26fVio/p.html" },
+    { id: "n01", date: "2026-10-08", src: "CGTN·Sports", title: "WTT China Smash highlighted by string of major early upsets in Beijing", link: "https://news.cgtn.com/news/2026-10-08/WTT-China-Smash-highlighted-by-string-of-major-early-upsets-in-Beijing-1R4py2V4RKo/p.html" },
+    { id: "n02", date: "2026-10-05", src: "CGTN·Sports", title: "WADA president visits Kenya amid doping concerns", link: "https://newsaf.cgtn.com/news/2026-10-05/WADA-president-visits-Kenya-amid-doping-concerns-1QZTZOklxg4/p.html" },
+    { id: "n03", date: "2026-09-06", src: "CGTN·Sports", title: "Zheng Qinwen roars into US Open round of 16 after sensational comeback", link: "https://news.cgtn.com/news/2026-09-06/Zheng-Qinwen-roars-into-US-Open-round-of-16-after-sensational-comeback-1QddfzJSTWo/p.html" },
+    { id: "n04", date: "2026-10-10", src: "CGTN·Culture", title: "How China uses digital tech to empower women globally", link: "https://news.cgtn.com/news/2026-10-10/How-China-uses-digital-tech-to-empower-women-globally-1R7KuZ2GTMk/p.html" },
+    { id: "n05", date: "2026-10-10", src: "CGTN·Culture", title: "Peng Liyuan urges development of digital education access for women", link: "https://news.cgtn.com/news/2026-10-10/Peng-Liyuan-urges-development-of-digital-education-access-for-women-1R7u8ZefbW0/p.html" },
+    { id: "n06", date: "2026-09-29", src: "CGTN·Culture", title: "From Nishan to world: 'Ask Confucius' about 'harmony in diversity'", link: "https://news.cgtn.com/news/2026-09-29/From-Nishan-to-World-Ask-Confucius-cultural-dialogue-1QPsWCBxGKI/p.html" },
     { id: "n07", date: "2026-09-24", src: "CGTN·Travel", title: "Chinese for a Day: The Temple of a Thousand Buddhas | Crossing Paths", link: "https://news.cgtn.com/news/2026-09-24/Chinese-for-a-Day-The-Temple-of-a-Thousand-Buddhas-Crossing-Paths-1QCvyIolyP6/p.html" },
     { id: "n08", date: "2026-10-01", src: "CGTN·Travel", title: "Health Talk | The secret to longevity", link: "https://news.cgtn.com/news/2026-10-01/Health-Talk-The-secret-to-longevity--1QSIcGuue8E/p.html" },
     { id: "n09", date: "2026-09-24", src: "CGTN·Travel", title: "US student reflects on the power of people-to-people exchange", link: "https://newsus.cgtn.com/news/2026-09-24/US-student-reflects-on-the-power-of-people-to-people-exchange-1QGN9dNNnB6/p.html" },
-    { id: "n10", date: "2026-09-30", src: "CGTN·Business", title: "Historic landmark and new horizons in China-US trade relations", link: "https://news.cgtn.com/news/2026-09-30/Historic-landmark-and-new-horizons-in-China-US-trade-relations-1QOePHt4jf2/p.html" },
-    { id: "n11", date: "2026-10-04", src: "CGTN·Business", title: "China plays constructive role at G20 trade ministers' meeting", link: "https://news.cgtn.com/news/2026-10-04/China-plays-constructive-role-at-G20-trade-ministers-meeting-1QXMzLUJSXC/p.html" },
-    { id: "n12", date: "2026-09-24", src: "CGTN·Business", title: "China's central bank pledges accommodative policy to support growth", link: "https://news.cgtn.com/news/2026-09-24/China-s-central-bank-pledges-accommodative-policy-to-support-growth-1QHDdGUcGB2/p.html" },
-    { id: "n13", date: "2026-10-09", src: "CGTN·China", title: "Chinese aunties show their spin on basketball", link: "https://newsus.cgtn.com/news/2026-10-09/Chinese-aunties-show-their-spin-on-basketball-1R5vRg6N4zu/p.html" },
-    { id: "n14", date: "2026-10-08", src: "CGTN·China", title: "China's He Lifeng, UK's John Healey hold video call on economic ties", link: "https://news.cgtn.com/news/2026-10-08/China-s-He-Lifeng-UK-s-John-Healey-hold-video-call-on-economic-ties-1R50w9sh7Es/p.html" },
-    { id: "n15", date: "2026-10-06", src: "CGTN·China", title: "Chaka Salt Lake welcomes National Day holiday crowds", link: "https://news.cgtn.com/news/2026-10-06/Chaka-Salt-Lake-welcomes-National-Day-holiday-crowds-1R1iq1uWzBe/p.html" }
+    { id: "n10", date: "2026-10-09", src: "CGTN·Business", title: "BizDataDive: How China's central bank views the RMB exchange rate", link: "https://news.cgtn.com/news/2026-10-09/BizDataDive-How-China-s-central-bank-views-the-RMB-exchange-rate-1R6CZCOYnbW/p.html" },
+    { id: "n11", date: "2026-10-01", src: "CGTN·Business", title: "Expanding new space for China-US economic and trade cooperation", link: "https://news.cgtn.com/news/2026-10-01/Expanding-new-space-for-China-US-economic-and-trade-cooperation-1QSWoKCBWQ8/p.html" },
+    { id: "n12", date: "2026-09-27", src: "CGTN·Business", title: "China-US relations: From tech blockade to AI dialogue", link: "https://news.cgtn.com/news/2026-09-27/China-US-relations-From-tech-blockade-to-AI-dialogue-1QMnHWJcgmY/p.html" },
+    { id: "n13", date: "2026-10-09", src: "CGTN·China", title: "China issues guidelines on developing new quality productive forces", link: "https://news.cgtn.com/news/2026-10-09/China-issues-guidelines-on-developing-new-quality-productive-forces-1R6ANt3mNS8/p.html" },
+    { id: "n14", date: "2026-10-09", src: "CGTN·China", title: "Symposium held to study Xi's works on culture", link: "https://news.cgtn.com/news/2026-10-09/Symposium-held-to-study-Xi-s-works-on-culture-1R6zQjPACHe/p.html" },
+    { id: "n15", date: "2026-10-07", src: "CGTN·China", title: "Beijing parks remain busy as National Day holiday ends", link: "https://news.cgtn.com/news/2026-10-07/Beijing-parks-remain-busy-as-National-Day-holiday-ends-1R2ZEEBSSBi/p.html" }
   ],
   readings: [
     {
