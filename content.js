@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   news: [
-    { id: "n01", date: "2026-10-08", src: "CGTN·Sports", title: "WTT China Smash highlighted by string of major early upsets in Beijing", link: "https://news.cgtn.com/news/2026-10-08/WTT-China-Smash-highlighted-by-string-of-major-early-upsets-in-Beijing-1R4py2V4RKo/p.html" },
-    { id: "n02", date: "2026-10-05", src: "CGTN·Sports", title: "WADA president visits Kenya amid doping concerns", link: "https://newsaf.cgtn.com/news/2026-10-05/WADA-president-visits-Kenya-amid-doping-concerns-1QZTZOklxg4/p.html" },
-    { id: "n03", date: "2026-09-06", src: "CGTN·Sports", title: "Zheng Qinwen roars into US Open round of 16 after sensational comeback", link: "https://news.cgtn.com/news/2026-09-06/Zheng-Qinwen-roars-into-US-Open-round-of-16-after-sensational-comeback-1QddfzJSTWo/p.html" },
-    { id: "n04", date: "2026-10-10", src: "CGTN·Culture", title: "How China uses digital tech to empower women globally", link: "https://news.cgtn.com/news/2026-10-10/How-China-uses-digital-tech-to-empower-women-globally-1R7KuZ2GTMk/p.html" },
-    { id: "n05", date: "2026-10-10", src: "CGTN·Culture", title: "Peng Liyuan urges development of digital education access for women", link: "https://news.cgtn.com/news/2026-10-10/Peng-Liyuan-urges-development-of-digital-education-access-for-women-1R7u8ZefbW0/p.html" },
-    { id: "n06", date: "2026-09-29", src: "CGTN·Culture", title: "From Nishan to world: 'Ask Confucius' about 'harmony in diversity'", link: "https://news.cgtn.com/news/2026-09-29/From-Nishan-to-World-Ask-Confucius-cultural-dialogue-1QPsWCBxGKI/p.html" },
+    { id: "n01", date: "2026-10-07", src: "CGTN·Sports", title: "Pickleball gains momentum in China as participation and events surge", link: "https://news.cgtn.com/news/2026-10-07/Pickleball-gains-momentum-in-China-as-participation-and-events-surge-1R2ARS2DEKk/p.html" },
+    { id: "n02", date: "2026-10-08", src: "CGTN·Sports", title: "Changchun 2027 World University Games marks 100-day countdown", link: "https://news.cgtn.com/news/2026-10-08/Changchun-2027-World-University-Games-marks-100-day-countdown-1R522NvcJaM/p.html" },
+    { id: "n03", date: "2026-09-09", src: "CGTN·Sports", title: "Real Madrid, Manchester City open Champions League campaigns with wins", link: "https://news.cgtn.com/news/2026-09-09/Real-Madrid-Manchester-City-open-Champions-League-campaigns-with-wins-1Qi9l1fr0lO/p.html" },
+    { id: "n04", date: "2026-10-09", src: "CGTN·Culture", title: "2027 Spring/Summer Shanghai Fashion Week kicks off", link: "https://news.cgtn.com/news/2026-10-09/2027-Spring-Summer-Shanghai-Fashion-Week-kicks-off-1R60vT5iee4/p.html" },
+    { id: "n05", date: "2026-10-09", src: "CGTN·Culture", title: "Spring/Summer 2027 Shanghai Fashion Week kicks off", link: "https://news.cgtn.com/news/2026-10-09/Spring-Summer-2027-Shanghai-Fashion-Week-kicks-off--1R6bkJ10QTK/p.html" },
+    { id: "n06", date: "2026-09-30", src: "CGTN·Culture", title: "Many dances, one pulse: Rhythmic China", link: "https://news.cgtn.com/news/2026-09-30/Many-dances-one-pulse-Rhythmic-China-1QRoXF5j1Vm/p.html" },
     { id: "n07", date: "2026-09-24", src: "CGTN·Travel", title: "Chinese for a Day: The Temple of a Thousand Buddhas | Crossing Paths", link: "https://news.cgtn.com/news/2026-09-24/Chinese-for-a-Day-The-Temple-of-a-Thousand-Buddhas-Crossing-Paths-1QCvyIolyP6/p.html" },
     { id: "n08", date: "2026-10-01", src: "CGTN·Travel", title: "Health Talk | The secret to longevity", link: "https://news.cgtn.com/news/2026-10-01/Health-Talk-The-secret-to-longevity--1QSIcGuue8E/p.html" },
     { id: "n09", date: "2026-09-24", src: "CGTN·Travel", title: "US student reflects on the power of people-to-people exchange", link: "https://newsus.cgtn.com/news/2026-09-24/US-student-reflects-on-the-power-of-people-to-people-exchange-1QGN9dNNnB6/p.html" },
-    { id: "n10", date: "2026-10-09", src: "CGTN·Business", title: "BizDataDive: How China's central bank views the RMB exchange rate", link: "https://news.cgtn.com/news/2026-10-09/BizDataDive-How-China-s-central-bank-views-the-RMB-exchange-rate-1R6CZCOYnbW/p.html" },
-    { id: "n11", date: "2026-10-01", src: "CGTN·Business", title: "Expanding new space for China-US economic and trade cooperation", link: "https://news.cgtn.com/news/2026-10-01/Expanding-new-space-for-China-US-economic-and-trade-cooperation-1QSWoKCBWQ8/p.html" },
-    { id: "n12", date: "2026-09-27", src: "CGTN·Business", title: "China-US relations: From tech blockade to AI dialogue", link: "https://news.cgtn.com/news/2026-09-27/China-US-relations-From-tech-blockade-to-AI-dialogue-1QMnHWJcgmY/p.html" },
-    { id: "n13", date: "2026-10-09", src: "CGTN·China", title: "China issues guidelines on developing new quality productive forces", link: "https://news.cgtn.com/news/2026-10-09/China-issues-guidelines-on-developing-new-quality-productive-forces-1R6ANt3mNS8/p.html" },
-    { id: "n14", date: "2026-10-09", src: "CGTN·China", title: "Symposium held to study Xi's works on culture", link: "https://news.cgtn.com/news/2026-10-09/Symposium-held-to-study-Xi-s-works-on-culture-1R6zQjPACHe/p.html" },
-    { id: "n15", date: "2026-10-07", src: "CGTN·China", title: "Beijing parks remain busy as National Day holiday ends", link: "https://news.cgtn.com/news/2026-10-07/Beijing-parks-remain-busy-as-National-Day-holiday-ends-1R2ZEEBSSBi/p.html" }
+    { id: "n10", date: "2026-10-10", src: "CGTN·Business", title: "China, EU reaffirm stable, balanced ties as key trading partners", link: "https://news.cgtn.com/news/2026-10-10/Commerce-Ministry-China-EU-reach-consensus-in-trade-talks-1R7TS3KDIpW/p.html" },
+    { id: "n11", date: "2026-10-04", src: "CGTN·Business", title: "Rising prices, weak spending put Japan's policymakers in tight spot", link: "https://news.cgtn.com/news/2026-10-04/Rising-prices-weak-spending-put-Japan-s-policymakers-in-tight-spot-1QXHBfcprMs/p.html" },
+    { id: "n12", date: "2026-09-30", src: "CGTN·Business", title: "National Day holiday spurs demand for pet boarding", link: "https://news.cgtn.com/news/2026-09-30/National-Day-holiday-spurs-demand-for-pet-boarding-1QRnCjGDCus/p.html" },
+    { id: "n13", date: "2026-10-10", src: "CGTN·China", title: "Mainland: Lai's speech disregards facts, reveals ulterior motives", link: "https://news.cgtn.com/news/2026-10-10/Mainland-Lai-s-speech-disregards-facts-reveals-ulterior-motives-1R86MPQsU4E/p.html" },
+    { id: "n14", date: "2026-10-10", src: "CGTN·China", title: "EU trade commissioner briefs media on outcomes of talks with China", link: "https://news.cgtn.com/news/2026-10-10/EU-trade-commissioner-briefs-media-on-outcomes-of-talks-with-China-1R7JHJBV732/p.html" },
+    { id: "n15", date: "2026-10-08", src: "CGTN·China", title: "How China's grassroots governance helps build 'cities for the people'", link: "https://news.cgtn.com/news/2026-10-08/How-China-s-grassroots-governance-helps-build-cities-for-the-people--1R4rpKZykG4/p.html" }
   ],
   readings: [
     {
