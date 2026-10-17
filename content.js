@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-16",
+  updated: "2026-10-17",
   news: [
-    { id: "n01", date: "2026-09-27", src: "CGTN·Sports", title: "Asian Games | China wins 100th gold; 36-year-old record falls", link: "https://news.cgtn.com/news/2026-09-27/Asian-Games-China-wins-100th-gold-36-year-old-record-falls-1QManwC9zUc/p.html" },
-    { id: "n02", date: "2026-10-01", src: "CGTN·Sports", title: "Lian Junjie wins China's 100th diving gold in history of Asian Games", link: "https://news.cgtn.com/news/2026-10-01/Lian-Junjie-wins-China-s-100th-diving-gold-in-history-of-Asian-Games-1QSFI9HqR7W/p.html" },
-    { id: "n03", date: "2026-09-15", src: "CGTN·Sports", title: "China routs defending champion Philippines to finish top in Group C", link: "https://news.cgtn.com/news/2026-09-15/China-routs-defending-champion-Philippines-to-finish-top-in-Group-C-1Qs9WzgueGI/p.html" },
-    { id: "n04", date: "2026-10-12", src: "CGTN·Culture", title: "The long march in song: from farewell to a new voice", link: "https://news.cgtn.com/news/2026-10-12/The-long-march-in-song-from-farewell-to-a-new-voice-1Rbj73L5bBS/p.html" },
-    { id: "n05", date: "2026-10-12", src: "CGTN·Culture", title: "A journey in Beijing through history, culture and music", link: "https://news.cgtn.com/news/2026-10-12/A-journey-in-Beijing-through-history-culture-and-music-1Rbk3zHp2I8/p.html" },
-    { id: "n06", date: "2026-10-07", src: "CGTN·Culture", title: "Atlanta zoo to debut new pandas and habitat", link: "https://newsus.cgtn.com/news/2026-10-07/Atlanta-zoo-to-debut-new-pandas-and-habitat--1R2e8bQYiNq/p.html" },
-    { id: "n07", date: "2026-09-28", src: "CGTN·Travel", title: "The Long March memory: Straw sandals and Xiao Nandou's family craft", link: "https://news.cgtn.com/news/2026-09-28/The-Long-March-memory-Straw-sandals-and-Xiao-Nandou-s-family-craft-1QMF0hvQVI4/p.html" },
-    { id: "n08", date: "2026-10-01", src: "CGTN·Travel", title: "People reflect on the Long March spirit at flag-raising ceremony", link: "https://news.cgtn.com/news/2026-10-01/People-reflect-on-the-Long-March-spirit-at-flag-raising-ceremony-1QSHSf8VDDq/p.html" },
-    { id: "n09", date: "2026-09-24", src: "CGTN·Travel", title: "Chinese for a Day: The best mooncake | Crossing Paths", link: "https://news.cgtn.com/news/2026-09-24/Chinese-for-a-Day-The-best-mooncake-Crossing-Paths-1QCvNzmaGha/p.html" },
-    { id: "n10", date: "2026-10-14", src: "CGTN·Business", title: "China's foreign trade tops 5 trillion yuan in September, up 27.5%", link: "https://news.cgtn.com/news/2026-10-14/China-s-foreign-trade-tops-5-trillion-yuan-in-September-up-27-5--1Rej2mT0sRa/p.html" },
-    { id: "n11", date: "2026-10-06", src: "CGTN·Business", title: "What's new in China's urban renewal plan?", link: "https://news.cgtn.com/news/2026-10-06/What-s-new-in-China-s-urban-renewal-plan--1R1CoEzbHuU/p.html" },
-    { id: "n12", date: "2026-10-04", src: "CGTN·Business", title: "China plays constructive role at G20 trade ministers' meeting", link: "https://news.cgtn.com/news/2026-10-04/China-plays-constructive-role-at-G20-trade-ministers-meeting-1QXMzLUJSXC/p.html" },
-    { id: "n13", date: "2026-10-14", src: "CGTN·China", title: "I remember seeing the moon", link: "https://news.cgtn.com/news/2026-10-14/I-remember-seeing-the-moon-1ReqvNah41W/p.html" },
-    { id: "n14", date: "2026-10-14", src: "CGTN·China", title: "Premier Li: Canton Fair offers window into China's economic vitality", link: "https://news.cgtn.com/news/2026-10-14/Li-Qiang-Canton-Fair-offers-window-into-China-s-economic-vitality-1ReKfi007Qc/p.html" },
-    { id: "n15", date: "2026-10-13", src: "CGTN·China", title: "Paris Motor Show opens with record number of Chinese brands", link: "https://news.cgtn.com/news/2026-10-13/Paris-Motor-Show-opens-with-record-number-of-Chinese-brands-1Rctww7PkCA/p.html" }
+    { id: "n01", date: "2026-10-02", src: "CGTN·Sports", title: "How Chinese technology supports esports competition at the Asian Games", link: "https://news.cgtn.com/news/2026-10-02/How-Chinese-technology-supports-esports-competition-at-the-Asian-Games-1QUjFV0bj5S/p.html" },
+    { id: "n02", date: "2026-09-30", src: "CGTN·Sports", title: "Exclusive: ATP CEO eyes change as China Open celebrates 20th edition", link: "https://news.cgtn.com/news/2026-09-30/Exclusive-ATP-CEO-eyes-change-as-China-Open-celebrates-20th-edition-1QRdYHLOXII/p.html" },
+    { id: "n03", date: "2026-09-20", src: "CGTN·Sports", title: "Asian Games open in Aichi-Nagoya with celebration of sport and culture", link: "https://news.cgtn.com/news/2026-09-20/Asian-Games-open-in-Aichi-Nagoya-with-celebration-of-sport-and-culture-1QAjvgHquGY/p.html" },
+    { id: "n04", date: "2026-10-10", src: "CGTN·Culture", title: "The Queen's Sword Ep. 5 | From princess to slave", link: "https://news.cgtn.com/news/2026-10-10/The-Queen-s-Sword-Ep-5-From-princess-to-slave-1R7BnBFh6mI/p.html" },
+    { id: "n05", date: "2026-10-09", src: "CGTN·Culture", title: "Symposium held to study Xi's works on culture", link: "https://news.cgtn.com/news/2026-10-09/Symposium-held-to-study-Xi-s-works-on-culture-1R6zQjPACHe/p.html" },
+    { id: "n06", date: "2026-10-05", src: "CGTN·Culture", title: "Tourists enjoy desert fun in Kashi during National Day holiday", link: "https://news.cgtn.com/news/2026-10-05/Tourists-enjoy-desert-fun-in-Kashi-during-National-Day-holiday-1QZHSnOvq5q/p.html" },
+    { id: "n07", date: "2026-10-08", src: "CGTN·Travel", title: "Admire exquisite Ming-era Buddhist statues at Beijing's Zhihua Temple", link: "https://news.cgtn.com/news/2026-10-08/Admire-exquisite-Ming-era-Buddhist-statues-at-Beijing-s-Zhihua-Temple-1R4HhDrPFi8/p.html" },
+    { id: "n08", date: "2026-10-12", src: "CGTN·Travel", title: "The Ming dynasty, still alive", link: "https://news.cgtn.com/news/2026-10-12/The-Ming-dynasty-still-alive-1RaPGiXSlZC/p.html" },
+    { id: "n09", date: "2026-10-05", src: "CGTN·Travel", title: "Richer, immersive experiences fuel China's holiday consumption", link: "https://news.cgtn.com/news/2026-10-05/Richer-immersive-experiences-fuel-China-s-holiday-consumption--1QZEqF34WJ2/p.html" },
+    { id: "n10", date: "2026-10-15", src: "CGTN·Business", title: "How has China's economy performed in 2026?", link: "https://news.cgtn.com/news/2026-10-15/How-has-China-s-economy-performed-in-2026--1Rg1j24iK7C/p.html" },
+    { id: "n11", date: "2026-10-07", src: "CGTN·Business", title: "BizFocus Ep.146: When AI steps onto the factory floor", link: "https://news.cgtn.com/news/2026-10-07/BizFocus-Ep-146-When-AI-steps-onto-the-factory-floor-1R3eMpvZsEU/p.html" },
+    { id: "n12", date: "2026-10-05", src: "CGTN·Business", title: "Libya bans exports of farm produce, locally made food products", link: "https://newsaf.cgtn.com/news/2026-10-05/Libya-bans-exports-of-farm-produce-locally-made-food-products-1QZTodCzHMc/p.html" },
+    { id: "n13", date: "2026-10-15", src: "CGTN·China", title: "Overseas guests applaud Chinese President's message at Canton Fair", link: "https://news.cgtn.com/news/2026-10-15/Overseas-guests-applaud-Chinese-President-s-message-at-Canton-Fair-1RgquVFTbQ4/p.html" },
+    { id: "n14", date: "2026-10-15", src: "CGTN·China", title: "Zhaoxing Dong Village: Youth on a new Long March", link: "https://news.cgtn.com/news/2026-10-15/Zhaoxing-Dong-Village-Youth-on-a-new-Long-March-1RggunCs4NO/p.html" },
+    { id: "n15", date: "2026-10-15", src: "CGTN·China", title: "Why the Long March Still Matters to China and the World", link: "https://news.cgtn.com/news/2026-10-15/Why-the-Long-March-Still-Matters-to-China-and-the-World-1RgdVzFdees/p.html" }
   ],
   readings: [
     {
