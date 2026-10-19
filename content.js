@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-18",
+  updated: "2026-10-19",
   news: [
-    { id: "n01", date: "2026-09-27", src: "CGTN·Sports", title: "Exclusive: Mutaz Essa Barshim eyes his fifth Asian Games and beyond", link: "https://news.cgtn.com/news/2026-09-27/Exclusive-Mutaz-Essa-Barshim-eyes-his-fifth-Asian-Games-and-beyond-1QM7HWZgw4U/p.html" },
-    { id: "n02", date: "2026-09-28", src: "CGTN·Sports", title: "Zimbabwe beats Uganda to win Rugby Africa Sevens title", link: "https://newsaf.cgtn.com/news/2026-09-28/Zimbabwe-beats-Uganda-to-win-Rugby-Africa-Sevens-title-1QO8hDL8KrK/p.html" },
-    { id: "n03", date: "2026-09-17", src: "CGTN·Sports", title: "A look at some of China's standout Guinness World Records", link: "https://news.cgtn.com/news/2026-09-17/A-look-at-some-of-China-s-standout-Guinness-World-Records-1QvTNtWA1uo/p.html" },
-    { id: "n04", date: "2026-10-12", src: "CGTN·Culture", title: "Listening to the people, building trust", link: "https://news.cgtn.com/news/2026-10-12/Listening-to-the-people-building-trust-1RbmdZwTBnO/p.html" },
-    { id: "n05", date: "2026-10-12", src: "CGTN·Culture", title: "Documentary film screening draws international audience", link: "https://news.cgtn.com/news/2026-10-12/Documentary-film-screening-draws-international-audience-1Rbmk9K3QnS/p.html" },
-    { id: "n06", date: "2026-10-07", src: "CGTN·Culture", title: "The Drum and Bell Towers and the rhythms of Old Beijing", link: "https://news.cgtn.com/news/2026-10-07/The-Drum-and-Bell-Towers-and-the-rhythms-of-Old-Beijing-1R2Wid9nnhe/p.html" },
-    { id: "n07", date: "2026-10-15", src: "CGTN·Travel", title: "Fall turns pink! A dreamy seasonal spectacle", link: "https://news.cgtn.com/news/2026-10-15/Fall-turns-pink-A-dreamy-seasonal-spectacle-1Rg4bloo3Xa/p.html" },
-    { id: "n08", date: "2026-10-15", src: "CGTN·Travel", title: "OIV Congress debuts in Asia, exploring Ningxia wine and tea culture", link: "https://news.cgtn.com/news/2026-10-15/OIV-Congress-debuts-in-Asia-exploring-Ningxia-wine-and-tea-culture-1Rg9k8WDCmI/p.html" },
-    { id: "n09", date: "2026-10-03", src: "CGTN·Travel", title: "The whole world knows China is on holiday", link: "https://news.cgtn.com/news/2026-10-03/The-whole-world-knows-China-is-on-holiday-1QWdX8yiGmQ/p.html" },
-    { id: "n10", date: "2026-10-13", src: "CGTN·Business", title: "Chinese vice premier meets with Apple executive chairman", link: "https://news.cgtn.com/news/2026-10-13/Chinese-vice-premier-meets-with-Apple-executive-chairman-1RcoeYcFN04/p.html" },
-    { id: "n11", date: "2026-10-06", src: "CGTN·Business", title: "What's new in China's urban renewal plan?", link: "https://news.cgtn.com/news/2026-10-06/What-s-new-in-China-s-urban-renewal-plan--1R1CoEzbHuU/p.html" },
-    { id: "n12", date: "2026-10-08", src: "CGTN·Business", title: "IEA backs faster release of 100 million barrels as fuel prices climb", link: "https://news.cgtn.com/news/2026-10-08/IEA-backs-faster-release-of-100-million-barrels-as-fuel-prices-climb-1R4j38DGLg4/p.html" },
-    { id: "n13", date: "2026-10-16", src: "CGTN·China", title: "Foreign ministers of Djibouti, Republic of Congo to visit China", link: "https://news.cgtn.com/news/2026-10-16/Foreign-ministers-of-Djibouti-Republic-of-Congo-to-visit-China-1Ri2FvJGZuE/p.html" },
-    { id: "n14", date: "2026-10-16", src: "CGTN·China", title: "Foreign diplomats explore Ningxia's specialty industries", link: "https://news.cgtn.com/news/2026-10-16/Foreign-diplomats-explore-Ningxia-s-specialty-industries-1RhVzlSvQL6/p.html" },
-    { id: "n15", date: "2026-10-16", src: "CGTN·China", title: "How AI is redefining precision farming in China", link: "https://news.cgtn.com/news/2026-10-16/How-AI-is-redefining-precision-farming-in-China-1RhsBvUDm12/p.html" }
+    { id: "n01", date: "2026-09-29", src: "CGTN·Sports", title: "IOC launches Trustworthy AI Framework", link: "https://news.cgtn.com/news/2026-09-29/IOC-launches-Trustworthy-AI-Framework-1QPAzDjp3fa/p.html" },
+    { id: "n02", date: "2026-09-29", src: "CGTN·Sports", title: "China’s young Asian Games squad makes a splash: Launchpad for LA 28?", link: "https://news.cgtn.com/news/2026-09-29/China-s-young-Asian-Games-squad-makes-a-splash-Launchpad-for-LA-28--1QPCQFhQzuw/p.html" },
+    { id: "n03", date: "2026-09-18", src: "CGTN·Sports", title: "Yang Shuai header lifts Shanghai Shenhua past Tampines Rovers", link: "https://news.cgtn.com/news/2026-09-18/Yang-Shuai-header-lifts-Shanghai-Shenhua-past-Tampines-Rovers-1Qx5Ozlc3yE/p.html" },
+    { id: "n04", date: "2026-10-08", src: "CGTN·Culture", title: "Crafting heritage: Art trio reveals the ideas behind their creations", link: "https://news.cgtn.com/news/2026-10-08/Crafting-heritage-Art-trio-reveals-the-ideas-behind-their-creations-1R4E08JKc1O/p.html" },
+    { id: "n05", date: "2026-10-09", src: "CGTN·Culture", title: "2027 Spring/Summer Shanghai Fashion Week kicks off", link: "https://news.cgtn.com/news/2026-10-09/2027-Spring-Summer-Shanghai-Fashion-Week-kicks-off-1R60vT5iee4/p.html" },
+    { id: "n06", date: "2026-10-04", src: "CGTN·Culture", title: "'China in the Classics' kicks off its new season", link: "https://news.cgtn.com/news/2026-10-04/-China-in-the-Classics-kicks-off-its-new-season--1QY6T0FcfZe/p.html" },
+    { id: "n07", date: "2026-09-28", src: "CGTN·Travel", title: "China's civil aviation sector prepares for National Day travel rush", link: "https://news.cgtn.com/news/2026-09-28/China-s-civil-aviation-sector-prepares-for-National-Day-travel-rush-1QObVVBNidG/p.html" },
+    { id: "n08", date: "2026-09-28", src: "CGTN·Travel", title: "How about decorating your desk with Confucius figurines?", link: "https://news.cgtn.com/news/2026-09-28/How-about-decorating-your-desk-with-Confucius-figurines--1QOkJ26fVio/p.html" },
+    { id: "n09", date: "2026-09-24", src: "CGTN·Travel", title: "Market Days With Movies light up grassland tourism in Ordos", link: "https://news.cgtn.com/news/2026-09-24/Market-Days-With-Movies-light-up-grassland-tourism-in-Ordos-1QH2PhB7cys/p.html" },
+    { id: "n10", date: "2026-10-15", src: "CGTN·Business", title: "Canton Fair at 70: How China brings certainty to global trade", link: "https://news.cgtn.com/news/2026-10-15/Canton-Fair-at-70-How-China-brings-certainty-to-global-trade-1Rf1uSvT8DS/p.html" },
+    { id: "n11", date: "2026-10-07", src: "CGTN·Business", title: "Hong Kong retains position as world's freest economy, report finds", link: "https://news.cgtn.com/news/2026-10-07/Hong-Kong-retains-position-as-world-s-freest-economy-report-finds-1R2q2CZHCxO/p.html" },
+    { id: "n12", date: "2026-10-08", src: "CGTN·Business", title: "PBOC: China committed to market-driven exchange rate", link: "https://news.cgtn.com/news/2026-10-08/PBOC-China-committed-to-market-driven-exchange-rate-1R4SMyVnqx2/p.html" },
+    { id: "n13", date: "2026-10-17", src: "CGTN·China", title: "China's outdoor sports industry reaches 3.17 trillion yuan", link: "https://news.cgtn.com/news/2026-10-17/China-s-outdoor-sports-industry-reaches-3-17-trillion-yuan-1RjebFQrlHW/p.html" },
+    { id: "n14", date: "2026-10-17", src: "CGTN·China", title: "Jane Eyre finds herself on the Chinese musical stage", link: "https://news.cgtn.com/news/2026-10-17/Jane-Eyre-finds-herself-on-the-Chinese-musical-stage-1RiuM91EUQo/p.html" },
+    { id: "n15", date: "2026-10-15", src: "CGTN·China", title: "Xi highlights China's commitment to opening up as Canton Fair opens", link: "https://news.cgtn.com/news/2026-10-15/Xi-highlights-China-s-commitment-to-opening-up-as-Canton-Fair-opens-1RghUMtX4ac/p.html" }
   ],
   readings: [
     {
