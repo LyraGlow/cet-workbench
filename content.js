@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-20",
+  updated: "2026-10-21",
   news: [
-    { id: "n01", date: "2026-09-27", src: "CGTN·Sports", title: "Su Wen breaks 36-year triple jump record for first Asian Games gold", link: "https://news.cgtn.com/news/2026-09-27/Su-Wen-breaks-36-year-triple-jump-record-for-first-Asian-Games-gold-1QM5vmDkiqs/p.html" },
-    { id: "n02", date: "2026-09-25", src: "CGTN·Sports", title: "NBA G League United's visits to China strengthen basketball exchanges", link: "https://news.cgtn.com/news/2026-09-25/NBA-G-League-United-s-visits-to-China-strengthen-basketball-exchanges-1QILJoPQTAs/p.html" },
-    { id: "n03", date: "2026-09-12", src: "CGTN·Sports", title: "Chen Xingtong survives Hana Goda for WTT Champions Macao quarterfinals", link: "https://news.cgtn.com/news/2026-09-12/Chen-Xingtong-survives-Hana-Goda-for-WTT-Champions-Macao-quarterfinals-1QnahUlRkbu/p.html" },
-    { id: "n04", date: "2026-10-13", src: "CGTN·Culture", title: "Foreign diplomats embrace China's livestream commerce", link: "https://news.cgtn.com/news/2026-10-13/Foreign-diplomats-embrace-China-s-livestream-commerce-1RbBlwFJYxG/p.html" },
-    { id: "n05", date: "2026-10-12", src: "CGTN·Culture", title: "Documentary film screening draws international audience", link: "https://news.cgtn.com/news/2026-10-12/Documentary-film-screening-draws-international-audience-1Rbmk9K3QnS/p.html" },
-    { id: "n06", date: "2026-10-07", src: "CGTN·Culture", title: "Domestic hits push China's National Day box office past 1 billion yuan", link: "https://news.cgtn.com/news/2026-10-07/Domestic-hits-push-China-s-National-Day-box-office-past-1-billion-yuan-1R2TXOZRxug/p.html" },
-    { id: "n07", date: "2026-10-09", src: "CGTN·Travel", title: "China sees service consumption growth during National Day holiday", link: "https://news.cgtn.com/news/2026-10-09/China-sees-service-consumption-growth-during-National-Day-holiday-1R5UNomUhVe/p.html" },
-    { id: "n08", date: "2026-10-08", src: "CGTN·Travel", title: "Misty Jinxi: The timeless charm of a Jiangnan water town", link: "https://news.cgtn.com/news/2026-10-08/Misty-Jinxi-The-timeless-charm-of-a-Jiangnan-water-town-1R4AEPTFi80/p.html" },
-    { id: "n09", date: "2026-10-03", src: "CGTN·Travel", title: "The whole world knows China is on holiday", link: "https://news.cgtn.com/news/2026-10-03/The-whole-world-knows-China-is-on-holiday-1QWdX8yiGmQ/p.html" },
-    { id: "n10", date: "2026-10-12", src: "CGTN·Business", title: "China, EU reach multiple consensus outcomes on auto trade", link: "https://news.cgtn.com/news/2026-10-12/China-EU-reach-multiple-consensus-outcomes-on-auto-trade-1RberZFzuG4/p.html" },
-    { id: "n11", date: "2026-10-18", src: "CGTN·Business", title: "Ulanqab steps up building green computing hub", link: "https://news.cgtn.com/news/2026-10-18/Ulanqab-steps-up-building-green-computing-hub-1RlwbIludXy/p.html" },
-    { id: "n12", date: "2026-10-07", src: "CGTN·Business", title: "China's countryside is having a moment", link: "https://news.cgtn.com/news/2026-10-07/China-s-countryside-is-having-a-moment-1R3dxaUJxbW/p.html" },
-    { id: "n13", date: "2026-10-17", src: "CGTN·China", title: "Chinese FM meets Israeli president", link: "https://news.cgtn.com/news/2026-10-17/Chinese-FM-meets-Israeli-president-1RibaPyuRHO/p.html" },
-    { id: "n14", date: "2026-10-18", src: "CGTN·China", title: "Painted in autumn: Echoes of Tang poetry along Beijing's Liangma River", link: "https://news.cgtn.com/news/2026-10-18/Painted-in-autumn-Echoes-of-Tang-poetry-along-Beijing-s-Liangma-River-1QUBxTeLFT2/p.html" },
-    { id: "n15", date: "2026-10-17", src: "CGTN·China", title: "China to expand hydrogen use through pilots in five city clusters", link: "https://news.cgtn.com/news/2026-10-17/China-to-expand-hydrogen-use-through-pilots-in-five-city-clusters-1Rj5WUwPNo4/p.html" }
+    { id: "n01", date: "2026-09-29", src: "CGTN·Sports", title: "IOC launches Trustworthy AI Framework", link: "https://news.cgtn.com/news/2026-09-29/IOC-launches-Trustworthy-AI-Framework-1QPAzDjp3fa/p.html" },
+    { id: "n02", date: "2026-10-05", src: "CGTN·Sports", title: "WADA president visits Kenya amid doping concerns", link: "https://newsaf.cgtn.com/news/2026-10-05/WADA-president-visits-Kenya-amid-doping-concerns-1QZTZOklxg4/p.html" },
+    { id: "n03", date: "2026-09-16", src: "CGTN·Sports", title: "Football star James Rodríguez ends 15-year Colombia career at age 35", link: "https://news.cgtn.com/news/2026-09-16/Football-star-James-Rodr-guez-ends-15-year-Colombia-career-at-age-35-1QtU8p9h6Ks/p.html" },
+    { id: "n04", date: "2026-10-10", src: "CGTN·Culture", title: "Beijing Music Festival opens with Mozart extravaganza", link: "https://news.cgtn.com/news/2026-10-10/Beijing-Music-Festival-opens-with-Mozart-extravaganza-1R7SHhV8pfa/p.html" },
+    { id: "n05", date: "2026-10-15", src: "CGTN·Culture", title: "'The Long March: A Road Without End' set for global release", link: "https://news.cgtn.com/news/2026-10-15/-The-Long-March-A-Road-Without-End-set-for-global-release-1Rgdagq927K/p.html" },
+    { id: "n06", date: "2026-10-06", src: "CGTN·Culture", title: "Chaka Salt Lake welcomes National Day holiday crowds", link: "https://news.cgtn.com/news/2026-10-06/Chaka-Salt-Lake-welcomes-National-Day-holiday-crowds-1R1iq1uWzBe/p.html" },
+    { id: "n07", date: "2026-10-17", src: "CGTN·Travel", title: "Behind the masks: A spirit that endures", link: "https://news.cgtn.com/news/2026-10-17/Behind-the-masks-A-spirit-that-endures-1RaQmYpXrFK/p.html" },
+    { id: "n08", date: "2026-09-24", src: "CGTN·Travel", title: "China's Green Code EP2 is out now: Growing Green", link: "https://news.cgtn.com/news/2026-09-24/China-s-Green-Code-EP2-is-out-now-Growing-Green-1QH6vMAimyY/p.html" },
+    { id: "n09", date: "2026-09-24", src: "CGTN·Travel", title: "Chinese for a Day: Noodles and vinegar Coke | Crossing Paths", link: "https://news.cgtn.com/news/2026-09-24/Chinese-for-a-Day-Noodles-and-vinegar-Coke-Crossing-Paths--1QCwoGk2eNW/p.html" },
+    { id: "n10", date: "2026-10-15", src: "CGTN·Business", title: "China's FDI stock ranks second globally at 26.8 trillion yuan", link: "https://news.cgtn.com/news/2026-10-15/China-s-FDI-equity-stock-ranks-second-globally-at-26-8-trillion-yuan-1RgkTTptk8U/p.html" },
+    { id: "n11", date: "2026-10-19", src: "CGTN·Business", title: "CGTN Poll: China's financial opening-up eases global governance woes", link: "https://news.cgtn.com/news/2026-10-19/CGTN-Poll-China-s-financial-opening-up-eases-global-governance-woes-1Rn3xmNyYX6/p.html" },
+    { id: "n12", date: "2026-10-15", src: "CGTN·Business", title: "Hot US inflation, rising AI costs spark global chip stock rout", link: "https://news.cgtn.com/news/2026-10-15/Hot-US-inflation-rising-AI-costs-spark-global-chip-stock-rout-1RgbacuNxwA/p.html" },
+    { id: "n13", date: "2026-10-20", src: "CGTN·China", title: "UN biodiversity conference begins formal sessions in Armenia", link: "https://news.cgtn.com/news/2026-10-20/UN-biodiversity-conference-begins-formal-sessions-in-Armenia-1Ro3iUxLEjK/p.html" },
+    { id: "n14", date: "2026-10-19", src: "CGTN·China", title: "CGTN launches immersive multilingual experience on the Long March", link: "https://news.cgtn.com/news/2026-10-19/CGTN-launches-immersive-multilingual-experience-on-the-Long-March-1RmZwnqlA4w/p.html" },
+    { id: "n15", date: "2026-10-19", src: "CGTN·China", title: "Stunning! First snow hits Xinjiang's Tianchi Lake", link: "https://news.cgtn.com/news/2026-10-19/Stunning-First-snow-hits-Xinjiang-s-Tianchi-Lake-1RmExISwbIc/p.html" }
   ],
   readings: [
     {
