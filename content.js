@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-22",
+  updated: "2026-10-23",
   news: [
-    { id: "n01", date: "2026-10-19", src: "CGTN·Sports", title: "Fifth Asian Para Games open in Aichi-Nagoya with nearly 3,000 athletes", link: "https://news.cgtn.com/news/2026-10-19/Fifth-Asian-Para-Games-open-in-Aichi-Nagoya-with-nearly-3-000-athletes-1RmxTuya5j2/p.html" },
-    { id: "n02", date: "2026-10-03", src: "CGTN·Sports", title: "Beyond the Medal Table: Asian Games, Esports, Asia's sporting powers", link: "https://news.cgtn.com/news/2026-10-03/Beyond-the-Medal-Table-Asian-Games-Esports-Asia-s-sporting-powers-1QVVqv8fpmw/p.html" },
-    { id: "n03", date: "2026-09-15", src: "CGTN·Sports", title: "China routs defending champion Philippines to finish top in Group C", link: "https://news.cgtn.com/news/2026-09-15/China-routs-defending-champion-Philippines-to-finish-top-in-Group-C-1Qs9WzgueGI/p.html" },
-    { id: "n04", date: "2026-10-20", src: "CGTN·Culture", title: "Who's learning Mandarin? 210 million learners, celebrity kids and more", link: "https://news.cgtn.com/news/2026-10-20/Who-s-learning-Mandarin-200-million-learners-celebrity-kids-and-more-1RoQsZO3Hgc/p.html" },
-    { id: "n05", date: "2026-10-15", src: "CGTN·Culture", title: "Grasslands in N China's Inner Mongolia ablaze with autumn hues", link: "https://news.cgtn.com/news/2026-10-15/Grasslands-in-N-China-s-Inner-Mongolia-ablaze-with-autumn-hues-1RfQJmHipC8/p.html" },
-    { id: "n06", date: "2026-10-08", src: "CGTN·Culture", title: "Canadian Anne Carson wins 2026 Nobel Prize in Literature", link: "https://news.cgtn.com/news/2026-10-08/news-1R4UMOJTbVK/p.html" },
-    { id: "n07", date: "2026-10-20", src: "CGTN·Travel", title: "Chasing autumn colors in Beijing", link: "https://news.cgtn.com/news/2026-10-20/Chasing-autumn-colors-in-Beijing-1Roxzg2otVu/p.html" },
-    { id: "n08", date: "2026-10-12", src: "CGTN·Travel", title: "The Ming dynasty, still alive", link: "https://news.cgtn.com/news/2026-10-12/The-Ming-dynasty-still-alive-1RaPGiXSlZC/p.html" },
-    { id: "n09", date: "2026-10-03", src: "CGTN·Travel", title: "'China Haul' trend highlights China's growing global appeal", link: "https://news.cgtn.com/news/2026-10-03/-China-Haul-trend-highlights-China-s-growing-global-appeal-1QWEIDCf9sc/p.html" },
-    { id: "n10", date: "2026-10-16", src: "CGTN·Business", title: "BizDataDive: China steps up talent training and skills development", link: "https://news.cgtn.com/news/2026-10-16/BizDataDive-China-steps-up-talent-training-and-skills-development-1Ri1b7U2rAc/p.html" },
-    { id: "n11", date: "2026-10-20", src: "CGTN·Business", title: "AI reshapes global economy, bringing both opportunities and challenges", link: "https://news.cgtn.com/news/2026-10-20/AI-reshapes-global-economy-bringing-both-opportunities-and-challenges-1RouBzvvfos/p.html" },
-    { id: "n12", date: "2026-10-12", src: "CGTN·Business", title: "China, EU reach multiple consensus outcomes on auto trade", link: "https://news.cgtn.com/news/2026-10-12/China-EU-reach-multiple-consensus-outcomes-on-auto-trade-1RberZFzuG4/p.html" },
-    { id: "n13", date: "2026-10-20", src: "CGTN·China", title: "Chinese central bank to employ 3-part AI strategy, says governor", link: "https://news.cgtn.com/news/2026-10-20/Chinese-central-bank-to-employ-3-part-AI-strategy-says-governor-1Rp01zM009O/p.html" },
-    { id: "n14", date: "2026-10-20", src: "CGTN·China", title: "Chasing autumn colors in Beijing", link: "https://news.cgtn.com/news/2026-10-20/Chasing-autumn-colors-in-Beijing-1Roxzg2otVu/p.html" },
-    { id: "n15", date: "2026-10-20", src: "CGTN·China", title: "Xi calls for high-quality growth with high-level protection", link: "https://news.cgtn.com/news/2026-10-20/Xi-calls-for-high-quality-growth-with-high-level-protection-1Rn16Yk0t7q/p.html" }
+    { id: "n01", date: "2026-10-17", src: "CGTN·Sports", title: "How Zheng Qinwen transformed her game and mindset in two months", link: "https://news.cgtn.com/news/2026-10-17/How-Zheng-Qinwen-transformed-her-game-and-mindset-in-two-months-1RjbdSFXKwg/p.html" },
+    { id: "n02", date: "2026-10-02", src: "CGTN·Sports", title: "Xie Zhenye backs China's young sprinters to shine on world stage", link: "https://news.cgtn.com/news/2026-10-02/Xie-Zhenye-backs-China-s-young-sprinters-to-shine-on-world-stage-1QUkbCV8cDe/p.html" },
+    { id: "n03", date: "2026-09-18", src: "CGTN·Sports", title: "Yang Shuai header lifts Shanghai Shenhua past Tampines Rovers", link: "https://news.cgtn.com/news/2026-09-18/Yang-Shuai-header-lifts-Shanghai-Shenhua-past-Tampines-Rovers-1Qx5Ozlc3yE/p.html" },
+    { id: "n04", date: "2026-10-21", src: "CGTN·Culture", title: "Yunnan snub-nosed monkeys enjoy bamboo feast in southwest China", link: "https://news.cgtn.com/news/2026-10-21/Yunnan-snub-nosed-monkeys-enjoy-bamboo-feast-in-southwest-China-1RqhLqn9w1q/p.html" },
+    { id: "n05", date: "2026-10-16", src: "CGTN·Culture", title: "The Long March, reimagined through seal art", link: "https://news.cgtn.com/news/2026-10-16/The-Long-March-reimagined-through-seal-art-1RhQlvWq3gA/p.html" },
+    { id: "n06", date: "2026-10-09", src: "CGTN·Culture", title: "Symposium held to study Xi's works on culture", link: "https://news.cgtn.com/news/2026-10-09/Symposium-held-to-study-Xi-s-works-on-culture-1R6zQjPACHe/p.html" },
+    { id: "n07", date: "2026-10-17", src: "CGTN·Travel", title: "Poll on Japanese PM Sanae Takaichi's offering to Yasukuni Shrine", link: "https://news.cgtn.com/news/2026-10-17/Poll-on-Japanese-PM-Sanae-Takaichi-s-offering-to-Yasukuni-Shrine-1RjDDngddBu/p.html" },
+    { id: "n08", date: "2026-10-02", src: "CGTN·Travel", title: "China's railway passenger trips hit record single-day high", link: "https://news.cgtn.com/news/2026-10-02/China-s-railway-passenger-trips-hit-record-single-day-high-1QUIZPVheVi/p.html" },
+    { id: "n09", date: "2026-09-25", src: "CGTN·Travel", title: "2026 Beijing Animation Festival opens", link: "https://news.cgtn.com/news/2026-09-25/2026-Beijing-Animation-Festival-opens-1QJ5Ny85IqI/p.html" },
+    { id: "n10", date: "2026-10-17", src: "CGTN·Business", title: "IMF: China's growth is a huge multiplier for Asia and the world", link: "https://news.cgtn.com/news/2026-10-17/IMF-China-s-growth-is-a-huge-multiplier-for-Asia-and-the-world-1Rjvgo8sR9u/p.html" },
+    { id: "n11", date: "2026-10-19", src: "CGTN·Business", title: "China-EU hybrid car understanding: What it means for automakers", link: "https://news.cgtn.com/news/2026-10-19/China-EU-hybrid-car-understanding-What-it-means-for-automakers-1RmGy714HAc/p.html" },
+    { id: "n12", date: "2026-10-15", src: "CGTN·Business", title: "Full text: Premier Li Qiang speaks at Canton Fair opening ceremony", link: "https://news.cgtn.com/news/2026-10-15/Full-text-Premier-Li-Qiang-speaks-at-Canton-Fair-opening-ceremony-1RghO7yHADm/p.html" },
+    { id: "n13", date: "2026-10-22", src: "CGTN·China", title: "Chinese FM meets Djibouti's counterpart", link: "https://news.cgtn.com/news/2026-10-22/Chinese-FM-meets-Djibouti-s-counterpart-1RrjSMlD7t6/p.html" },
+    { id: "n14", date: "2026-10-21", src: "CGTN·China", title: "Young musicians bring fresh energy to Beijing Music Festival finale", link: "https://news.cgtn.com/news/2026-10-21/Young-musicians-bring-fresh-energy-to-Beijing-Music-Festival-finale-1RqgBUMYwP6/p.html" },
+    { id: "n15", date: "2026-10-21", src: "CGTN·China", title: "China's Belt and Road partnership fuels inclusive global governance", link: "https://news.cgtn.com/news/2026-10-21/China-s-Belt-and-Road-partnership-fuels-inclusive-global-governance-1RpRv6wSNuE/p.html" }
   ],
   readings: [
     {
