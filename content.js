@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-27",
+  updated: "2026-10-28",
   news: [
-    { id: "n01", date: "2026-10-18", src: "CGTN·Sports", title: "Zverev, Medvedev ousted with Spanish duo to clash for Shanghai title", link: "https://news.cgtn.com/news/2026-10-18/Zverev-Medvedev-ousted-with-Spanish-duo-to-clash-for-Shanghai-title-1RkV2SW3mpi/p.html" },
-    { id: "n02", date: "2026-09-29", src: "CGTN·Sports", title: "IOC launches Trustworthy AI Framework", link: "https://news.cgtn.com/news/2026-09-29/IOC-launches-Trustworthy-AI-Framework-1QPAzDjp3fa/p.html" },
-    { id: "n03", date: "2026-09-30", src: "CGTN·Sports", title: "China closes athletics with three golds at Asian Games", link: "https://news.cgtn.com/news/2026-09-30/China-closes-athletics-with-three-golds-at-Asian-Games-1QR6uHtLDlm/p.html" },
-    { id: "n04", date: "2026-10-23", src: "CGTN·Culture", title: "Beijing's central axis: Yandaixiejie Street and Wanning Bridge", link: "https://news.cgtn.com/news/2026-10-23/Beijing-s-central-axis-Yandaixiejie-Street-and-Wanning-Bridge-1RtBYQSjscw/p.html" },
-    { id: "n05", date: "2026-10-16", src: "CGTN·Culture", title: "Retracing the Long March through screen stories", link: "https://news.cgtn.com/news/2026-10-16/Retracing-the-Long-March-through-screen-stories-1RhQtYKsLw4/p.html" },
-    { id: "n06", date: "2026-10-18", src: "CGTN·Culture", title: "2026 Yangtze River Delta International Youth Film Festival opens", link: "https://news.cgtn.com/news/2026-10-18/2026-Yangtze-River-Delta-International-Youth-Film-Festival-opens-1Rld9kPWbOo/p.html" },
-    { id: "n07", date: "2026-10-19", src: "CGTN·Travel", title: "Good omens in Anhui architecture", link: "https://news.cgtn.com/news/2026-10-19/Good-omens-in-Anhui-architecture-1RkbuPU2ECs/p.html" },
-    { id: "n08", date: "2026-10-05", src: "CGTN·Travel", title: "Tourists enjoy desert fun in Kashi during National Day holiday", link: "https://news.cgtn.com/news/2026-10-05/Tourists-enjoy-desert-fun-in-Kashi-during-National-Day-holiday-1QZHSnOvq5q/p.html" },
-    { id: "n09", date: "2026-10-06", src: "CGTN·Travel", title: "Bronze statue and twin pagodas reveal Hainan’s hidden cultural depth", link: "https://news.cgtn.com/news/2026-10-06/Bronze-statue-and-twin-pagodas-reveal-Hainan-s-hidden-cultural-depth-1R1kzWvP7KE/p.html" },
-    { id: "n10", date: "2026-10-17", src: "CGTN·Business", title: "China's export controls on PV: Precision, balance, and rules-based", link: "https://news.cgtn.com/news/2026-10-17/China-s-export-controls-on-PV-Precision-balance-and-rules-based-1Rjpz3TKF20/p.html" },
-    { id: "n11", date: "2026-10-23", src: "CGTN·Business", title: "What happens after people are lifted out of poverty in China?", link: "https://news.cgtn.com/news/2026-10-23/What-happens-after-people-are-lifted-out-of-poverty-in-China--1RtIwXf9XEs/p.html" },
-    { id: "n12", date: "2026-10-15", src: "CGTN·Business", title: "Full text: Premier Li Qiang speaks at Canton Fair opening ceremony", link: "https://news.cgtn.com/news/2026-10-15/Full-text-Premier-Li-Qiang-speaks-at-Canton-Fair-opening-ceremony-1RghO7yHADm/p.html" },
-    { id: "n13", date: "2026-10-25", src: "CGTN·China", title: "China’s rural revival: How a cliffside village defies isolation", link: "https://newsaf.cgtn.com/news/2026-10-25/China-s-rural-revival-How-a-cliffside-village-defies-isolation-1RwUE5Gi9qw/p.html" },
-    { id: "n14", date: "2026-10-23", src: "CGTN·China", title: "Ethiopian expert calls for dialogue, cooperation on global governance", link: "https://news.cgtn.com/news/2026-10-23/Ethiopian-expert-calls-for-dialogue-cooperation-on-global-governance-1RtUTGl1ANa/p.html" },
-    { id: "n15", date: "2026-10-23", src: "CGTN·China", title: "Wang Yi holds talks with Foreign Minister of Congo on bilateral ties", link: "https://news.cgtn.com/news/2026-10-23/Wang-Yi-holds-talks-with-Foreign-Minister-of-Congo-on-bilateral-ties-1RtawnyMVj2/p.html" }
+    { id: "n01", date: "2026-10-13", src: "CGTN·Sports", title: "Alcaraz exits Shanghai Masters in straight-sets loss", link: "https://news.cgtn.com/news/2026-10-13/Alcaraz-exits-Shanghai-Masters-in-straight-sets-loss-1RcAQwKYvQI/p.html" },
+    { id: "n02", date: "2026-09-24", src: "CGTN·Sports", title: "Tong Xin retains Asian Games Taijiquan and Taijijian titles", link: "https://news.cgtn.com/news/2026-09-24/Tong-Xin-retains-Asian-Games-Taijiquan-and-Taijijian-titles-1QHgpAskTza/p.html" },
+    { id: "n03", date: "2026-09-25", src: "CGTN·Sports", title: "NBA G League United's visits to China strengthen basketball exchanges", link: "https://news.cgtn.com/news/2026-09-25/NBA-G-League-United-s-visits-to-China-strengthen-basketball-exchanges-1QILJoPQTAs/p.html" },
+    { id: "n04", date: "2026-10-14", src: "CGTN·Culture", title: "Creative program: This Is Kung Fu", link: "https://news.cgtn.com/news/2026-10-14/Creative-program-This-Is-Kung-Fu-1ReGVtLpBVm/p.html" },
+    { id: "n05", date: "2026-10-15", src: "CGTN·Culture", title: "Grasslands in N China's Inner Mongolia ablaze with autumn hues", link: "https://news.cgtn.com/news/2026-10-15/Grasslands-in-N-China-s-Inner-Mongolia-ablaze-with-autumn-hues-1RfQJmHipC8/p.html" },
+    { id: "n06", date: "2026-10-14", src: "CGTN·Culture", title: "The Long March in paint: Retracing the journey through art", link: "https://news.cgtn.com/news/2026-10-14/The-Long-March-in-paint-Retracing-the-journey-through-art-1ReljFspTFu/p.html" },
+    { id: "n07", date: "2026-10-24", src: "CGTN·Travel", title: "Discover the She Culture in Anhui", link: "https://news.cgtn.com/news/2026-10-24/Discover-the-She-Culture-in-Anhui-1RrPT7aOyyc/p.html" },
+    { id: "n08", date: "2026-10-12", src: "CGTN·Travel", title: "A journey in Beijing through history, culture and music", link: "https://news.cgtn.com/news/2026-10-12/A-journey-in-Beijing-through-history-culture-and-music-1Rbk3zHp2I8/p.html" },
+    { id: "n09", date: "2026-10-14", src: "CGTN·Travel", title: "VR recreates historical scene of Red Army's capture of Luding Bridge", link: "https://news.cgtn.com/news/2026-10-14/VR-recreates-historical-scene-of-Red-Army-s-capture-of-Luding-Bridge--1ReE9eOzYiI/p.html" },
+    { id: "n10", date: "2026-10-22", src: "CGTN·Business", title: "China upgrades digital yuan to expand payments, smart contracts", link: "https://news.cgtn.com/news/2026-10-22/China-upgrades-digital-yuan-to-expand-payments-smart-contracts-1RrVufoO9Bm/p.html" },
+    { id: "n11", date: "2026-10-14", src: "CGTN·Business", title: "Wall Street firms tie bonuses, promotions to AI skills, survey finds", link: "https://news.cgtn.com/news/2026-10-14/Wall-Street-firms-tie-bonuses-promotions-to-AI-skills-survey-finds-1ReXdxQoa88/p.html" },
+    { id: "n12", date: "2026-10-14", src: "CGTN·Business", title: "Premier Li calls on cooperation in global industrial and supply chains", link: "https://news.cgtn.com/news/2026-10-14/Premier-Li-calls-on-cooperation-in-global-industrial-and-supply-chains-1ReSzCVW8us/p.html" },
+    { id: "n13", date: "2026-10-26", src: "CGTN·China", title: "Hong Kong to host 94th Interpol General Assembly", link: "https://news.cgtn.com/news/2026-10-26/Hong-Kong-to-host-94th-Interpol-General-Assembly-1RysNMAV16g/p.html" },
+    { id: "n14", date: "2026-10-24", src: "CGTN·China", title: "Xi sends message to 2026 Global Governance Forum", link: "https://news.cgtn.com/news/2026-10-24/Xi-sends-message-to-2026-Global-Governance-Forum--1Rvb9SMO6yY/p.html" },
+    { id: "n15", date: "2026-10-24", src: "CGTN·China", title: "Courtyard meetings give villagers a say in local spending", link: "https://news.cgtn.com/news/2026-10-24/Courtyard-meetings-give-villagers-a-say-in-local-spending-1RuUft5HG9i/p.html" }
   ],
   readings: [
     {
