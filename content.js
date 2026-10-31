@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-10-30",
+  updated: "2026-10-31",
   news: [
-    { id: "n01", date: "2026-10-09", src: "CGTN·Sports", title: "One name per category: Football's ultimate debate", link: "https://news.cgtn.com/news/2026-10-09/One-name-per-category-Football-s-ultimate-debate-1R5XIbZGoy4/p.html" },
-    { id: "n02", date: "2026-09-22", src: "CGTN·Sports", title: "China collects 12 golds as records fall on Day 2 at 2026 Asian Games", link: "https://news.cgtn.com/news/2026-09-22/China-collects-12-golds-as-records-fall-on-Day-2-at-2026-Asian-Games-1QDHxqMrOfK/p.html" },
-    { id: "n03", date: "2026-09-24", src: "CGTN·Sports", title: "China claims 16 golds on Wednesday as swimmers and gymnasts shine", link: "https://news.cgtn.com/news/2026-09-24/China-claims-16-golds-on-Wednesday-as-swimmers-and-gymnasts-shine-1QHh09UXUgU/p.html" },
-    { id: "n04", date: "2026-10-22", src: "CGTN·Culture", title: "China Post issues stamps for 90th anniversary of Long March victory", link: "https://news.cgtn.com/news/2026-10-22/China-Post-issues-stamps-for-90th-anniversary-of-Long-March-victory-1RrPHRJOLM4/p.html" },
-    { id: "n05", date: "2026-10-13", src: "CGTN·Culture", title: "Ming-era gold crown showcases exquisite craftsmanship", link: "https://news.cgtn.com/news/2026-10-13/Ming-era-gold-crown-showcases-exquisite-craftsmanship-1Rd3Mb6QOHK/p.html" },
-    { id: "n06", date: "2026-10-14", src: "CGTN·Culture", title: "The Long March in paint: Retracing the journey through art", link: "https://news.cgtn.com/news/2026-10-14/The-Long-March-in-paint-Retracing-the-journey-through-art-1ReljFspTFu/p.html" },
-    { id: "n07", date: "2026-10-24", src: "CGTN·Travel", title: "Wuhu Port: A moving link for made-in-China cars going global", link: "https://news.cgtn.com/news/2026-10-24/Wuhu-Port-A-moving-link-for-made-in-China-cars-going-global-1RrQfCuCOQM/p.html" },
-    { id: "n08", date: "2026-10-08", src: "CGTN·Travel", title: "China sees 2.14 bln cross-regional trips during National Day holiday", link: "https://news.cgtn.com/news/2026-10-08/China-sees-2-14-bln-cross-regional-trips-during-National-Day-holiday-1R4nJs4kcsE/p.html" },
-    { id: "n09", date: "2026-10-14", src: "CGTN·Travel", title: "VR recreates historical scene of Red Army's capture of Luding Bridge", link: "https://news.cgtn.com/news/2026-10-14/VR-recreates-historical-scene-of-Red-Army-s-capture-of-Luding-Bridge--1ReE9eOzYiI/p.html" },
-    { id: "n10", date: "2026-10-15", src: "CGTN·Business", title: "China's FDI stock ranks second globally at 26.8 trillion yuan", link: "https://news.cgtn.com/news/2026-10-15/China-s-FDI-equity-stock-ranks-second-globally-at-26-8-trillion-yuan-1RgkTTptk8U/p.html" },
-    { id: "n11", date: "2026-10-20", src: "CGTN·Business", title: "Chinese central bank to employ 3-part AI strategy, says governor", link: "https://news.cgtn.com/news/2026-10-20/Chinese-central-bank-to-employ-3-part-AI-strategy-says-governor-1Rp01zM009O/p.html" },
-    { id: "n12", date: "2026-10-15", src: "CGTN·Business", title: "China-Europe EV cooperation: Building a greener future together", link: "https://news.cgtn.com/news/2026-10-15/China-Europe-EV-cooperation-Building-a-greener-future-together-1RgeMiAmJkA/p.html" },
-    { id: "n13", date: "2026-10-26", src: "CGTN·China", title: "Xi's speech marking 90th anniversary of Long March victory published", link: "https://news.cgtn.com/news/2026-10-26/Xi-s-speech-marking-90th-anniversary-of-Long-March-victory-published-1RyKUD17paU/p.html" },
-    { id: "n14", date: "2026-10-28", src: "CGTN·China", title: "China is putting ecosystems on the road to recovery", link: "https://news.cgtn.com/news/2026-10-28/China-is-putting-ecosystems-on-the-road-to-recovery-1RBYxVoQCf6/p.html" },
-    { id: "n15", date: "2026-10-26", src: "CGTN·China", title: "How the CPC stays strong through self-renewal", link: "https://news.cgtn.com/news/2026-10-26/How-the-CPC-stays-strong-through-self-renewal-1RyecZfl0m4/p.html" }
+    { id: "n01", date: "2026-10-06", src: "CGTN·Sports", title: "Sun Yingsha reaches second round at WTT China Smash", link: "https://news.cgtn.com/news/2026-10-06/Sun-Yingsha-reaches-second-round-at-WTT-China-Smash-1R0Y6nJvXUc/p.html" },
+    { id: "n02", date: "2026-10-29", src: "CGTN·Sports", title: "Africa Watch: Dakar 2026: Africa’s Olympic Moment?", link: "https://newsaf.cgtn.com/news/2026-10-29/Africa-Watch-Dakar-2026-Africa-s-Olympic-Moment--1RDXFpWviko/p.html" },
+    { id: "n03", date: "2026-09-22", src: "CGTN·Sports", title: "Refugee taekwondo athlete Al Hinide targets gold medal at Asian Games", link: "https://news.cgtn.com/news/2026-09-22/Refugee-taekwondo-athlete-Al-Hinide-targets-gold-medal-at-Asian-Games-1QDSgAyMo24/p.html" },
+    { id: "n04", date: "2026-10-21", src: "CGTN·Culture", title: "BMF walk capturing: Beijing's raw sonic notes", link: "https://news.cgtn.com/news/2026-10-21/BMF-walk-capturing-Beijing-s-raw-sonic-notes-1RqiXryUY5q/p.html" },
+    { id: "n05", date: "2026-10-30", src: "CGTN·Culture", title: "Beyond the stage: Young musicians make a difference", link: "https://news.cgtn.com/news/2026-10-30/Beyond-the-stage-Young-musicians-make-a-difference-1RERz2Rx7aM/p.html" },
+    { id: "n06", date: "2026-10-16", src: "CGTN·Culture", title: "A lifetime of care: The doctor who never left a remote Chinese county", link: "https://news.cgtn.com/news/2026-10-16/A-lifetime-of-care-The-doctor-who-never-left-a-remote-Chinese-county-1RhGgBBJwqI/p.html" },
+    { id: "n07", date: "2026-10-13", src: "CGTN·Travel", title: "Ming-era gold crown showcases exquisite craftsmanship", link: "https://news.cgtn.com/news/2026-10-13/Ming-era-gold-crown-showcases-exquisite-craftsmanship-1Rd3Mb6QOHK/p.html" },
+    { id: "n08", date: "2026-10-29", src: "CGTN·Travel", title: "Dreamy clouds wrap UNESCO Mount Fanjing", link: "https://news.cgtn.com/news/2026-10-29/Dreamy-clouds-wrap-UNESCO-Mount-Fanjing-1RDt61pNprG/p.html" },
+    { id: "n09", date: "2026-10-07", src: "CGTN·Travel", title: "China's railways hit the return peak as holidaymakers head home", link: "https://news.cgtn.com/news/2026-10-07/China-s-railways-hit-the-return-peak-as-holidaymakers-head-home-1R3dtnYPpsc/p.html" },
+    { id: "n10", date: "2026-10-15", src: "CGTN·Business", title: "China's foreign trade at 70: From 'mutual exchange' to global lynchpin", link: "https://news.cgtn.com/news/2026-10-15/China-s-foreign-trade-at-70-From-mutual-exchange-to-global-lynchpin-1Rgj6b8Opu8/p.html" },
+    { id: "n11", date: "2026-10-25", src: "CGTN·Business", title: "UAE's Ras Al Khaimah signs friendship agreement with Fujian Province", link: "https://news.cgtn.com/news/2026-10-25/UAE-s-Ras-Al-Khaimah-signs-friendship-agreement-with-Fujian-Province-1RwBpebJbDq/p.html" },
+    { id: "n12", date: "2026-10-19", src: "CGTN·Business", title: "China's economy grows 4.6% as output, demand reinforce each other", link: "https://news.cgtn.com/news/2026-10-19/China-s-economy-grows-4-6-as-output-demand-reinforce-each-other-1RngAuqXtqU/p.html" },
+    { id: "n13", date: "2026-10-28", src: "CGTN·China", title: "HKSAR suspends import of poultry products from areas in Denmark, US", link: "https://news.cgtn.com/news/2026-10-28/HKSAR-suspends-import-of-poultry-products-from-areas-in-Denmark-US-1RBmBkW4yuQ/p.html" },
+    { id: "n14", date: "2026-10-29", src: "CGTN·China", title: "Communique of the Fifth Plenary Session of 20th CPC Central Committee", link: "https://news.cgtn.com/news/2026-10-29/Communique-of-the-Fifth-Plenary-Session-of-20th-CPC-Central-Committee-1RDN23bl4ze/p.html" },
+    { id: "n15", date: "2026-10-27", src: "CGTN·China", title: "Full, rigorous party self-governance: How the CPC stays accountable", link: "https://news.cgtn.com/news/2026-10-27/Full-rigorous-party-self-governance-How-the-CPC-stays-accountable-1RAd24nngIw/p.html" }
   ],
   readings: [
     {
