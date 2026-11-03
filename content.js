@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-11-02",
+  updated: "2026-11-03",
   news: [
-    { id: "n01", date: "2026-10-17", src: "CGTN·Sports", title: "How Zheng Qinwen transformed her game and mindset in two months", link: "https://news.cgtn.com/news/2026-10-17/How-Zheng-Qinwen-transformed-her-game-and-mindset-in-two-months-1RjbdSFXKwg/p.html" },
-    { id: "n02", date: "2026-10-25", src: "CGTN·Sports", title: "2026 Baoji Marathon kicks off, drawing runners from all walks of life", link: "https://news.cgtn.com/news/2026-10-25/2026-Baoji-Marathon-kicks-off-drawing-runners-from-all-walks-of-life-1Rxee9hoZ6E/p.html" },
-    { id: "n03", date: "2026-09-27", src: "CGTN·Sports", title: "Exclusive: Mutaz Essa Barshim eyes his fifth Asian Games and beyond", link: "https://news.cgtn.com/news/2026-09-27/Exclusive-Mutaz-Essa-Barshim-eyes-his-fifth-Asian-Games-and-beyond-1QM7HWZgw4U/p.html" },
-    { id: "n04", date: "2026-10-24", src: "CGTN·Culture", title: "Avoiding suspicion: An ancient lesson for modern governance", link: "https://news.cgtn.com/news/2026-10-24/Avoiding-suspicion-An-ancient-lesson-for-modern-governance-1RuUb8LWzYc/p.html" },
-    { id: "n05", date: "2026-10-28", src: "CGTN·Culture", title: "Australia returns two cultural relics to China", link: "https://news.cgtn.com/news/2026-10-28/Australia-returns-two-cultural-relics-to-China-1RBBuEhs9Vu/p.html" },
-    { id: "n06", date: "2026-10-18", src: "CGTN·Culture", title: "2026 Yangtze River Delta International Youth Film Festival opens", link: "https://news.cgtn.com/news/2026-10-18/2026-Yangtze-River-Delta-International-Youth-Film-Festival-opens-1Rld9kPWbOo/p.html" },
-    { id: "n07", date: "2026-10-19", src: "CGTN·Travel", title: "Golden autumn transforms desert poplar forests in Inner Mongolia", link: "https://news.cgtn.com/news/2026-10-19/Golden-autumn-transforms-desert-poplar-forests-in-Inner-Mongolia-1RmPqNqSUHC/p.html" },
-    { id: "n08", date: "2026-10-25", src: "CGTN·Travel", title: "Tracing the Vision: The Ecology of Prosperity", link: "https://news.cgtn.com/news/2026-10-25/Tracing-the-Vision-The-Ecology-of-Prosperity-1RtTikfpx3q/p.html" },
-    { id: "n09", date: "2026-10-09", src: "CGTN·Travel", title: "Macao draws record National Day crowds", link: "https://news.cgtn.com/news/2026-10-09/Macao-draws-record-National-Day-crowds-1R6lurnnz0s/p.html" },
+    { id: "n01", date: "2026-10-17", src: "CGTN·Sports", title: "China's outdoor sports industry reaches 3.17 trillion yuan", link: "https://news.cgtn.com/news/2026-10-17/China-s-outdoor-sports-industry-reaches-3-17-trillion-yuan-1RjebFQrlHW/p.html" },
+    { id: "n02", date: "2026-10-24", src: "CGTN·Sports", title: "Baoji Marathon draws 31,000 runners, highlights ancient culture", link: "https://news.cgtn.com/news/2026-10-24/Baoji-Marathon-draws-31-000-runners-highlights-ancient-culture-1RvD06t6jHG/p.html" },
+    { id: "n03", date: "2026-09-23", src: "CGTN·Sports", title: "Swimming roundup: China collects four more titles at Asian Games", link: "https://news.cgtn.com/news/2026-09-23/Swimming-roundup-China-collects-four-more-titles-at-Asian-Games-1QFrx6DxeHS/p.html" },
+    { id: "n04", date: "2026-10-24", src: "CGTN·Culture", title: "AI recreates Long March history in anniversary TV gala", link: "https://news.cgtn.com/news/2026-10-24/AI-recreates-Long-March-history-in-anniversary-TV-gala-1RvjqCDah1u/p.html" },
+    { id: "n05", date: "2026-10-27", src: "CGTN·Culture", title: "Art Up Close | Ancient walls, new sounds", link: "https://news.cgtn.com/news/2026-10-27/Art-Up-Close-Ancient-walls-new-sounds-1RzWrik2tBC/p.html" },
+    { id: "n06", date: "2026-10-15", src: "CGTN·Culture", title: "Grassroots Consultation: Beijing salon brings dialogue on governance", link: "https://news.cgtn.com/news/2026-10-15/Grassroots-Consultation-Beijing-salon-brings-dialogue-on-governance-1RfS0IIgmK4/p.html" },
+    { id: "n07", date: "2026-10-26", src: "CGTN·Travel", title: "Blink and You'll Miss It: Yangtze Finless Porpoises", link: "https://news.cgtn.com/news/2026-10-26/Blink-and-You-ll-Miss-It-Yangtze-Finless-Porpoises-1RmVlGffDnq/p.html" },
+    { id: "n08", date: "2026-10-28", src: "CGTN·Travel", title: "\"The future is here!\" US student explores Shenzhen before APEC 2026", link: "https://news.cgtn.com/news/2026-10-28/-The-future-is-here-US-student-explores-Shenzhen-before-APEC-2026-1RBONzxowiQ/p.html" },
+    { id: "n09", date: "2026-10-14", src: "CGTN·Travel", title: "Beijing through their eyes: A Spanish tourist sketches the Bell Tower", link: "https://news.cgtn.com/news/2026-10-14/Beijing-through-their-eyes-A-Spanish-tourist-sketches-the-Bell-Tower-1ReDDpwCTlu/p.html" },
     { id: "n10", date: "2026-10-29", src: "CGTN·Business", title: "El Nino returns: How will it disrupt global coal supplies?", link: "https://news.cgtn.com/news/2026-10-29/El-Nino-returns-How-will-it-disrupt-global-coal-supplies--1RDCWl5K09i/p.html" },
-    { id: "n11", date: "2026-10-23", src: "CGTN·Business", title: "Eurasia Group economist: China's new growth drivers taking shape", link: "https://news.cgtn.com/news/2026-10-23/Eurasia-Group-economist-China-s-new-growth-drivers-taking-shape-1RtlRm0mi6Q/p.html" },
-    { id: "n12", date: "2026-10-20", src: "CGTN·Business", title: "China's economic transformation gains momentum", link: "https://news.cgtn.com/news/2026-10-20/China-s-economic-transformation-gains-momentum-1RowU8b9Q7m/p.html" },
-    { id: "n13", date: "2026-10-31", src: "CGTN·China", title: "Gang Aoping: HKSAR govt. responded to Tai Po fire with accountability", link: "https://news.cgtn.com/news/2026-10-31/Gang-Aoping-HKSAR-govt-responded-to-Tai-Po-fire-with-accountability-1RGwhgNB7A4/p.html" },
-    { id: "n14", date: "2026-10-29", src: "CGTN·China", title: "Austrian buyer says Canton Fair is all about reliability and trust", link: "https://news.cgtn.com/news/2026-10-29/Austrian-buyer-says-Canton-Fair-is-all-about-reliability-and-trust-1RDCcKb9BVS/p.html" },
-    { id: "n15", date: "2026-10-29", src: "CGTN·China", title: "The new global pact to save the ocean", link: "https://news.cgtn.com/news/2026-10-29/The-new-global-pact-to-save-the-ocean-1RDBnji1ZGE/p.html" }
+    { id: "n11", date: "2026-10-23", src: "CGTN·Business", title: "China is best bond market of 2026, offers good diversification", link: "https://news.cgtn.com/news/2026-10-23/China-is-best-bond-market-of-2026-offers-good-diversification--1RtJ1gaCGFW/p.html" },
+    { id: "n12", date: "2026-10-19", src: "CGTN·Business", title: "China's economy grows 4.6% as output, demand reinforce each other", link: "https://news.cgtn.com/news/2026-10-19/China-s-economy-grows-4-6-as-output-demand-reinforce-each-other-1RngAuqXtqU/p.html" },
+    { id: "n13", date: "2026-11-02", src: "CGTN·China", title: "Remembering Israel Epstein and the Spanish edition of China Today", link: "https://news.cgtn.com/news/2026-11-02/Remembering-Israel-Epstein-and-the-Spanish-edition-of-China-Today-1RK7hjhGfvy/p.html" },
+    { id: "n14", date: "2026-11-03", src: "CGTN·China", title: "China's central bank to raise forex reserve requirement ratio for financial institutions", link: "https://news.cgtn.com/news/2026-11-03/China-s-central-bank-to-raise-forex-reserve-requirement-ratio-for-financial-institutions-1RLp2n0i3vy/p.html" },
+    { id: "n15", date: "2026-10-31", src: "CGTN·China", title: "From Karakoram to Arabian Sea, Ep. 3: A Friendship Across Generations", link: "https://news.cgtn.com/news/2026-10-31/From-Karakoram-to-Arabian-Sea-Ep-3-A-Friendship-Across-Generations-1RGUKVssuCk/p.html" }
   ],
   readings: [
     {
