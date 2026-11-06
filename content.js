@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-11-05",
+  updated: "2026-11-06",
   news: [
-    { id: "n01", date: "2026-10-09", src: "CGTN·Sports", title: "Buyunchaokete shines on serve to book Shanghai showdown with Ruud", link: "https://news.cgtn.com/news/2026-10-09/Buyunchaokete-shines-on-serve-to-book-Shanghai-showdown-with-Ruud-1R5YrkX44us/p.html" },
-    { id: "n02", date: "2026-10-30", src: "CGTN·Sports", title: "Xi's special envoy to attend 4th Youth Olympic Games opening", link: "https://news.cgtn.com/news/2026-10-30/Xi-s-special-envoy-to-attend-4th-Youth-Olympic-Games-opening-1RFelwev0sg/p.html" },
-    { id: "n03", date: "2026-09-30", src: "CGTN·Sports", title: "China's Wei &amp; Jiang reflect on winning badminton gold at Asian Games", link: "https://news.cgtn.com/news/2026-09-30/China-s-Wei-Jiang-reflect-on-winning-badminton-gold-at-Asian-Games-1QR5Tr8hZio/p.html" },
-    { id: "n04", date: "2026-10-22", src: "CGTN·Culture", title: "CMG gala pays tribute to Red Army's crossing of Jiajin Mountain", link: "https://news.cgtn.com/news/2026-10-22/CMG-gala-pays-tribute-to-Red-Army-s-crossing-of-Jiajin-Mountain-1RsgYW8cEqQ/p.html" },
-    { id: "n05", date: "2026-11-03", src: "CGTN·Culture", title: "Immersive drama draws crowds of visitors in Dunhuang", link: "https://news.cgtn.com/news/2026-11-03/Immersive-drama-draws-crowds-of-visitors-in-Dunhuang-1RLRNmTz46A/p.html" },
-    { id: "n06", date: "2026-10-19", src: "CGTN·Culture", title: "CMG hosts short and medium-length drama conference in Shanghai", link: "https://news.cgtn.com/news/2026-10-19/CMG-hosts-short-and-medium-length-drama-conference-in-Shanghai-1RmKck0QrsI/p.html" },
-    { id: "n07", date: "2026-10-24", src: "CGTN·Travel", title: "Tracing the vision: Preserving Culture", link: "https://news.cgtn.com/news/2026-10-24/Tracing-the-vision-Preserving-Culture-1RtS8yT4PCM/p.html" },
-    { id: "n08", date: "2026-11-03", src: "CGTN·Travel", title: "Embroidered Traditions: Dong dress in daily life", link: "https://news.cgtn.com/news/2026-11-03/Embroidered-Traditions-Dong-dress-in-daily-life-1RLtNbe8OuQ/p.html" },
-    { id: "n09", date: "2026-10-22", src: "CGTN·Travel", title: "Kenya launches $160 million initiative to fund wildlife conservation", link: "https://news.cgtn.com/news/2026-10-22/Kenya-launches-160-million-initiative-to-fund-wildlife-conservation-1Rs6WIyhQbK/p.html" },
-    { id: "n10", date: "2026-10-31", src: "CGTN·Business", title: "Hainan's digital reporting system streamlines grassroots governance", link: "https://news.cgtn.com/news/2026-10-31/Hainan-s-digital-reporting-system-streamlines-grassroots-governance-1RFtRmFlg3u/p.html" },
-    { id: "n11", date: "2026-11-03", src: "CGTN·Business", title: "IMF projects 4.5% growth for sub-Saharan Africa amid rising risks", link: "https://newsaf.cgtn.com/news/2026-11-03/IMF-projects-4-5-growth-for-sub-Saharan-Africa-amid-rising-risks-1RLVa7aqkQE/p.html" },
-    { id: "n12", date: "2026-10-20", src: "CGTN·Business", title: "China vows fresh policy measures to support growth: NDRC", link: "https://news.cgtn.com/news/2026-10-20/China-vows-fresh-policy-measures-to-support-growth-NDRC-1RowyKEGnMk/p.html" },
-    { id: "n13", date: "2026-11-01", src: "CGTN·China", title: "Chinese, German auto companies boost cooperation amid industry shift", link: "https://news.cgtn.com/news/2026-11-01/Chinese-German-auto-companies-boost-cooperation-amid-industry-shift-1RIJ83dHRZe/p.html" },
-    { id: "n14", date: "2026-11-04", src: "CGTN·China", title: "UN Peacekeeping Workshop Concludes: Interview with UN Medical Director", link: "https://news.cgtn.com/news/2026-11-04/UN-Peacekeeping-Workshop-Concludes-Interview-with-UN-Medical-Director-1RMiXETJHZ6/p.html" },
-    { id: "n15", date: "2026-11-01", src: "CGTN·China", title: "Political party leaders worldwide praise successful CPC plenum", link: "https://news.cgtn.com/news/2026-11-01/Political-party-leaders-worldwide-praise-successful-CPC-plenum-1RI1pUIFjag/p.html" }
+    { id: "n01", date: "2026-10-06", src: "CGTN·Sports", title: "China Open: Djokovic meets De Minaur in final, Zheng into round of 16", link: "https://news.cgtn.com/news/2026-10-06/China-Open-Djokovic-meets-De-Minaur-in-final-Zheng-into-round-of-16-1R0XF7G76Ug/p.html" },
+    { id: "n02", date: "2026-10-29", src: "CGTN·Sports", title: "South Africa bids to make Durban host city for 2036 or 2040 Olympics", link: "https://newsaf.cgtn.com/news/2026-10-29/South-Africa-bids-to-make-Durban-host-city-for-2036-or-2040-Olympics-1RDSAFFeeQM/p.html" },
+    { id: "n03", date: "2026-10-04", src: "CGTN·Sports", title: "China reaches 169 Asian Games gold medals, sets new overseas record", link: "https://news.cgtn.com/news/2026-10-04/China-reaches-169-Asian-Games-gold-medals-sets-new-overseas-record-1QXM1DaxKiQ/p.html" },
+    { id: "n04", date: "2026-10-29", src: "CGTN·Culture", title: "China's subway stations offer more than just a ride", link: "https://news.cgtn.com/news/2026-10-29/China-s-subway-stations-offer-more-than-just-a-ride-1RDCB73H0s0/p.html" },
+    { id: "n05", date: "2026-11-05", src: "CGTN·Culture", title: "International fans explore C-pop content in Puyuan", link: "https://news.cgtn.com/news/2026-11-05/International-fans-explore-C-pop-content-in-Puyuan-1ROOlm2Rt7y/p.html" },
+    { id: "n06", date: "2026-10-28", src: "CGTN·Culture", title: "Social media, China travel fuel global interest in learning Chinese", link: "https://news.cgtn.com/news/2026-10-28/Social-media-China-travel-fuel-global-interest-in-learning-Chinese-1RBjGURIE5W/p.html" },
+    { id: "n07", date: "2026-10-23", src: "CGTN·Travel", title: "China, the 'golden thread' of fashion friendship", link: "https://news.cgtn.com/news/2026-10-23/China-the-golden-thread-of-fashion-friendship-1RttdW0Zpx6/p.html" },
+    { id: "n08", date: "2026-11-04", src: "CGTN·Travel", title: "What does Beijing look like in golden autumn?", link: "https://news.cgtn.com/news/2026-11-04/What-does-Beijing-look-like-in-golden-autumn--1RNv2wTOKqs/p.html" },
+    { id: "n09", date: "2026-10-23", src: "CGTN·Travel", title: "Golden Avenue dazzles in Xinjiang's autumn splendor", link: "https://news.cgtn.com/news/2026-10-23/Golden-Avenue-dazzles-in-Xinjiang-s-autumn-splendor-1Rtryo1kYDK/p.html" },
+    { id: "n10", date: "2026-11-04", src: "CGTN·Business", title: "Macao advances urban governance through green tourism transition", link: "https://news.cgtn.com/news/2026-11-04/Macao-advances-urban-governance-through-green-tourism-transition-1RNocqrlbRS/p.html" },
+    { id: "n11", date: "2026-11-04", src: "CGTN·Business", title: "Canada returns to CIIE as guest country of honor, boosting trade", link: "https://news.cgtn.com/news/2026-11-04/Canada-returns-to-CIIE-as-guest-country-of-honor-boosting-trade-1RNrcs4ntKw/p.html" },
+    { id: "n12", date: "2026-10-23", src: "CGTN·Business", title: "BizTalk | Inside China's Q3 economy", link: "https://news.cgtn.com/news/2026-10-23/BizTalk-Inside-China-s-Q3-economy-1RtkZG0W8Uw/p.html" },
+    { id: "n13", date: "2026-11-04", src: "CGTN·China", title: "Global stories and voices: Hainan film festival set for December", link: "https://news.cgtn.com/news/2026-11-04/Global-stories-and-voices-Hainan-film-festival-set-for-December-1RNuFpo6H0A/p.html" },
+    { id: "n14", date: "2026-11-04", src: "CGTN·China", title: "China's services trade maintains growth amid push for new drivers", link: "https://news.cgtn.com/news/2026-11-04/China-s-services-trade-maintains-growth-amid-push-for-new-drivers-1RNTCQ8VhmM/p.html" },
+    { id: "n15", date: "2026-11-04", src: "CGTN·China", title: "One Blue World | A Green Sea Turtle's Journey Home", link: "https://news.cgtn.com/news/2026-11-04/One-Blue-World-A-Green-Sea-Turtle-s-Journey-Home--1RNbngBD0AM/p.html" }
   ],
   readings: [
     {
