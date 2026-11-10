@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-11-09",
+  updated: "2026-11-10",
   news: [
-    { id: "n01", date: "2026-09-30", src: "CGTN·Sports", title: "Exclusive: ATP CEO eyes change as China Open celebrates 20th edition", link: "https://news.cgtn.com/news/2026-09-30/Exclusive-ATP-CEO-eyes-change-as-China-Open-celebrates-20th-edition-1QRdYHLOXII/p.html" },
-    { id: "n02", date: "2026-10-25", src: "CGTN·Sports", title: "Aichi-Nagoya bids farewell to Asian Para Games in closing ceremony", link: "https://news.cgtn.com/news/2026-10-25/Aichi-Nagoya-bids-farewell-to-Asian-Para-Games-in-closing-ceremony-1Rwv6rZYcGk/p.html" },
-    { id: "n03", date: "2026-09-27", src: "CGTN·Sports", title: "Su Wen breaks 36-year triple jump record for first Asian Games gold", link: "https://news.cgtn.com/news/2026-09-27/Su-Wen-breaks-36-year-triple-jump-record-for-first-Asian-Games-gold-1QM5vmDkiqs/p.html" },
-    { id: "n04", date: "2026-10-24", src: "CGTN·Culture", title: "Tracing the vision: Preserving Culture", link: "https://news.cgtn.com/news/2026-10-24/Tracing-the-vision-Preserving-Culture-1RtS8yT4PCM/p.html" },
-    { id: "n05", date: "2026-11-06", src: "CGTN·Culture", title: "Atlanta is ready for pandas", link: "https://newsus.cgtn.com/news/2026-11-06/Atlanta-is-ready-for-pandas-1RQ6U6psLaE/p.html" },
-    { id: "n06", date: "2026-10-23", src: "CGTN·Culture", title: "Beijing's central axis: Yandaixiejie Street and Wanning Bridge", link: "https://news.cgtn.com/news/2026-10-23/Beijing-s-central-axis-Yandaixiejie-Street-and-Wanning-Bridge-1RtBYQSjscw/p.html" },
-    { id: "n07", date: "2026-10-24", src: "CGTN·Travel", title: "Baoji Marathon draws 31,000 runners, highlights ancient culture", link: "https://news.cgtn.com/news/2026-10-24/Baoji-Marathon-draws-31-000-runners-highlights-ancient-culture-1RvD06t6jHG/p.html" },
-    { id: "n08", date: "2026-11-05", src: "CGTN·Travel", title: "Respect and tolerance in online discourse under discussion in Wuzhen", link: "https://news.cgtn.com/news/2026-11-05/Respect-and-tolerance-in-online-discourse-under-discussion-in-Wuzhen-1ROUGYfl5M4/p.html" },
-    { id: "n09", date: "2026-10-24", src: "CGTN·Travel", title: "Wuhu Port: A moving link for made-in-China cars going global", link: "https://news.cgtn.com/news/2026-10-24/Wuhu-Port-A-moving-link-for-made-in-China-cars-going-global-1RrQfCuCOQM/p.html" },
-    { id: "n10", date: "2026-11-05", src: "CGTN·Business", title: "China's opening up: A world of opportunities", link: "https://news.cgtn.com/news/2026-11-05/China-s-opening-up-A-world-of-opportunities-1RPnxywULAc/p.html" },
-    { id: "n11", date: "2026-10-28", src: "CGTN·Business", title: "BizDataDive: 76 years of China-Finland diplomatic ties", link: "https://news.cgtn.com/news/2026-10-28/BizDataDive-76-years-of-China-Finland-diplomatic-ties-1RBTKEVKXOo/p.html" },
-    { id: "n12", date: "2026-11-01", src: "CGTN·Business", title: "US firms lead business sign-ups for APEC CEO Summit in Shenzhen", link: "https://news.cgtn.com/news/2026-11-01/US-firms-lead-business-sign-ups-for-APEC-CEO-Summit-in-Shenzhen-1RIu9vQVGPC/p.html" },
-    { id: "n13", date: "2026-11-06", src: "CGTN·China", title: "Atlanta is ready for pandas", link: "https://newsus.cgtn.com/news/2026-11-06/Atlanta-is-ready-for-pandas-1RQ6U6psLaE/p.html" },
-    { id: "n14", date: "2026-11-07", src: "CGTN·China", title: "Experts: Why CPC's self-reform matters for China's governance", link: "https://news.cgtn.com/news/2026-11-07/Experts-Why-CPC-s-self-reform-matters-for-China-s-governance-1RRUotgdh3a/p.html" },
-    { id: "n15", date: "2026-11-06", src: "CGTN·China", title: "One Blue World | Xiapu: Life Among the Seaweed Farms", link: "https://news.cgtn.com/news/2026-11-06/One-Blue-World-Xiapu-Life-Among-the-Seaweed-Farms-1RPf28w3CqQ/p.html" }
+    { id: "n01", date: "2026-09-29", src: "CGTN·Sports", title: "Zhang Zhanshuo: Seven golds on his Asian Games debut", link: "https://news.cgtn.com/news/2026-09-29/Zhang-Zhanshuo-Seven-golds-on-his-Asian-Games-debut-1QPQ626yQ2A/p.html" },
+    { id: "n02", date: "2026-10-17", src: "CGTN·Sports", title: "How Zheng Qinwen transformed her game and mindset in two months", link: "https://news.cgtn.com/news/2026-10-17/How-Zheng-Qinwen-transformed-her-game-and-mindset-in-two-months-1RjbdSFXKwg/p.html" },
+    { id: "n03", date: "2026-09-29", src: "CGTN·Sports", title: "IOC launches Trustworthy AI Framework", link: "https://news.cgtn.com/news/2026-09-29/IOC-launches-Trustworthy-AI-Framework-1QPAzDjp3fa/p.html" },
+    { id: "n04", date: "2026-10-25", src: "CGTN·Culture", title: "ASEAN media partners share their Hainan wish list", link: "https://news.cgtn.com/news/2026-10-25/ASEAN-media-partners-share-their-Hainan-wish-list-1RwSfxQGZEc/p.html" },
+    { id: "n05", date: "2026-11-04", src: "CGTN·Culture", title: "90 Seconds at CIIE | Things that caught my eye", link: "https://news.cgtn.com/news/2026-11-04/90-Seconds-at-CIIE-Things-that-caught-my-eye-1RNyKzKj5QI/p.html" },
+    { id: "n06", date: "2026-10-24", src: "CGTN·Culture", title: "AI recreates Long March history in anniversary TV gala", link: "https://news.cgtn.com/news/2026-10-24/AI-recreates-Long-March-history-in-anniversary-TV-gala-1RvjqCDah1u/p.html" },
+    { id: "n07", date: "2026-10-23", src: "CGTN·Travel", title: "International youths' reflections along a Long March route", link: "https://news.cgtn.com/news/2026-10-23/International-youths-reflections-along-a-Long-March-route-1RtDalCpHuo/p.html" },
+    { id: "n08", date: "2026-11-04", src: "CGTN·Travel", title: "Catching the sweet scent of autumn in Anhui", link: "https://news.cgtn.com/news/2026-11-04/Catching-the-sweet-scent-of-autumn-in-Anhui-1RN6tmTb4eQ/p.html" },
+    { id: "n09", date: "2026-10-23", src: "CGTN·Travel", title: "Golden Avenue dazzles in Xinjiang's autumn splendor", link: "https://news.cgtn.com/news/2026-10-23/Golden-Avenue-dazzles-in-Xinjiang-s-autumn-splendor-1Rtryo1kYDK/p.html" },
+    { id: "n10", date: "2026-11-06", src: "CGTN·Business", title: "How to win big: betting on the US midterms", link: "https://newsus.cgtn.com/news/2026-11-06/How-to-win-big-betting-on-the-US-midterms-1RPNr2qCiTS/p.html" },
+    { id: "n11", date: "2026-11-07", src: "CGTN·Business", title: "Adidas executive: Made for China, now a global hit", link: "https://news.cgtn.com/news/2026-11-07/Adidas-executive-Made-for-China-now-a-global-hit-1RSuErlKQYE/p.html" },
+    { id: "n12", date: "2026-11-03", src: "CGTN·Business", title: "China's central bank to raise forex reserve requirement ratio for financial institutions", link: "https://news.cgtn.com/news/2026-11-03/China-s-central-bank-to-raise-forex-reserve-requirement-ratio-for-financial-institutions-1RLp2n0i3vy/p.html" },
+    { id: "n13", date: "2026-11-09", src: "CGTN·China", title: "Cuba's special envoy to pay an official visit to China this week", link: "https://news.cgtn.com/news/2026-11-09/Cuba-s-special-envoy-to-pay-an-official-visit-to-China-this-week-1RVKsWAtlAs/p.html" },
+    { id: "n14", date: "2026-11-09", src: "CGTN·China", title: "BRICS youth gather in China to explore innovation and cooperation", link: "https://news.cgtn.com/news/2026-11-09/BRICS-youth-gather-in-China-to-explore-innovation-and-cooperation-1RVBiO4DI3e/p.html" },
+    { id: "n15", date: "2026-11-09", src: "CGTN·China", title: "President Xi congratulates Iotova on election as Bulgarian president", link: "https://news.cgtn.com/news/2026-11-09/Xi-congratulates-Iliana-Iotova-on-election-as-Bulgarian-president-1RVDMiS02U8/p.html" }
   ],
   readings: [
     {
