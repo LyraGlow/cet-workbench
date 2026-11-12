@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-11-11",
+  updated: "2026-11-12",
   news: [
-    { id: "n01", date: "2026-09-27", src: "CGTN·Sports", title: "Su Wen breaks 36-year triple jump record for first Asian Games gold", link: "https://news.cgtn.com/news/2026-09-27/Su-Wen-breaks-36-year-triple-jump-record-for-first-Asian-Games-gold-1QM5vmDkiqs/p.html" },
-    { id: "n02", date: "2026-10-25", src: "CGTN·Sports", title: "Aichi-Nagoya bids farewell to Asian Para Games in closing ceremony", link: "https://news.cgtn.com/news/2026-10-25/Aichi-Nagoya-bids-farewell-to-Asian-Para-Games-in-closing-ceremony-1Rwv6rZYcGk/p.html" },
-    { id: "n03", date: "2026-09-30", src: "CGTN·Sports", title: "Exclusive: ATP CEO eyes change as China Open celebrates 20th edition", link: "https://news.cgtn.com/news/2026-09-30/Exclusive-ATP-CEO-eyes-change-as-China-Open-celebrates-20th-edition-1QRdYHLOXII/p.html" },
-    { id: "n04", date: "2026-10-24", src: "CGTN·Culture", title: "Baoji Marathon draws 31,000 runners, highlights ancient culture", link: "https://news.cgtn.com/news/2026-10-24/Baoji-Marathon-draws-31-000-runners-highlights-ancient-culture-1RvD06t6jHG/p.html" },
-    { id: "n05", date: "2026-11-06", src: "CGTN·Culture", title: "Artwork roots and genre blending of 'Phantom Blade Zero'", link: "https://news.cgtn.com/news/2026-11-06/Artwork-roots-and-genre-blending-of-Phantom-Blade-Zero--1RQKGwQuuju/p.html" },
-    { id: "n06", date: "2026-10-27", src: "CGTN·Culture", title: "The rule of law: Where governance begins", link: "https://news.cgtn.com/news/2026-10-27/The-rule-of-law-Where-governance-begins-1RA6f6u4A2Q/p.html" },
-    { id: "n07", date: "2026-10-24", src: "CGTN·Travel", title: "Finding Time’s Slow Rhythm on China’s “Jiangnan Sky Road”", link: "https://news.cgtn.com/news/2026-10-24/Finding-Time-s-Slow-Rhythm-on-China-s-Jiangnan-Sky-Road--1RohVnPWshO/p.html" },
-    { id: "n08", date: "2026-11-05", src: "CGTN·Travel", title: "Xiatang Shaobing: Baked in an upside-down wok", link: "https://news.cgtn.com/news/2026-11-05/Xiatang-Shaobing-Baked-in-an-upside-down-wok-1RLzPYI93B6/p.html" },
-    { id: "n09", date: "2026-10-26", src: "CGTN·Travel", title: "What did the world look like 3,000 years ago?", link: "https://news.cgtn.com/news/2026-10-26/What-did-the-world-look-like-3-000-years-ago--1RtBW5PRbRm/p.html" },
-    { id: "n10", date: "2026-11-06", src: "CGTN·Business", title: "How to win big: betting on the US midterms", link: "https://newsus.cgtn.com/news/2026-11-06/How-to-win-big-betting-on-the-US-midterms-1RPNr2qCiTS/p.html" },
-    { id: "n11", date: "2026-11-07", src: "CGTN·Business", title: "Adidas executive: Made for China, now a global hit", link: "https://news.cgtn.com/news/2026-11-07/Adidas-executive-Made-for-China-now-a-global-hit-1RSuErlKQYE/p.html" },
-    { id: "n12", date: "2026-11-03", src: "CGTN·Business", title: "China's central bank to raise forex reserve requirement ratio for financial institutions", link: "https://news.cgtn.com/news/2026-11-03/China-s-central-bank-to-raise-forex-reserve-requirement-ratio-for-financial-institutions-1RLp2n0i3vy/p.html" },
-    { id: "n13", date: "2026-11-09", src: "CGTN·China", title: "Cuba's special envoy to pay an official visit to China this week", link: "https://news.cgtn.com/news/2026-11-09/Cuba-s-special-envoy-to-pay-an-official-visit-to-China-this-week-1RVKsWAtlAs/p.html" },
-    { id: "n14", date: "2026-11-09", src: "CGTN·China", title: "BRICS youth gather in China to explore innovation and cooperation", link: "https://news.cgtn.com/news/2026-11-09/BRICS-youth-gather-in-China-to-explore-innovation-and-cooperation-1RVBiO4DI3e/p.html" },
-    { id: "n15", date: "2026-11-09", src: "CGTN·China", title: "President Xi congratulates Iotova on election as Bulgarian president", link: "https://news.cgtn.com/news/2026-11-09/Xi-congratulates-Iliana-Iotova-on-election-as-Bulgarian-president-1RVDMiS02U8/p.html" }
+    { id: "n01", date: "2026-10-16", src: "CGTN·Sports", title: "Choi takes early lead at Buick LPGA Shanghai, Yin tied for third", link: "https://news.cgtn.com/news/2026-10-16/Choi-takes-early-lead-at-Buick-LPGA-Shanghai-Yin-tied-for-third-1RhC2ZqwaiY/p.html" },
+    { id: "n02", date: "2026-10-01", src: "CGTN·Sports", title: "Lian Junjie wins China's 100th diving gold in history of Asian Games", link: "https://news.cgtn.com/news/2026-10-01/Lian-Junjie-wins-China-s-100th-diving-gold-in-history-of-Asian-Games-1QSFI9HqR7W/p.html" },
+    { id: "n03", date: "2026-09-29", src: "CGTN·Sports", title: "IOC launches Trustworthy AI Framework", link: "https://news.cgtn.com/news/2026-09-29/IOC-launches-Trustworthy-AI-Framework-1QPAzDjp3fa/p.html" },
+    { id: "n04", date: "2026-11-11", src: "CGTN·Culture", title: "China Popcast: Shenzhen's got global talent", link: "https://news.cgtn.com/news/2026-11-11/China-Popcast-Shenzhen-s-got-global-talent-1RYLp8T0sTe/p.html" },
+    { id: "n05", date: "2026-11-05", src: "CGTN·Culture", title: "Dunhuang Expo: First-time visitor wowed by Mogao Caves", link: "https://news.cgtn.com/news/2026-11-05/Dunhuang-Expo-First-time-visitor-wowed-by-Mogao-Caves-1RNKpJ3hvLq/p.html" },
+    { id: "n06", date: "2026-10-31", src: "CGTN·Culture", title: "APEC \"China Year\" meets arts as Greater Bay Area festival opens", link: "https://news.cgtn.com/news/2026-10-31/APEC-China-Year-meets-arts-as-Greater-Bay-Area-festival-opens-1RGNhS8ZPQ4/p.html" },
+    { id: "n07", date: "2026-11-11", src: "CGTN·Travel", title: "China Popcast: Shenzhen's got global talent", link: "https://news.cgtn.com/news/2026-11-11/China-Popcast-Shenzhen-s-got-global-talent-1RYLp8T0sTe/p.html" },
+    { id: "n08", date: "2026-11-04", src: "CGTN·Travel", title: "Climbing the Great Wall in Mandarin", link: "https://news.cgtn.com/news/2026-11-04/Climbing-the-Great-Wall-in-Mandarin-1RNjaAGWRsk/p.html" },
+    { id: "n09", date: "2026-10-25", src: "CGTN·Travel", title: "A Perfect Day in Huangshan’s Villages", link: "https://news.cgtn.com/news/2026-10-25/A-Perfect-Day-in-Huangshan-s-Villages-1RvoQ4eVA0o/p.html" },
+    { id: "n10", date: "2026-11-07", src: "CGTN·Business", title: "Adidas executive: Made for China, now a global hit", link: "https://news.cgtn.com/news/2026-11-07/Adidas-executive-Made-for-China-now-a-global-hit-1RSuErlKQYE/p.html" },
+    { id: "n11", date: "2026-11-07", src: "CGTN·Business", title: "UK-China business leader: CIIE connects businesses across China", link: "https://news.cgtn.com/news/2026-11-07/UK-China-business-leader-CIIE-connects-businesses-across-China-1RSwMsapk2s/p.html" },
+    { id: "n12", date: "2026-11-05", src: "CGTN·Business", title: "9th China International Import Expo opens in Shanghai", link: "https://news.cgtn.com/news/2026-11-05/9th-China-International-Import-Expo-opens-in-Shanghai-1ROQYoaVJmw/p.html" },
+    { id: "n13", date: "2026-11-11", src: "CGTN·China", title: "Mainland to share modernization opportunities with Taiwan compatriots", link: "https://news.cgtn.com/news/2026-11-11/Mainland-to-share-modernization-opportunities-with-Taiwan-compatriots-1RZwdCJOpO0/p.html" },
+    { id: "n14", date: "2026-11-11", src: "CGTN·China", title: "PLA Air Force unveils its international social media accounts", link: "https://news.cgtn.com/news/2026-11-11/PLA-Air-Force-unveils-its-international-social-media-accounts-1RZ66A2gpy0/p.html" },
+    { id: "n15", date: "2026-11-11", src: "CGTN·China", title: "China Popcast: Shenzhen's got global talent", link: "https://news.cgtn.com/news/2026-11-11/China-Popcast-Shenzhen-s-got-global-talent-1RYLp8T0sTe/p.html" }
   ],
   readings: [
     {
