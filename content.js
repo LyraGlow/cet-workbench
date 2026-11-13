@@ -1,17 +1,17 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-11-12",
+  updated: "2026-11-13",
   news: [
-    { id: "n01", date: "2026-10-16", src: "CGTN·Sports", title: "Choi takes early lead at Buick LPGA Shanghai, Yin tied for third", link: "https://news.cgtn.com/news/2026-10-16/Choi-takes-early-lead-at-Buick-LPGA-Shanghai-Yin-tied-for-third-1RhC2ZqwaiY/p.html" },
-    { id: "n02", date: "2026-10-01", src: "CGTN·Sports", title: "Lian Junjie wins China's 100th diving gold in history of Asian Games", link: "https://news.cgtn.com/news/2026-10-01/Lian-Junjie-wins-China-s-100th-diving-gold-in-history-of-Asian-Games-1QSFI9HqR7W/p.html" },
-    { id: "n03", date: "2026-09-29", src: "CGTN·Sports", title: "IOC launches Trustworthy AI Framework", link: "https://news.cgtn.com/news/2026-09-29/IOC-launches-Trustworthy-AI-Framework-1QPAzDjp3fa/p.html" },
-    { id: "n04", date: "2026-11-11", src: "CGTN·Culture", title: "China Popcast: Shenzhen's got global talent", link: "https://news.cgtn.com/news/2026-11-11/China-Popcast-Shenzhen-s-got-global-talent-1RYLp8T0sTe/p.html" },
-    { id: "n05", date: "2026-11-05", src: "CGTN·Culture", title: "Dunhuang Expo: First-time visitor wowed by Mogao Caves", link: "https://news.cgtn.com/news/2026-11-05/Dunhuang-Expo-First-time-visitor-wowed-by-Mogao-Caves-1RNKpJ3hvLq/p.html" },
-    { id: "n06", date: "2026-10-31", src: "CGTN·Culture", title: "APEC \"China Year\" meets arts as Greater Bay Area festival opens", link: "https://news.cgtn.com/news/2026-10-31/APEC-China-Year-meets-arts-as-Greater-Bay-Area-festival-opens-1RGNhS8ZPQ4/p.html" },
-    { id: "n07", date: "2026-11-11", src: "CGTN·Travel", title: "China Popcast: Shenzhen's got global talent", link: "https://news.cgtn.com/news/2026-11-11/China-Popcast-Shenzhen-s-got-global-talent-1RYLp8T0sTe/p.html" },
-    { id: "n08", date: "2026-11-04", src: "CGTN·Travel", title: "Climbing the Great Wall in Mandarin", link: "https://news.cgtn.com/news/2026-11-04/Climbing-the-Great-Wall-in-Mandarin-1RNjaAGWRsk/p.html" },
-    { id: "n09", date: "2026-10-25", src: "CGTN·Travel", title: "A Perfect Day in Huangshan’s Villages", link: "https://news.cgtn.com/news/2026-10-25/A-Perfect-Day-in-Huangshan-s-Villages-1RvoQ4eVA0o/p.html" },
+    { id: "n01", date: "2026-11-08", src: "CGTN·Sports", title: "China retains women's trampoline team world title in Nanjing", link: "https://news.cgtn.com/news/2026-11-08/China-retains-women-s-trampoline-team-world-title-in-Nanjing-1RTHJuAjm48/p.html" },
+    { id: "n02", date: "2026-10-17", src: "CGTN·Sports", title: "Yang Shuyu, Wang Siyu score 11 points each on WNBL debuts in Australia", link: "https://news.cgtn.com/news/2026-10-17/Yang-Shuyu-Wang-Siyu-score-11-points-each-on-WNBL-debuts-in-Australia-1Rjd9h2tns4/p.html" },
+    { id: "n03", date: "2026-09-28", src: "CGTN·Sports", title: "Zimbabwe beats Uganda to win Rugby Africa Sevens title", link: "https://newsaf.cgtn.com/news/2026-09-28/Zimbabwe-beats-Uganda-to-win-Rugby-Africa-Sevens-title-1QO8hDL8KrK/p.html" },
+    { id: "n04", date: "2026-11-07", src: "CGTN·Culture", title: "A welcoming tea culture journey begins in Beijing", link: "https://news.cgtn.com/news/2026-11-07/A-welcoming-tea-culture-journey-begins-in-Beijing--1RSsxRi9Ixq/p.html" },
+    { id: "n05", date: "2026-10-29", src: "CGTN·Culture", title: "Harvest season brings golden hues to Dong village in Guizhou", link: "https://news.cgtn.com/news/2026-10-29/Harvest-season-brings-golden-hues-to-Dong-village-in-Guizhou-1RDtbq2jni0/p.html" },
+    { id: "n06", date: "2026-11-04", src: "CGTN·Culture", title: "How Ningbo is building its esports and digital cultural economy", link: "https://news.cgtn.com/news/2026-11-04/How-Ningbo-is-building-its-esports-and-digital-cultural-economy-1RNeAulJKWk/p.html" },
+    { id: "n07", date: "2026-11-11", src: "CGTN·Travel", title: "Hongcun: A village designed around water", link: "https://news.cgtn.com/news/2026-11-11/Hongcun-A-village-designed-around-water-1RW06ab9ntS/p.html" },
+    { id: "n08", date: "2026-11-05", src: "CGTN·Travel", title: "Mastering the bamboo: Centuries of Huizhou craftsmanship in Hongcun", link: "https://news.cgtn.com/news/2026-11-05/Mastering-the-bamboo-Centuries-of-Huizhou-craftsmanship-in-Hongcun-1RKdPwFFPgc/p.html" },
+    { id: "n09", date: "2026-10-26", src: "CGTN·Travel", title: "A Grand Festival Begins at Dusk", link: "https://news.cgtn.com/news/2026-10-26/A-Grand-Festival-Begins-at-Dusk-1Ryy7nKldrG/p.html" },
     { id: "n10", date: "2026-11-07", src: "CGTN·Business", title: "Adidas executive: Made for China, now a global hit", link: "https://news.cgtn.com/news/2026-11-07/Adidas-executive-Made-for-China-now-a-global-hit-1RSuErlKQYE/p.html" },
     { id: "n11", date: "2026-11-07", src: "CGTN·Business", title: "UK-China business leader: CIIE connects businesses across China", link: "https://news.cgtn.com/news/2026-11-07/UK-China-business-leader-CIIE-connects-businesses-across-China-1RSwMsapk2s/p.html" },
     { id: "n12", date: "2026-11-05", src: "CGTN·Business", title: "9th China International Import Expo opens in Shanghai", link: "https://news.cgtn.com/news/2026-11-05/9th-China-International-Import-Expo-opens-in-Shanghai-1ROQYoaVJmw/p.html" },
