@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-11-16",
+  updated: "2026-11-17",
   news: [
-    { id: "n01", date: "2026-10-26", src: "CGTN·Sports", title: "Zou Jingyuan wins parallel bars gold as gymnastics worlds conclude", link: "https://news.cgtn.com/news/2026-10-26/Zou-Jingyuan-wins-parallel-bars-gold-as-gymnastics-worlds-conclude-1Ryd2B15SBG/p.html" },
-    { id: "n02", date: "2026-11-15", src: "CGTN·Sports", title: "Ning, Lian strike gold for China at Speed Skating World Cup in Beijing", link: "https://news.cgtn.com/news/2026-11-15/Ning-Lian-strike-gold-for-China-at-Speed-Skating-World-Cup-in-Beijing-1S5kuLkz7Ta/p.html" },
-    { id: "n03", date: "2026-10-10", src: "CGTN·Sports", title: "Zheng Qinwen reaches China Open semifinals with straight-set win", link: "https://news.cgtn.com/news/2026-10-10/Zheng-Qinwen-reaches-China-Open-semifinals-with-straight-set-win-1R7KP2weY8g/p.html" },
-    { id: "n04", date: "2026-11-10", src: "CGTN·Culture", title: "Shenzhen's giant waste grab powers a greener city", link: "https://news.cgtn.com/news/2026-11-10/Shenzhen-s-giant-waste-grab-powers-a-greener-city-1RXf3NXKkhO/p.html" },
-    { id: "n05", date: "2026-11-15", src: "CGTN·Culture", title: "Discover Foshan: where Lingnan traditions come alive", link: "https://news.cgtn.com/news/2026-11-15/Discover-Foshan-where-Lingnan-traditions-come-alive--1S5zziK4scE/p.html" },
-    { id: "n06", date: "2026-11-05", src: "CGTN·Culture", title: "Military attachés trace Long March history through calligraphy", link: "https://news.cgtn.com/news/2026-11-05/Military-attach-s-trace-Long-March-history-through-calligraphy-1RO1jTzpFZe/p.html" },
-    { id: "n07", date: "2026-11-06", src: "CGTN·Travel", title: "Xiatang shaobing and the upside-down wok", link: "https://news.cgtn.com/news/2026-11-06/Xiatang-shaobing-and-the-upside-down-wok-1RQWLwfcD5u/p.html" },
-    { id: "n08", date: "2026-11-15", src: "CGTN·Travel", title: "Navigating a Chinese Gym? Master These Essential Workout Terms", link: "https://news.cgtn.com/news/2026-11-15/Navigating-a-Chinese-Gym-Master-These-Essential-Workout-Terms-1S5jWxtj2Wk/p.html" },
-    { id: "n09", date: "2026-11-03", src: "CGTN·Travel", title: "Precision and Skill at Wuhu Port: Loading Cars into Containers", link: "https://news.cgtn.com/news/2026-11-03/Precision-and-Skill-at-Wuhu-Port-Loading-Cars-into-Containers-1RKdDnrmAhO/p.html" },
-    { id: "n10", date: "2026-11-10", src: "CGTN·Business", title: "Bert Hofman: APEC can boost trust and confidence in cooperation", link: "https://news.cgtn.com/news/2026-11-10/Bert-Hofman-APEC-can-boost-trust-and-confidence-in-cooperation-1RX31a6IkqA/p.html" },
-    { id: "n11", date: "2026-11-12", src: "CGTN·Business", title: "When a robot steals the spotlight mid-shoot", link: "https://news.cgtn.com/news/2026-11-12/When-a-robot-steals-the-spotlight-mid-shoot-1S0PooAIWcg/p.html" },
-    { id: "n12", date: "2026-11-06", src: "CGTN·Business", title: "What are global CEOs' top picks at the CIIE?", link: "https://news.cgtn.com/news/2026-11-06/What-are-global-CEOs-top-picks-at-the-CIIE--1RRe6mjRrq0/p.html" },
-    { id: "n13", date: "2026-11-15", src: "CGTN·China", title: "Bert Hofman revisits Shenzhen: Exploring the forces behind its rise", link: "https://news.cgtn.com/news/2026-11-15/Bert-Hofman-revisits-Shenzhen-Exploring-the-forces-behind-its-rise-1S4jrdaG3Ju/p.html" },
-    { id: "n14", date: "2026-11-15", src: "CGTN·China", title: "Big Boats, Small Boats, Farther Seas", link: "https://news.cgtn.com/news/2026-11-15/Big-Boats-Small-Boats-Farther-Seas-1S4mEDn9kUo/p.html" },
-    { id: "n15", date: "2026-11-12", src: "CGTN·China", title: "Xi Jinping's key quotes on building a greener, sustainable future", link: "https://news.cgtn.com/news/2026-11-12/Xi-Jinping-s-key-quotes-on-building-a-greener-sustainable-future-1S0KftQP9FC/p.html" }
+    { id: "n01", date: "2026-10-25", src: "CGTN·Sports", title: "Chengdu's title hopes suffer setback as Dalian wins 1-0 in CSL", link: "https://news.cgtn.com/news/2026-10-25/Chengdu-s-title-hopes-suffer-setback-as-Dalian-wins-1-0-in-CSL-1RwxpnoFB5u/p.html" },
+    { id: "n02", date: "2026-11-09", src: "CGTN·Sports", title: "Nigeria sweeps 100m golds as Kenya, Senegal and Egypt shine at Dakar", link: "https://newsaf.cgtn.com/news/2026-11-09/Nigeria-sweeps-100m-golds-as-Kenya-Senegal-and-Egypt-shine-at-Dakar-1RVL3t4SGSk/p.html" },
+    { id: "n03", date: "2026-10-07", src: "CGTN·Sports", title: "Pickleball gains momentum in China as participation and events surge", link: "https://news.cgtn.com/news/2026-10-07/Pickleball-gains-momentum-in-China-as-participation-and-events-surge-1R2ARS2DEKk/p.html" },
+    { id: "n04", date: "2026-11-15", src: "CGTN·Culture", title: "Goryeo Buddhist paintings reflect China-Korea artistic ties", link: "https://news.cgtn.com/news/2026-11-15/Goryeo-Buddhist-paintings-reflect-China-Korea-artistic-ties-1S5O0NH9F5u/p.html" },
+    { id: "n05", date: "2026-11-14", src: "CGTN·Culture", title: "Fujian holds grand tribute to Mazu, China's beloved sea goddess", link: "https://news.cgtn.com/news/2026-11-14/Fujian-holds-grand-tribute-to-Mazu-China-s-beloved-sea-goddess-1S41yYO4RDW/p.html" },
+    { id: "n06", date: "2026-11-06", src: "CGTN·Culture", title: "Let's play video games in class", link: "https://news.cgtn.com/news/2026-11-06/Let-s-play-video-games-in-class-1RQJv7lGy8E/p.html" },
+    { id: "n07", date: "2026-11-13", src: "CGTN·Travel", title: "Hidden salt sinkhole reveals rare geological wonder", link: "https://news.cgtn.com/news/2026-11-13/Hidden-salt-sinkhole-reveals-rare-geological-wonder-1S2m1JqPn44/p.html" },
+    { id: "n08", date: "2026-11-12", src: "CGTN·Travel", title: "Shenzhen Parks Are Putting My Workout in the Cloud", link: "https://news.cgtn.com/news/2026-11-12/Shenzhen-Parks-Are-Putting-My-Workout-in-the-Cloud-1S0uG80642A/p.html" },
+    { id: "n09", date: "2026-11-02", src: "CGTN·Travel", title: "Autumn foliage draws visitors to Beijing's Xiangshan Park", link: "https://news.cgtn.com/news/2026-11-02/Autumn-foliage-draws-visitors-to-Beijing-s-Xiangshan-Park-1RKbXelEupG/p.html" },
+    { id: "n10", date: "2026-11-16", src: "CGTN·Business", title: "What it really takes to run a robot theme park", link: "https://news.cgtn.com/news/2026-11-16/What-it-really-takes-to-run-a-robot-theme-park-1S7q3FwPFU4/p.html" },
+    { id: "n11", date: "2026-11-14", src: "CGTN·Business", title: "Building roads and bridges to foster closer people-to-people bonds", link: "https://news.cgtn.com/news/2026-11-14/Building-roads-and-bridges-to-foster-closer-people-to-people-bonds--1S3YTPuM7tu/p.html" },
+    { id: "n12", date: "2026-11-10", src: "CGTN·Business", title: "Bert Hofman: APEC can boost trust and confidence in cooperation", link: "https://news.cgtn.com/news/2026-11-10/Bert-Hofman-APEC-can-boost-trust-and-confidence-in-cooperation-1RX31a6IkqA/p.html" },
+    { id: "n13", date: "2026-11-16", src: "CGTN·China", title: "Eurasian enterprises explore new opportunities in Chongqing", link: "https://news.cgtn.com/news/2026-11-16/Eurasian-enterprises-explore-new-opportunities-in-Chongqing-1S7Bs3Kitpe/p.html" },
+    { id: "n14", date: "2026-11-16", src: "CGTN·China", title: "Why we must use antibiotics wisely", link: "https://news.cgtn.com/news/2026-11-16/Why-we-must-use-antibiotics-wisely-1S7O78aRVf2/p.html" },
+    { id: "n15", date: "2026-11-16", src: "CGTN·China", title: "Mexican president arrives in Shenzhen for 33rd APEC Economic Leaders' Meeting", link: "https://news.cgtn.com/news/2026-11-16/Mexican-president-arrives-in-Shenzhen-for-33rd-APEC-Economic-Leaders-Meeting-1S76o1hwDzW/p.html" }
   ],
   readings: [
     {
