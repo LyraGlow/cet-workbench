@@ -1,23 +1,23 @@
 // 四六级备考工作台 · 每日内容包
 // news 由每日自动化真实抓取 CGTN RSS（多个频道）；readings/listenings/dialogues 为 AI 原创改写（四六级难度）
 window.CET_CONTENT = {
-  updated: "2026-11-23",
+  updated: "2026-11-24",
   news: [
-    { id: "n01", date: "2026-10-30", src: "CGTN·Sports", title: "Xi's special envoy to attend 4th Youth Olympic Games opening", link: "https://news.cgtn.com/news/2026-10-30/Xi-s-special-envoy-to-attend-4th-Youth-Olympic-Games-opening-1RFelwev0sg/p.html" },
-    { id: "n02", date: "2026-10-29", src: "CGTN·Sports", title: "Hong Kexin claims gold for China at World Wrestling Championships", link: "https://news.cgtn.com/news/2026-10-29/Hong-Kexin-claims-gold-for-China-at-World-Wrestling-Championships-1RDbGrrMclG/p.html" },
-    { id: "n03", date: "2026-10-03", src: "CGTN·Sports", title: "Tegla Loroupe welcomes OCA Refugee Team, urges stronger sporting ties", link: "https://news.cgtn.com/news/2026-10-03/Tegla-Loroupe-welcomes-OCA-Refugee-Team-urges-stronger-sporting-ties-1QVUOSN8MrC/p.html" },
-    { id: "n04", date: "2026-11-17", src: "CGTN·Culture", title: "Goryeo Buddhist art revives centuries of China-Korea cultural ties", link: "https://news.cgtn.com/news/2026-11-17/Goryeo-Buddhist-art-revives-centuries-of-China-Korea-cultural-ties-1S979JPSKg8/p.html" },
-    { id: "n05", date: "2026-11-15", src: "CGTN·Culture", title: "Inside Suzhou: Where history meets modern charm", link: "https://news.cgtn.com/news/2026-11-15/Inside-Suzhou-Where-history-meets-modern-charm-1S5O7vPnWQE/p.html" },
-    { id: "n06", date: "2026-11-08", src: "CGTN·Culture", title: "From viral TikTok trend to real-life adventure", link: "https://news.cgtn.com/news/2026-11-08/From-viral-TikTok-trend-to-real-life-adventure-1RSxrV7lY8U/p.html" },
-    { id: "n07", date: "2026-11-11", src: "CGTN·Travel", title: "Hongcun village: An open-air art studio", link: "https://news.cgtn.com/news/2026-11-11/Hongcun-village-An-open-air-art-studio-1RW10IZ0FZ6/p.html" },
-    { id: "n08", date: "2026-11-10", src: "CGTN·Travel", title: "We spent a day in a robot store", link: "https://news.cgtn.com/news/2026-11-10/We-spent-a-day-in-a-robot-store-1RVwIS64s1i/p.html" },
-    { id: "n09", date: "2026-10-31", src: "CGTN·Travel", title: "Autumn in Beijing, with more than leaves on the agenda", link: "https://news.cgtn.com/news/2026-10-31/Autumn-in-Beijing-with-more-than-leaves-on-the-agenda-1RGuPL0YI6s/p.html" },
+    { id: "n01", date: "2026-10-26", src: "CGTN·Sports", title: "Chen Yi crowned in women's singles at table tennis Asian Championships", link: "https://news.cgtn.com/news/2026-10-26/Chen-Yi-crowned-in-women-s-singles-at-table-tennis-Asian-Championships-1RydnRZWy7C/p.html" },
+    { id: "n02", date: "2026-10-26", src: "CGTN·Sports", title: "Zou Jingyuan wins parallel bars gold as gymnastics worlds conclude", link: "https://news.cgtn.com/news/2026-10-26/Zou-Jingyuan-wins-parallel-bars-gold-as-gymnastics-worlds-conclude-1Ryd2B15SBG/p.html" },
+    { id: "n03", date: "2026-10-18", src: "CGTN·Sports", title: "Zverev, Medvedev ousted with Spanish duo to clash for Shanghai title", link: "https://news.cgtn.com/news/2026-10-18/Zverev-Medvedev-ousted-with-Spanish-duo-to-clash-for-Shanghai-title-1RkV2SW3mpi/p.html" },
+    { id: "n04", date: "2026-11-15", src: "CGTN·Culture", title: "Discover Foshan: where Lingnan traditions come alive", link: "https://news.cgtn.com/news/2026-11-15/Discover-Foshan-where-Lingnan-traditions-come-alive--1S5zziK4scE/p.html" },
+    { id: "n05", date: "2026-11-15", src: "CGTN·Culture", title: "Carved in bone: The enduring beauty of China's earliest writing", link: "https://news.cgtn.com/news/2026-11-15/Carved-in-bone-The-enduring-beauty-of-China-s-earliest-writing-1S5E9SkOKKQ/p.html" },
+    { id: "n06", date: "2026-11-10", src: "CGTN·Culture", title: "Jingshan Park: A golden view of Beijing's Central Axis", link: "https://news.cgtn.com/news/2026-11-10/Jingshan-Park-A-golden-view-of-Beijing-s-Central-Axis-1RXn2j9P1Uk/p.html" },
+    { id: "n07", date: "2026-11-09", src: "CGTN·Travel", title: "The quiet detail of Sanxingdui jade", link: "https://news.cgtn.com/news/2026-11-09/The-quiet-detail-of-Sanxingdui-jade-1RVDL6lJcL6/p.html" },
+    { id: "n08", date: "2026-11-09", src: "CGTN·Travel", title: "What was in his hands?", link: "https://news.cgtn.com/news/2026-11-09/What-was-in-his-hands--1RVDZurzPYk/p.html" },
+    { id: "n09", date: "2026-11-07", src: "CGTN·Travel", title: "A taste of Shantou: Fresh seafood rice rolls", link: "https://news.cgtn.com/news/2026-11-07/A-taste-of-Shantou-Fresh-seafood-rice-rolls-1RSqvl5A8Du/p.html" },
     { id: "n10", date: "2026-11-17", src: "CGTN·Business", title: "BYD: APEC guests amazed by Shenzhen's remarkable transformation", link: "https://news.cgtn.com/news/2026-11-17/BYD-APEC-guests-amazed-by-Shenzhen-s-remarkable-transformation-1S9lGbq0pP2/p.html" },
-    { id: "n11", date: "2026-11-13", src: "CGTN·Business", title: "IKEA: Beyond consumer market, China is an innovation hub", link: "https://news.cgtn.com/news/2026-11-13/IKEA-Beyond-consumer-market-China-is-an-innovation-hub-1RQTPQEECf6/p.html" },
+    { id: "n11", date: "2026-11-13", src: "CGTN·Business", title: "WEF field trip: How two Chinese cities are greening industry", link: "https://news.cgtn.com/news/2026-11-13/WEF-field-trip-How-two-Chinese-cities-are-greening-industry-1S2dzp04CTm/p.html" },
     { id: "n12", date: "2026-11-13", src: "CGTN·Business", title: "How Shenzhen is shaping the future of the Asia-Pacific", link: "https://news.cgtn.com/news/2026-11-13/How-Shenzhen-is-shaping-the-future-of-the-Asia-Pacific-1S2v9t9rFbq/p.html" },
-    { id: "n13", date: "2026-11-20", src: "CGTN·China", title: "Mark Carney’s Asian tour aims to diversify Canada’s trading partners", link: "https://newsus.cgtn.com/news/2026-11-20/Mark-Carney-s-Asian-tour-aims-to-diversify-Canada-s-trading-partners-1SduhsHbaA8/p.html" },
-    { id: "n14", date: "2026-11-20", src: "CGTN·China", title: "Tariff disputes on hold, but unresolved as APEC meeting gets underway", link: "https://newsus.cgtn.com/news/2026-11-20/Tariff-disputes-on-hold-but-unresolved-as-APEC-meeting-gets-underway-1SduogRwLKg/p.html" },
-    { id: "n15", date: "2026-11-19", src: "CGTN·China", title: "John Lee outlines five key takeaways from HK's APEC participation", link: "https://news.cgtn.com/news/2026-11-19/John-Lee-outlines-five-key-takeaways-from-HK-s-APEC-participation-1ScC9zhA6xq/p.html" }
+    { id: "n13", date: "2026-11-23", src: "CGTN·China", title: "Chinese envoys step up peace efforts in Middle East, Horn of Africa", link: "https://news.cgtn.com/news/2026-11-23/Chinese-envoys-step-up-peace-efforts-in-Middle-East-Horn-of-Africa-1SiPdVqBN1C/p.html" },
+    { id: "n14", date: "2026-11-23", src: "CGTN·China", title: "How Kunqu finds new life at Beijing's Zhengyici Theater", link: "https://news.cgtn.com/news/2026-11-23/How-Kunqu-finds-new-life-at-Beijing-s-Zhengyici-Theater-1SiL8kP53wI/p.html" },
+    { id: "n15", date: "2026-11-21", src: "CGTN·China", title: "TV drama 'River of No Return' begins promotional tour in Nanjing", link: "https://news.cgtn.com/news/2026-11-21/TV-drama-River-of-No-Return-begins-promotional-tour-in-Nanjing-1SfHH8wvLoI/p.html" }
   ],
   readings: [
     {
